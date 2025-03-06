@@ -127,7 +127,7 @@ Where:
 - $( v_0 )$ is the initial velocity
 - $( g )$ is the gravitational acceleration (usually $( 9.81 \, \text{m/s}^2 )$ on Earth)
 
-## Dependence of Range on the Angle of Projection
+### Dependence of Range on the Angle of Projection
 
 From the equation above, the range depends on the **sine of twice the angle** $( 2\theta )$. Let's break this down:
 
@@ -138,9 +138,20 @@ From the equation above, the range depends on the **sine of twice the angle** $(
    This is the optimal launch angle for the maximum range. Since $( \sin(90^\circ) = 1 )$, the range is maximized when the angle is $( 45^\circ )$. For angles less than or greater than $( 45^\circ )$, the sine of $( 2\theta )$ decreases, reducing the horizontal range.
 
 3. **For angles larger than 45° (up to 90°)**:  
-   The range starts to decrease as the angle increases. For instance, at $( \theta = 90^\circ )$ (vertical launch), the sine term becomes zero again, meaning there’s no horizontal motion, and the range is zero.
+   The range starts to decrease as the angle increases. At $( \theta = 90^\circ )$ (vertical launch), the sine term becomes zero again, meaning there’s no horizontal motion, and the range is zero.
 
-Thus, **the horizontal range is maximized at $( 45^\circ )$**, and any deviation from this angle leads to a reduction in range.
+**The horizontal range is maximized at $( 45^\circ )$**, and any deviation from this angle leads to a reduction in range.
+
+### Influence of Gravitational Acceleration
+
+The gravitational acceleration $( g )$ is a key factor in determining the horizontal range, as it is inversely proportional to the range. If $( g )$ increases, the range decreases, and vice versa. For example:
+
+- On the Moon, where the gravitational acceleration is about $( 1.6 \, \text{m/s}^2 )$, the horizontal range would be much greater for the same initial velocity and angle compared to Earth, where $( g = 9.81 \, \text{m/s}^2 )$.
+
+This means:
+- If gravity is stronger (larger $( g )$), the projectile spends less time in the air, so the range will be smaller.
+- If gravity is weaker (smaller $( g )$), the projectile stays in the air longer, and the range increases.
+
 
 
 
