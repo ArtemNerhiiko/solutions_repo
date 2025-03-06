@@ -88,6 +88,9 @@ Integrating again to get the vertical position:
 
 $y(t) = v_0 \sin\theta \cdot t - \frac{1}{2} g t^2$
 
+![image-36](https://github.com/user-attachments/assets/dacf869c-3266-46b2-b78a-11f644b2d814)
+
+
 # 2.1 **Differential Equations**
 
 ### Euler-Lagrange Equation
