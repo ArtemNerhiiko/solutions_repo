@@ -50,7 +50,7 @@ Since there are no forces acting in the horizontal direction (assuming no air re
 
 Since there is no horizontal force, acceleration in the \( x \)-direction is zero:  
 
-$a_x = 0$
+**$a_x = 0$**
 
 
 The velocity in the \( x \)-direction remains constant:  
