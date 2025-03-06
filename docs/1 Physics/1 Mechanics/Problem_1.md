@@ -56,10 +56,10 @@ $a_y = -g$
 
 Applying Newton’s second law:  
 
-$m a_y = -mg$
+$m \cdot a_y = -mg$
 
 
-$frac{d v_y}{dt} = -g$
+$\frac{d v_y}{dt} = -g$
   
 Integrating with respect to time, we obtain the velocity in the \( y \)-direction:  
 
