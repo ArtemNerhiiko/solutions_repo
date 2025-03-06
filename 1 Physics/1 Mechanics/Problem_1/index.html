@@ -183,6 +183,52 @@
 <li><strong>Vertical (y-direction):</strong> Motion under constant acceleration due to gravity</li>
 </ul>
 <p><img alt="images" src="https://github.com/user-attachments/assets/c2a69a7b-25ad-42b2-8101-1c47d8114b79"/></p>
+<p>The key parameters:</p>
+<ul>
+<li><strong><span class="arithmatex">\( v_0 \)</span> = Initial velocity</strong></li>
+<li><strong><span class="arithmatex">\( g \)</span> = Acceleration due to gravity</strong></li>
+<li><strong><span class="arithmatex">\( x(t), y(t) \)</span> = Position coordinates at time <span class="arithmatex">\( t \)</span></strong></li>
+<li><strong><span class="arithmatex">\( \theta \)</span> = Angle of projection</strong></li>
+</ul>
+<h1 id="11-newtons-second-law-and-differential-equations">1.1 Newton’s Second Law and Differential Equations</h1>
+<p>Newton’s second law states: 
+[
+F = ma
+]<br/>
+Since there are no forces acting in the horizontal direction (assuming no air resistance), and gravity acts downward in the vertical direction, we can write the equations of motion separately for each axis.</p>
+<h1 id="horizontal-motion">Horizontal Motion:</h1>
+<p>Since there is no horizontal force, acceleration in the <span class="arithmatex">\( x \)</span>-direction is zero:<br/>
+[
+a_x = 0
+]  </p>
+<p>The velocity in the <span class="arithmatex">\( x \)</span>-direction remains constant:<br/>
+[
+v_x = v_0 \cos\theta
+]<br/>
+Integrating this, we get the horizontal position as a function of time:<br/>
+[
+x(t) = v_0 \cos\theta \cdot t
+]  </p>
+<h1 id="vertical-motion">Vertical Motion</h1>
+<p>The only force in the vertical direction is gravity, which gives an acceleration:<br/>
+[
+a_y = -g
+]  </p>
+<p>Applying Newton’s second law:<br/>
+[
+m a_y = -mg
+]<br/>
+[
+\frac{d v_y}{dt} = -g
+]<br/>
+Integrating with respect to time, we obtain the velocity in the <span class="arithmatex">\( y \)</span>-direction:<br/>
+[
+v_y = v_0 \sin\theta - g t
+]<br/>
+Integrating again to get the vertical position:<br/>
+[
+y(t) = v_0 \sin\theta \cdot t - \frac{1}{2} g t^2
+]  </p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
