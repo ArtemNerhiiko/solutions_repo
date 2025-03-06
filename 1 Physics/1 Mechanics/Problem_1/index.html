@@ -228,7 +228,7 @@
 <p>Integrating again to get the vertical position:  </p>
 <p><span class="arithmatex">\(y(t) = v_0 \sin\theta \cdot t - \frac{1}{2} g t^2\)</span></p>
 <p><img alt="image-36" src="https://github.com/user-attachments/assets/dacf869c-3266-46b2-b78a-11f644b2d814"/></p>
-<h1 id="12-euler-lagrange-equation">1.2 <strong>Euler-Lagrange Equation</strong></h1>
+<h3 id="12-euler-lagrange-equation">1.2 <strong>Euler-Lagrange Equation</strong></h3>
 <p>The Euler-Lagrange equation is a fundamental equation in calculus of variations and Lagrangian mechanics. It provides the necessary condition for a function to be an extremum (minimum, maximum, or saddle point) in variational problems, particularly in classical mechanics where it helps derive equations of motion.</p>
 <p><span class="arithmatex">\(L = T - V\)</span></p>
 <p>where:
@@ -239,6 +239,35 @@
 <p>where:
 - <span class="arithmatex">\(( q )\)</span> is the generalized coordinate,
 - <span class="arithmatex">\(( \dot{q} )\)</span> is the velocity.</p>
+<h1 id="21-analysis-of-the-range">2.1 Analysis of the Range:</h1>
+<h3 id="horizontal-range-and-angle-of-projection">Horizontal Range and Angle of Projection</h3>
+<p>The horizontal range <span class="arithmatex">\(R\)</span> of a projectile is the distance covered by the projectile from the foot of the tower to the point where the projetile hits the ground. It travels horizontally before landing, and it depends on various parameters, including the angle of projection <span class="arithmatex">\(θ\)</span>, the initial velocity <span class="arithmatex">\(v_0\)</span> and the gravitational acceleration <span class="arithmatex">\(g\)</span>.
+The general equation for the horizontal range of a projectile launched from the ground level is given by:</p>
+<p><span class="arithmatex">\(R = \frac{v_0^2 sin(2θ)}{g}\)</span></p>
+<p>Where:</p>
+<ul>
+<li><span class="arithmatex">\(( R )\)</span> is the horizontal range</li>
+<li><span class="arithmatex">\(( \theta )\)</span> is the angle of projection</li>
+<li><span class="arithmatex">\(( v_0 )\)</span> is the initial velocity</li>
+<li><span class="arithmatex">\(( g )\)</span> is the gravitational acceleration (usually <span class="arithmatex">\(( 9.81 \, \text{m/s}^2 )\)</span> on Earth)</li>
+</ul>
+<h2 id="dependence-of-range-on-the-angle-of-projection">Dependence of Range on the Angle of Projection</h2>
+<p>From the equation above, the range depends on the <strong>sine of twice the angle</strong> <span class="arithmatex">\(( 2\theta )\)</span>. Let's break this down:</p>
+<ol>
+<li>
+<p><strong>At <span class="arithmatex">\(( \theta = 0^\circ )\)</span> (horizontal launch)</strong>:<br/>
+   The sine term becomes zero, meaning the range <span class="arithmatex">\(( R )\)</span> is also zero. The projectile doesn't gain any vertical height, so it lands immediately after being launched.</p>
+</li>
+<li>
+<p><strong>At <span class="arithmatex">\(( \theta = 45^\circ )\)</span></strong>:<br/>
+   This is the optimal launch angle for the maximum range. Since <span class="arithmatex">\(( \sin(90^\circ) = 1 )\)</span>, the range is maximized when the angle is <span class="arithmatex">\(( 45^\circ )\)</span>. For angles less than or greater than <span class="arithmatex">\(( 45^\circ )\)</span>, the sine of <span class="arithmatex">\(( 2\theta )\)</span> decreases, reducing the horizontal range.</p>
+</li>
+<li>
+<p><strong>For angles larger than 45° (up to 90°)</strong>:<br/>
+   The range starts to decrease as the angle increases. For instance, at <span class="arithmatex">\(( \theta = 90^\circ )\)</span> (vertical launch), the sine term becomes zero again, meaning there’s no horizontal motion, and the range is zero.</p>
+</li>
+</ol>
+<p>Thus, <strong>the horizontal range is maximized at <span class="arithmatex">\(( 45^\circ )\)</span></strong>, and any deviation from this angle leads to a reduction in range.</p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
