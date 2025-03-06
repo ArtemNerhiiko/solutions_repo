@@ -228,8 +228,16 @@
 <p>Integrating again to get the vertical position:  </p>
 <p><span class="arithmatex">\(y(t) = v_0 \sin\theta \cdot t - \frac{1}{2} g t^2\)</span></p>
 <p><img alt="image-36" src="https://github.com/user-attachments/assets/dacf869c-3266-46b2-b78a-11f644b2d814"/></p>
-<h1 id="21-differential-equations">2.1 <strong>Differential Equations</strong></h1>
-<h3 id="euler-lagrange-equation">Euler-Lagrange Equation</h3>
+<h1 id="21-deriving-a-differential-equation-for-projectile-motion">2.1 <strong>Deriving a differential equation for projectile motion</strong></h1>
+<p>We have a projectile, which we will consider spherical, of radius <span class="arithmatex">\(r\)</span> and destiny <span class="arithmatex">\(ρ_m\)</span> and mass <span class="arithmatex">\(m\)</span> and we begin by firing it from a point <span class="arithmatex">\((0,h_0)\)</span> at an initial velocity <span class="arithmatex">\(v_0\)</span> at an angle <span class="arithmatex">\(θ_0\)</span> From this we can say that:</p>
+<p><span class="arithmatex">\(x′(0)=v_0cos(θ_0),y′(0)=v_0sin(θ_0)\)</span></p>
+<p>If we neglect all forces acting except those due to gravity then we can say:</p>
+<p><span class="arithmatex">\(x′′=0,y′′=−g\)</span></p>
+<p>Integrating to give:</p>
+<p><span class="arithmatex">\(x′ = C_1, y′ = −gt+C_2\)</span>
+<span class="arithmatex">\(x=C_1t + C_3,y=−\frac{g}{t}2 + C_2 + C_4\)</span></p>
+<p>Now by applying initial conditions we get:</p>
+<h3 id="22-euler-lagrange-equation">2.2 Euler-Lagrange Equation</h3>
 <p>The Euler-Lagrange equation is a fundamental equation in calculus of variations and Lagrangian mechanics. It provides the necessary condition for a function to be an extremum (minimum, maximum, or saddle point) in variational problems, particularly in classical mechanics where it helps derive equations of motion.</p>
 <p><span class="arithmatex">\(L = T - V\)</span></p>
 <p>where:
