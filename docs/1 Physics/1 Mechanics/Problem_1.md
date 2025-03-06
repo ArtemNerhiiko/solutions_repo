@@ -14,7 +14,10 @@ Projectile motion is the motion of an object thrown (projected) into the air whe
 We separate projectile motion into the two components of its motion, one along the horizontal axis and the other along the vertical.
 
 - **Horizontal (x-direction):** Motion with constant velocity  
-- **Vertical (y-direction):** Motion under constant acceleration due to gravity 
+- **Vertical (y-direction):** Motion under constant acceleration due to gravity
+
+  ![images](https://github.com/user-attachments/assets/c2a69a7b-25ad-42b2-8101-1c47d8114b79)
+
 
 
 
