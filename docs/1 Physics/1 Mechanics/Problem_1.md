@@ -32,7 +32,7 @@ Newton’s second law states:
 $F = ma$
 Since there are no forces acting in the horizontal direction (assuming no air resistance), and gravity acts downward in the vertical direction, we can write the equations of motion separately for each axis.
 
-# 1.2 General Equations of Motion
+### 1.2 General Equations of Motion
 
 - **Horizontal position:**  
 
