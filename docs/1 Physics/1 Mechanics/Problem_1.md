@@ -149,8 +149,8 @@ The gravitational acceleration $( g )$ is a key factor in determining the horizo
 - On the Moon, where the gravitational acceleration is about $( 1.6 \, \text{m/s}^2 )$, the horizontal range would be much greater for the same initial velocity and angle compared to Earth, where $( g = 9.81 \, \text{m/s}^2 )$.
 
 This means:
-- If gravity is stronger (larger $( g )$), the projectile spends less time in the air, so the range will be smaller.
-- If gravity is weaker (smaller $( g )$), the projectile stays in the air longer, and the range increases.
+- If gravity is stronger larger $( g )$, the projectile spends less time in the air, so the range will be smaller.
+- If gravity is weaker smaller $( g )$, the projectile stays in the air longer, and the range increases.
 
 
 
