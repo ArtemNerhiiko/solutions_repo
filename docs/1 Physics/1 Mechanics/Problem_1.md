@@ -91,7 +91,7 @@ $y(t) = v_0 \sin\theta \cdot t - \frac{1}{2} g t^2$
 # 2.1 **Differential Equations**
 
 ### Euler-Lagrange Equation
-For systems described by generalized coordinates, the motion is derived from the Lagrangian function:
+The Euler-Lagrange equation is a fundamental equation in calculus of variations and Lagrangian mechanics. It provides the necessary condition for a function to be an extremum (minimum, maximum, or saddle point) in variational problems, particularly in classical mechanics where it helps derive equations of motion.
 
 $L = T - V$
 
