@@ -30,6 +30,11 @@ The key parameters:
 
 Newton’s second law states: 
 $F = ma$
+
+where:
+- $( F )$ is the force acting on a mass $( m )$,
+- $( a )$ is the acceleration, given by $( \frac{d^2 x}{dt^2} )$.
+
 Since there are no forces acting in the horizontal direction (assuming no air resistance), and gravity acts downward in the vertical direction, we can write the equations of motion separately for each axis.
 
 ### 1.2 General Equations of Motion
@@ -50,7 +55,7 @@ Since there are no forces acting in the horizontal direction (assuming no air re
 
 Since there is no horizontal force, acceleration in the \( x \)-direction is zero:  
 
-**$a_x = 0$**
+$a_x = 0$
 
 
 The velocity in the \( x \)-direction remains constant:  
@@ -82,6 +87,8 @@ $v_y = v_0 \sin\theta - g t$
 Integrating again to get the vertical position:  
 
 $y(t) = v_0 \sin\theta \cdot t - \frac{1}{2} g t^2$
+
+
  
 
 
