@@ -29,17 +29,17 @@ The key parameters:
 # 1.1 Newton’s Second Law and Differential Equations  
 
 Newton’s second law states: 
-\
+$
 F = ma
-\  
+$
 Since there are no forces acting in the horizontal direction (assuming no air resistance), and gravity acts downward in the vertical direction, we can write the equations of motion separately for each axis.
 
 # Horizontal Motion:
 
 Since there is no horizontal force, acceleration in the \( x \)-direction is zero:  
-\
+$
 a_x = 0
-\  
+$
 
 The velocity in the \( x \)-direction remains constant:  
 \
