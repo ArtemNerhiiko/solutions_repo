@@ -37,7 +37,7 @@ where:
 
 Since there are no forces acting in the horizontal direction (assuming no air resistance), and gravity acts downward in the vertical direction, we can write the equations of motion separately for each axis.
 
-### 1.2 General Equations of Motion
+### General Equations of Motion
 
 - **Horizontal position:**  
 
@@ -51,7 +51,7 @@ Since there are no forces acting in the horizontal direction (assuming no air re
  
   $v_x = v_0 \cos\theta, \quad v_y = v_0 \sin\theta - g t$
 
-### 1.3 Horizontal Motion:
+### Horizontal Motion:
 
 Since there is no horizontal force, acceleration in the \( x \)-direction is zero:  
 
@@ -67,7 +67,7 @@ Integrating this, we get the horizontal position as a function of time:
 $x(t) = v_0 \cos\theta \cdot t$
 
 
-### 1.4 Vertical Motion  
+### Vertical Motion  
 The only force in the vertical direction is gravity, which gives an acceleration:  
 
 $a_y = -g$
@@ -91,25 +91,16 @@ $y(t) = v_0 \sin\theta \cdot t - \frac{1}{2} g t^2$
 ![image-36](https://github.com/user-attachments/assets/dacf869c-3266-46b2-b78a-11f644b2d814)
 
 
-# 2.1 **Deriving a differential equation for projectile motion**
+# 1.2 **Deriving a differential equation for projectile motion**
 
-We have a projectile, which we will consider spherical, of radius $r$ and destiny $ρ_m$ and mass $m$ and we begin by firing it from a point $(0,h_0)$ at an initial velocity $v_0$ at an angle $θ_0$. From this we can say that:
 
-$x′(0)=v_0cos(θ_0),y′(0)=v_0sin(θ_0)$
 
-If we neglect all forces acting except those due to gravity then we can say:
 
-$x′′=0,y′′=−g$
 
-Integrating to give:
 
-$x′ = C_1, y′ = −gt+C_2$
 
-$x=C_1t + C_3, y=−\frac{g}{t}2 + C_2 + C_4$
 
-Now by applying initial conditions we get:
-
-### 2.2 Euler-Lagrange Equation
+### 1.3 **Euler-Lagrange Equation**
 The Euler-Lagrange equation is a fundamental equation in calculus of variations and Lagrangian mechanics. It provides the necessary condition for a function to be an extremum (minimum, maximum, or saddle point) in variational problems, particularly in classical mechanics where it helps derive equations of motion.
 
 $L = T - V$
