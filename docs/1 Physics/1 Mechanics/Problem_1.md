@@ -93,7 +93,7 @@ $y(t) = v_0 \sin\theta \cdot t - \frac{1}{2} g t^2$
 
 # 2.1 **Deriving a differential equation for projectile motion**
 
-We have a projectile, which we will consider spherical, of radius $r$ and destiny $ρ_m$ and mass $m$ and we begin by firing it from a point $(0,h_0)$ at an initial velocity $v_0$ at an angle $θ_0$ From this we can say that:
+We have a projectile, which we will consider spherical, of radius $r$ and destiny $ρ_m$ and mass $m$ and we begin by firing it from a point $(0,h_0)$ at an initial velocity $v_0$ at an angle $θ_0$. From this we can say that:
 
 $x′(0)=v_0cos(θ_0),y′(0)=v_0sin(θ_0)$
 
