@@ -152,6 +152,15 @@ This means:
 - If gravity is stronger $(larger ( g ))$, the projectile spends less time in the air, so the range will be smaller.
 - If gravity is weaker $(smaller ( g ))$, the projectile stays in the air longer, and the range increases.
 
+### Influence of Initial Velocity
+
+The initial velocity $( v_0 )$ plays a direct role in determining the horizontal range. The range $( R )$ is proportional to the square of the initial velocity. This means:
+
+- If the initial velocity is doubled, the horizontal range will increase by a factor of four $(since ( R \propto v_0^2 ))$.
+- If the velocity is halved, the range will be reduced by a factor of four.
+
+Increasing the initial velocity increases the horizontal range, while decreasing it reduces the range. However, this effect is independent of the angle of projection; the same range increase happens regardless of whether the angle is 30°, 45°, or 60°.
+
 
 
 
