@@ -29,48 +29,48 @@ The key parameters:
 # 1.1 Newton’s Second Law and Differential Equations  
 
 Newton’s second law states: 
-\[
+\
 F = ma
-\]  
+\  
 Since there are no forces acting in the horizontal direction (assuming no air resistance), and gravity acts downward in the vertical direction, we can write the equations of motion separately for each axis.
 
 # Horizontal Motion:
 
 Since there is no horizontal force, acceleration in the \( x \)-direction is zero:  
-\[
+\
 a_x = 0
-\]  
+\  
 
 The velocity in the \( x \)-direction remains constant:  
-\[
+\
 v_x = v_0 \cos\theta
-\]  
+\  
 Integrating this, we get the horizontal position as a function of time:  
-\[
+\
 x(t) = v_0 \cos\theta \cdot t
-\]  
+\  
 
 # Vertical Motion  
 The only force in the vertical direction is gravity, which gives an acceleration:  
-\[
+\
 a_y = -g
-\]  
+\  
 
 Applying Newton’s second law:  
-\[
+\
 m a_y = -mg
-\]  
-\[
+\
+\
 \frac{d v_y}{dt} = -g
-\]  
+\  
 Integrating with respect to time, we obtain the velocity in the \( y \)-direction:  
-\[
+\
 v_y = v_0 \sin\theta - g t
-\]  
+\  
 Integrating again to get the vertical position:  
-\[
+\
 y(t) = v_0 \sin\theta \cdot t - \frac{1}{2} g t^2
-\]  
+\  
 
 
 
