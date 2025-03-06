@@ -46,7 +46,7 @@ Since there are no forces acting in the horizontal direction (assuming no air re
  
   $v_x = v_0 \cos\theta, \quad v_y = v_0 \sin\theta - g t$
 
-# 1.3 Horizontal Motion:
+### 1.3 Horizontal Motion:
 
 Since there is no horizontal force, acceleration in the \( x \)-direction is zero:  
 
@@ -62,7 +62,7 @@ Integrating this, we get the horizontal position as a function of time:
 $x(t) = v_0 \cos\theta \cdot t$
 
 
-# 1.4 Vertical Motion  
+### 1.4 Vertical Motion  
 The only force in the vertical direction is gravity, which gives an acceleration:  
 
 $a_y = -g$
