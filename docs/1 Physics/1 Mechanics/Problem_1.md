@@ -32,7 +32,21 @@ Newton’s second law states:
 $F = ma$
 Since there are no forces acting in the horizontal direction (assuming no air resistance), and gravity acts downward in the vertical direction, we can write the equations of motion separately for each axis.
 
-# Horizontal Motion:
+# 1.2 General Equations of Motion
+
+- **Horizontal position:**  
+
+  $x = v_0 \cos\theta \cdot t$
+
+- **Vertical position:**  
+
+  $y = v_0 \sin\theta \cdot t - \frac{1}{2} g t^2$
+
+- **Velocity components:**  
+ 
+  $v_x = v_0 \cos\theta, \quad v_y = v_0 \sin\theta - g t$
+
+# 1.3 Horizontal Motion:
 
 Since there is no horizontal force, acceleration in the \( x \)-direction is zero:  
 
@@ -48,7 +62,7 @@ Integrating this, we get the horizontal position as a function of time:
 $x(t) = v_0 \cos\theta \cdot t$
 
 
-# Vertical Motion  
+# 1.4 Vertical Motion  
 The only force in the vertical direction is gravity, which gives an acceleration:  
 
 $a_y = -g$
