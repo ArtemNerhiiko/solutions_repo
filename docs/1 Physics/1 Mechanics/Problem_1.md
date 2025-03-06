@@ -19,7 +19,58 @@ We separate projectile motion into the two components of its motion, one along t
   ![images](https://github.com/user-attachments/assets/c2a69a7b-25ad-42b2-8101-1c47d8114b79)
 
 
+The key parameters:
 
+- **\( v_0 \) = Initial velocity**
+- **\( g \) = Acceleration due to gravity**
+- **\( x(t), y(t) \) = Position coordinates at time \( t \)**
+- **\( \theta \) = Angle of projection**
+ 
+# 1.1 Newton’s Second Law and Differential Equations  
+
+Newton’s second law states: 
+\[
+F = ma
+\]  
+Since there are no forces acting in the horizontal direction (assuming no air resistance), and gravity acts downward in the vertical direction, we can write the equations of motion separately for each axis.
+
+# Horizontal Motion:
+
+Since there is no horizontal force, acceleration in the \( x \)-direction is zero:  
+\[
+a_x = 0
+\]  
+
+The velocity in the \( x \)-direction remains constant:  
+\[
+v_x = v_0 \cos\theta
+\]  
+Integrating this, we get the horizontal position as a function of time:  
+\[
+x(t) = v_0 \cos\theta \cdot t
+\]  
+
+# Vertical Motion  
+The only force in the vertical direction is gravity, which gives an acceleration:  
+\[
+a_y = -g
+\]  
+
+Applying Newton’s second law:  
+\[
+m a_y = -mg
+\]  
+\[
+\frac{d v_y}{dt} = -g
+\]  
+Integrating with respect to time, we obtain the velocity in the \( y \)-direction:  
+\[
+v_y = v_0 \sin\theta - g t
+\]  
+Integrating again to get the vertical position:  
+\[
+y(t) = v_0 \sin\theta \cdot t - \frac{1}{2} g t^2
+\]  
 
 
 
