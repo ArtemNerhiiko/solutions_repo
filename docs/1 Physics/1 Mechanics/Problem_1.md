@@ -91,7 +91,7 @@ $y(t) = v_0 \sin\theta \cdot t - \frac{1}{2} g t^2$
 ![image-36](https://github.com/user-attachments/assets/dacf869c-3266-46b2-b78a-11f644b2d814)
 
 
-# 1.2 **Euler-Lagrange Equation**
+### 1.2 **Euler-Lagrange Equation**
 The Euler-Lagrange equation is a fundamental equation in calculus of variations and Lagrangian mechanics. It provides the necessary condition for a function to be an extremum (minimum, maximum, or saddle point) in variational problems, particularly in classical mechanics where it helps derive equations of motion.
 
 $L = T - V$
@@ -107,6 +107,42 @@ $\frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q}} \right) - \frac{\partia
 where:
 - $( q )$ is the generalized coordinate,
 - $( \dot{q} )$ is the velocity.
+
+
+
+
+# 2.1 Analysis of the Range:
+
+### Horizontal Range and Angle of Projection
+
+The horizontal range $R$ of a projectile is the distance covered by the projectile from the foot of the tower to the point where the projetile hits the ground. It travels horizontally before landing, and it depends on various parameters, including the angle of projection $θ$, the initial velocity $v_0$ and the gravitational acceleration $g$.
+The general equation for the horizontal range of a projectile launched from the ground level is given by:
+
+$R = \frac{v_0^2 sin(2θ)}{g}$
+
+Where:
+
+- $( R )$ is the horizontal range
+- $( \theta )$ is the angle of projection
+- $( v_0 )$ is the initial velocity
+- $( g )$ is the gravitational acceleration (usually $( 9.81 \, \text{m/s}^2 )$ on Earth)
+
+## Dependence of Range on the Angle of Projection
+
+From the equation above, the range depends on the **sine of twice the angle** $( 2\theta )$. Let's break this down:
+
+1. **At $( \theta = 0^\circ )$ (horizontal launch)**:  
+   The sine term becomes zero, meaning the range $( R )$ is also zero. The projectile doesn't gain any vertical height, so it lands immediately after being launched.
+   
+2. **At $( \theta = 45^\circ )$**:  
+   This is the optimal launch angle for the maximum range. Since $( \sin(90^\circ) = 1 )$, the range is maximized when the angle is $( 45^\circ )$. For angles less than or greater than $( 45^\circ )$, the sine of $( 2\theta )$ decreases, reducing the horizontal range.
+
+3. **For angles larger than 45° (up to 90°)**:  
+   The range starts to decrease as the angle increases. For instance, at $( \theta = 90^\circ )$ (vertical launch), the sine term becomes zero again, meaning there’s no horizontal motion, and the range is zero.
+
+Thus, **the horizontal range is maximized at $( 45^\circ )$**, and any deviation from this angle leads to a reduction in range.
+
+
 
 
 
