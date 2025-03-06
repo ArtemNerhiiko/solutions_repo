@@ -104,7 +104,8 @@ $x′′=0,y′′=−g$
 Integrating to give:
 
 $x′ = C_1, y′ = −gt+C_2$
-$x=C_1t + C_3,y=−\frac{g}{t}2 + C_2 + C_4$
+
+$x=C_1t + C_3, y=−\frac{g}{t}2 + C_2 + C_4$
 
 Now by applying initial conditions we get:
 
