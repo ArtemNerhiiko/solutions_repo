@@ -21,10 +21,10 @@ We separate projectile motion into the two components of its motion, one along t
 
 The key parameters:
 
-- **\( v_0 \) = Initial velocity**
-- **\( g \) = Acceleration due to gravity**
-- **\( x(t), y(t) \) = Position coordinates at time \( t \)**
-- **\( \theta \) = Angle of projection**
+- **$( v_0 )$ = Initial velocity**
+- **$( g )$ = Acceleration due to gravity**
+- **$( x(t), y(t) )$ = Position coordinates at time $( t )$**
+- **$( \theta )$ = Angle of projection**
  
 # 1.1 Newton’s Second Law and Differential Equations  
 
