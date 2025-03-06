@@ -88,6 +88,27 @@ Integrating again to get the vertical position:
 
 $y(t) = v_0 \sin\theta \cdot t - \frac{1}{2} g t^2$
 
+# 2.1 **Differential Equations**
+
+### Euler-Lagrange Equation
+For systems described by generalized coordinates, the motion is derived from the Lagrangian function:
+
+$L = T - V$
+
+where:
+- $T$  is the kinetic energy,
+- $V$ is the potential energy.
+
+The Euler-Lagrange equation is given by:
+
+$\frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q}} \right) - \frac{\partial L}{\partial q} = 0$
+
+where:
+- $( q )$ is the generalized coordinate,
+- $( \dot{q} )$ is the velocity.
+
+
+
 
  
 
