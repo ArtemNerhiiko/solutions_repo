@@ -202,7 +202,7 @@ So, the proper calculations and taking into account all factors is important in 
 
 **Adaptation:** 
 
-Air resistance introduces a velocity-dependent drag force, often modeled as $F_d = -kv (linear resistance)$ or $F_d = -kv^2 (quadratic resistance)$. These forces cause the projectile to deviate from the ideal parabolic trajectory, leading to a more realistic path that can be computed numerically.
+Air resistance introduces a velocity-dependent drag force, often modeled as $F_d = -kv$ (linear resistance) or $F_d = -kv^2$ (quadratic resistance). These forces cause the projectile to deviate from the ideal parabolic trajectory, leading to a more realistic path that can be computed numerically.
 
 ### Coriolis Effect on Large-Scale Motion
 
@@ -213,9 +213,7 @@ This effect is caused by Earth's rotation, slightly deflects long-range projecti
 - Weather prediction models
 - Ballistic missile trajectory adjustments.
 
-
-![fQmut](https://github.com/user-attachments/assets/78e2a4d0-2f5f-4b4a-94c2-2b13b4515022)
-
+# 4.1 
 
 
 
@@ -228,7 +226,14 @@ This effect is caused by Earth's rotation, slightly deflects long-range projecti
 
 
 
+<<<<<<< HEAD
 
+=======
+
+
+
+
+>>>>>>> df860ca8b707cdbfdfc17369affbe537c7270af8
  
 
 
