@@ -212,7 +212,8 @@ This effect is caused by Earth's rotation, slightly deflects long-range projecti
 
 - Weather prediction models
 - Ballistic missile trajectory adjustments.
-![coriolis-force-and-coriolis-effect](https://github.com/user-attachments/assets/06c5a750-e11d-4214-9dec-db19d199ca7b)
+![figure8 2 2](https://github.com/user-attachments/assets/36bd0b2b-3412-43aa-9622-20e669c750a0)
+
 
 
 
