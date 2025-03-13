@@ -196,6 +196,8 @@ So, the proper calculations and taking into account all factors is important in 
 
 - Aerodynamics in ballistics and sports
 - Spacecraft re-entry, where atmospheric drag plays a critical role in slowing down the vehicle.
+
+
 ![projectiles](https://github.com/user-attachments/assets/a1488ea2-8ab6-418a-b535-5ddab0152bcc)
 
 **Adaptation:** 
