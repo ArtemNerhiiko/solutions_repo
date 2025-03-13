@@ -212,6 +212,8 @@ This effect is caused by Earth's rotation, slightly deflects long-range projecti
 
 - Weather prediction models
 - Ballistic missile trajectory adjustments.
+
+
 ![fQmut](https://github.com/user-attachments/assets/78e2a4d0-2f5f-4b4a-94c2-2b13b4515022)
 
 
