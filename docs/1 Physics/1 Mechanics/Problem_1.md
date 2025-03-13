@@ -70,23 +70,23 @@ $x(t) = v_0 \cos\theta \cdot t$
 ### Vertical Motion  
 The only force in the vertical direction is gravity, which gives an acceleration:  
 
-$a_y = -g$
+**$a_y = -g$**
 
 
 Applying Newton’s second law:  
 
-$m \cdot a_y = -mg$
+**$m \cdot a_y = -mg$**
 
 
-$\frac{d v_y}{dt} = -g$
+**$\frac{d v_y}{dt} = -g$**
   
 Integrating with respect to time, we obtain the velocity in the \( y \)-direction:  
 
-$v_y = v_0 \sin\theta - g t$
+**$v_y = v_0 \sin\theta - g t$**
  
 Integrating again to get the vertical position:  
 
-$y(t) = v_0 \sin\theta \cdot t - \frac{1}{2} g t^2$
+**$y(t) = v_0 \sin\theta \cdot t - \frac{1}{2} g t^2$**
 
 ![Angular-Projectile-Throw-Definitions](https://github.com/user-attachments/assets/68017586-32f8-4d29-a0c4-b10adc65e5a4)
 
@@ -94,20 +94,20 @@ $y(t) = v_0 \sin\theta \cdot t - \frac{1}{2} g t^2$
 ### 1.2 **Euler-Lagrange Equation**
 The Euler-Lagrange equation is a fundamental equation in calculus of variations and Lagrangian mechanics. It provides the necessary condition for a function to be an extremum (minimum, maximum, or saddle point) in variational problems, particularly in classical mechanics where it helps derive equations of motion.
 
-$L = T - V$
+**$L = T - V$**
 
 where:
-- $T$  is the kinetic energy,
-- $V$ is the potential energy,
+- **$T$** is the kinetic energy,
+- **$V$** is the potential energy,
 
 The Euler-Lagrange equation is given by:
 
-$\frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q}} \right) - \frac{\partial L}{\partial q} = 0$
+**$\frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q}} \right) - \frac{\partial L}{\partial q} = 0$**
 
 where:
-- $( q )$ is the generalized coordinate,
-- $( \dot{q} )$ is the velocity,
-- $(\frac{\partial L}{\partial q})$ is the generalized force term.
+- **$( q )$** is the generalized coordinate,
+- **$( \dot{q} )$** is the velocity,
+- **$(\frac{\partial L}{\partial q})$** is the generalized force term.
 
 
 
@@ -116,10 +116,10 @@ where:
 
 ### Horizontal Range and Angle of Projection
 
-The horizontal range $R$ of a projectile is the distance covered by the projectile from the foot of the tower to the point where the projetile hits the ground. It travels horizontally before landing, and it depends on various parameters, including the angle of projection $θ$, the initial velocity $v_0$ and the gravitational acceleration $g$.
+The horizontal range $R$ of a projectile is the distance covered by the projectile from the foot of the tower to the point where the projetile hits the ground. It travels horizontally before landing, and it depends on various parameters, including the angle of projection **$θ$**, the initial velocity $v_0$ and the gravitational acceleration **$g$**.
 The general equation for the horizontal range of a projectile launched from the ground level is given by:
 
-$R = \frac{v_0^2 sin(2θ)}{g}$
+**$R = \frac{v_0^2 sin(2θ)}{g}$**
 
 Where:
 
@@ -147,17 +147,17 @@ From the equation above, the range depends on the **sine of twice the angle** $(
 
 The gravitational acceleration $( g )$ is a key factor in determining the horizontal range, as it is inversely proportional to the range. If $( g )$ increases, the range decreases, and vice versa. For example:
 
-- On the Moon, where the gravitational acceleration is about $( 1.6 \, \text{m/s}^2 )$, the horizontal range would be much greater for the same initial velocity and angle compared to Earth, where $( g = 9.81 \, \text{m/s}^2 )$.
+- On the Moon, where the gravitational acceleration is about **$( 1.6 \, \text{m/s}^2 )$**, the horizontal range would be much greater for the same initial velocity and angle compared to Earth, where **$( g = 9.81 \, \text{m/s}^2 )$**.
 
 This means:
-- If gravity is stronger $(larger ( g ))$, the projectile spends less time in the air, so the range will be smaller.
-- If gravity is weaker $(smaller ( g ))$, the projectile stays in the air longer, and the range increases.
+- If gravity is stronger **$(larger ( g ))$**, the projectile spends less time in the air, so the range will be smaller.
+- If gravity is weaker **$(smaller ( g ))$**, the projectile stays in the air longer, and the range increases.
 
 ### Influence of Initial Velocity
 
-The initial velocity $( v_0 )$ plays a direct role in determining the horizontal range. The range $( R )$ is proportional to the square of the initial velocity. This means:
+The initial velocity **$( v_0 )$** plays a direct role in determining the horizontal range. The range **$( R )$** is proportional to the square of the initial velocity. This means:
 
-- If the initial velocity is doubled, the horizontal range will increase by a factor of four $(since ( R \propto v_0^2 ))$.
+- If the initial velocity is doubled, the horizontal range will increase by a factor of four **$(since ( R \propto v_0^2 ))$**.
 - If the velocity is halved, the range will be reduced by a factor of four.
 
 Increasing the initial velocity increases the horizontal range, while decreasing it reduces the range. However, this effect is independent of the angle of projection; the same range increase happens regardless of whether the angle is 30°, 45°, or 60°.
@@ -178,17 +178,17 @@ $h(x)$ that describes the terrain height and solving for the intersection of the
 
 In real-world projectile motion, air resistance (also called drag) significantly alters the trajectory of a projectile compared to ideal motion in a vacuum. Compared to ideal projectile motion, air resistance causes the following changes:
 
-1. Reduced Maximum Height:
+1. **Reduced Maximum Height:**
 
 - The projectile reaches a lower peak height.
 - The vertical velocity decreases faster due to opposing drag forces.
 
-2. *Non-Symmetric Trajectory:*
+2. **Non-Symmetric Trajectory:**
 
 - With air resistance, the descent is steeper than the ascent because drag continuously removes energy from the projectile.
 - Without air resistance, the projectile’s path is a perfect parabola.
 
-3. Shorter Range (Horizontal Distance):
+3. **Shorter Range (Horizontal Distance):**
 
 - The horizontal motion is significantly slowed down.
 
@@ -197,7 +197,7 @@ So, the proper calculations and taking into account all factors is important in 
 - Aerodynamics in ballistics and sports
 - Spacecraft re-entry, where atmospheric drag plays a critical role in slowing down the vehicle.
 
-Adaptation: 
+**Adaptation:** 
 
 Air resistance introduces a velocity-dependent drag force, often modeled as $F_d = -kv (linear resistance)$ or $F_d = -kv^2 (quadratic resistance)$. These forces cause the projectile to deviate from the ideal parabolic trajectory, leading to a more realistic path that can be computed numerically.
 
@@ -205,7 +205,7 @@ Air resistance introduces a velocity-dependent drag force, often modeled as $F_d
 
 This effect is caused by Earth's rotation, slightly deflects long-range projectiles, requiring correction in targeting calculations. Objects moving long distances across the surface of the Earth experience an apparent deflection because they retain the rotational motion of their point of origin. 
 
-Applications:
+**Applications:**
 
 - Weather prediction models
 - Ballistic missile trajectory adjustments.
