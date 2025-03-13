@@ -214,7 +214,6 @@ This effect is caused by Earth's rotation, slightly deflects long-range projecti
 - Ballistic missile trajectory adjustments.
 
 # 4.1 
-
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -255,7 +254,7 @@ def plot_trajectories(v0_list, angles):
             plt.plot(traj[:, 0], traj[:, 1], label=f'v0={v0}m/s, angle={angle}°')
     
     plt.xlabel("Distance (m)")
-    plt.ylabel("Height (m)")
+    plt.ylabel("Height (m")
     plt.title("Projectile Motion with Air Resistance")
     plt.legend()
     plt.grid()
