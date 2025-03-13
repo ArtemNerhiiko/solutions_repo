@@ -166,6 +166,53 @@ Increasing the initial velocity increases the horizontal range, while decreasing
 
 ### Projectile Motion on Uneven Terrain
 
+Calculating projectile motion on uneven terrain may be useful in such situations:
+
+- Sports science, such as golf or ski jumping,
+- Military ballistics for targeting in hilly or mountainous regions.
+
+The adaptation is pretty clear: the landing position of a projectile must be adjusted for variations in elevation. This can be done by introducing a function 
+$h(x)$ that describes the terrain height and solving for the intersection of the projectile's path with the terrain function.
+
+### Effect of Air Resistance
+
+In real-world projectile motion, air resistance (also called drag) significantly alters the trajectory of a projectile compared to ideal motion in a vacuum. Compared to ideal projectile motion, air resistance causes the following changes:
+
+1. Reduced Maximum Height:
+
+- The projectile reaches a lower peak height.
+- The vertical velocity decreases faster due to opposing drag forces.
+
+2. Non-Symmetric Trajectory:
+
+- With air resistance, the descent is steeper than the ascent because drag continuously removes energy from the projectile.
+- Without air resistance, the projectile’s path is a perfect parabola.
+
+3. Shorter Range (Horizontal Distance):
+
+- The horizontal motion is significantly slowed down.
+
+So, the proper calculations and taking into account all factors is important in such applications:
+
+- Aerodynamics in ballistics and sports
+- Spacecraft re-entry, where atmospheric drag plays a critical role in slowing down the vehicle.
+
+Adaptation: 
+
+Air resistance introduces a velocity-dependent drag force, often modeled as $F_d = -kv (linear resistance)$ or $F_d = -kv^2 (quadratic resistance)$. These forces cause the projectile to deviate from the ideal parabolic trajectory, leading to a more realistic path that can be computed numerically.
+
+### Coriolis Effect on Large-Scale Motion
+
+This effect is caused by Earth's rotation, slightly deflects long-range projectiles, requiring correction in targeting calculations. Objects moving long distances across the surface of the Earth experience an apparent deflection because they retain the rotational motion of their point of origin. 
+
+Applications:
+
+- Weather prediction models
+- Ballistic missile trajectory adjustments.
+
+
+
+
 
 
 
