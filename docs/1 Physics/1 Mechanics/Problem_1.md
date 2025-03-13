@@ -16,7 +16,8 @@ We separate projectile motion into the two components of its motion, one along t
 - **Horizontal (x-direction):** Motion with constant velocity  
 - **Vertical (y-direction):** Motion under constant acceleration due to gravity
 
-  ![images](https://github.com/user-attachments/assets/c2a69a7b-25ad-42b2-8101-1c47d8114b79)
+  
+![maxresdefault](https://github.com/user-attachments/assets/e2641361-67ee-446e-b529-cba56f89e1c9)
 
 
 The key parameters:
