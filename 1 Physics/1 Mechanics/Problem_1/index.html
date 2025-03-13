@@ -286,6 +286,55 @@ The general equation for the horizontal range of a projectile launched from the 
 <p>Increasing the initial velocity increases the horizontal range, while decreasing it reduces the range. However, this effect is independent of the angle of projection; the same range increase happens regardless of whether the angle is 30°, 45°, or 60°.</p>
 <h1 id="31-practical-applications">3.1 Practical Applications:</h1>
 <h3 id="projectile-motion-on-uneven-terrain">Projectile Motion on Uneven Terrain</h3>
+<p>Calculating projectile motion on uneven terrain may be useful in such situations:</p>
+<ul>
+<li>Sports science, such as golf or ski jumping,</li>
+<li>Military ballistics for targeting in hilly or mountainous regions.</li>
+</ul>
+<p>The adaptation is pretty clear: the landing position of a projectile must be adjusted for variations in elevation. This can be done by introducing a function 
+<span class="arithmatex">\(h(x)\)</span> that describes the terrain height and solving for the intersection of the projectile's path with the terrain function.</p>
+<h3 id="effect-of-air-resistance">Effect of Air Resistance</h3>
+<p>In real-world projectile motion, air resistance (also called drag) significantly alters the trajectory of a projectile compared to ideal motion in a vacuum. Compared to ideal projectile motion, air resistance causes the following changes:</p>
+<ol>
+<li>
+<p>Reduced Maximum Height:</p>
+</li>
+<li>
+<p>The projectile reaches a lower peak height.</p>
+</li>
+<li>
+<p>The vertical velocity decreases faster due to opposing drag forces.</p>
+</li>
+<li>
+<p>Non-Symmetric Trajectory:</p>
+</li>
+<li>
+<p>With air resistance, the descent is steeper than the ascent because drag continuously removes energy from the projectile.</p>
+</li>
+<li>
+<p>Without air resistance, the projectile’s path is a perfect parabola.</p>
+</li>
+<li>
+<p>Shorter Range (Horizontal Distance):</p>
+</li>
+<li>
+<p>The horizontal motion is significantly slowed down.</p>
+</li>
+</ol>
+<p>So, the proper calculations and taking into account all factors is important in such applications:</p>
+<ul>
+<li>Aerodynamics in ballistics and sports</li>
+<li>Spacecraft re-entry, where atmospheric drag plays a critical role in slowing down the vehicle.</li>
+</ul>
+<p>Adaptation: </p>
+<p>Air resistance introduces a velocity-dependent drag force, often modeled as <span class="arithmatex">\(F_d = -kv (linear resistance)\)</span> or <span class="arithmatex">\(F_d = -kv^2 (quadratic resistance)\)</span>. These forces cause the projectile to deviate from the ideal parabolic trajectory, leading to a more realistic path that can be computed numerically.</p>
+<h3 id="coriolis-effect-on-large-scale-motion">Coriolis Effect on Large-Scale Motion</h3>
+<p>This effect is caused by Earth's rotation, slightly deflects long-range projectiles, requiring correction in targeting calculations. Objects moving long distances across the surface of the Earth experience an apparent deflection because they retain the rotational motion of their point of origin. </p>
+<p>Applications:</p>
+<ul>
+<li>Weather prediction models</li>
+<li>Ballistic missile trajectory adjustments.</li>
+</ul>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
