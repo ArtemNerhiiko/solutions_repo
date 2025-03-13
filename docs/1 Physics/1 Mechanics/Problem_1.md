@@ -183,7 +183,7 @@ In real-world projectile motion, air resistance (also called drag) significantly
 - The projectile reaches a lower peak height.
 - The vertical velocity decreases faster due to opposing drag forces.
 
-2. Non-Symmetric Trajectory:
+2. *Non-Symmetric Trajectory:*
 
 - With air resistance, the descent is steeper than the ascent because drag continuously removes energy from the projectile.
 - Without air resistance, the projectile’s path is a perfect parabola.
