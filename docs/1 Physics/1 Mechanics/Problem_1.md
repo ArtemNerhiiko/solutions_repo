@@ -98,7 +98,7 @@ $L = T - V$
 
 where:
 - $T$  is the kinetic energy,
-- $V$ is the potential energy.
+- $V$ is the potential energy,
 
 The Euler-Lagrange equation is given by:
 
@@ -106,7 +106,8 @@ $\frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q}} \right) - \frac{\partia
 
 where:
 - $( q )$ is the generalized coordinate,
-- $( \dot{q} )$ is the velocity.
+- $( \dot{q} )$ is the velocity,
+- $\frac{\partial L}{\partial q}$ is the generalized force term.
 
 
 
@@ -160,6 +161,12 @@ The initial velocity $( v_0 )$ plays a direct role in determining the horizontal
 - If the velocity is halved, the range will be reduced by a factor of four.
 
 Increasing the initial velocity increases the horizontal range, while decreasing it reduces the range. However, this effect is independent of the angle of projection; the same range increase happens regardless of whether the angle is 30°, 45°, or 60°.
+
+# 3.1 Practical Applications:
+
+### Projectile Motion on Uneven Terrain
+
+
 
 
 
