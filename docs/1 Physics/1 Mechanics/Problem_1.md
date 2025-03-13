@@ -107,7 +107,7 @@ $\frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q}} \right) - \frac{\partia
 where:
 - $( q )$ is the generalized coordinate,
 - $( \dot{q} )$ is the velocity,
-- $\frac{\partial L}{\partial q}$ is the generalized force term.
+- $(\frac{\partial L}{\partial q})$ is the generalized force term.
 
 
 
