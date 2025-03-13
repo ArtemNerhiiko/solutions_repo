@@ -88,10 +88,7 @@ Integrating again to get the vertical position:
 
 $y(t) = v_0 \sin\theta \cdot t - \frac{1}{2} g t^2$
 
-![image-36](https://github.com/user-attachments/assets/dacf869c-3266-46b2-b78a-11f644b2d814)
-
 ![Angular-Projectile-Throw-Definitions](https://github.com/user-attachments/assets/68017586-32f8-4d29-a0c4-b10adc65e5a4)
-
 
 
 ### 1.2 **Euler-Lagrange Equation**
