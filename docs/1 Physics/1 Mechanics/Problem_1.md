@@ -196,6 +196,7 @@ So, the proper calculations and taking into account all factors is important in 
 
 - Aerodynamics in ballistics and sports
 - Spacecraft re-entry, where atmospheric drag plays a critical role in slowing down the vehicle.
+![projectiles](https://github.com/user-attachments/assets/a1488ea2-8ab6-418a-b535-5ddab0152bcc)
 
 **Adaptation:** 
 
@@ -209,6 +210,7 @@ This effect is caused by Earth's rotation, slightly deflects long-range projecti
 
 - Weather prediction models
 - Ballistic missile trajectory adjustments.
+![coriolis-force-and-coriolis-effect](https://github.com/user-attachments/assets/06c5a750-e11d-4214-9dec-db19d199ca7b)
 
 
 
