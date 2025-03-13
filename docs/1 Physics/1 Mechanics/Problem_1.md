@@ -213,7 +213,22 @@ This effect is caused by Earth's rotation, slightly deflects long-range projecti
 - Weather prediction models
 - Ballistic missile trajectory adjustments.
 
-# 4.1 
+# 4.1 Implementation:
 
+Lets develope a Python simulation of projectile motion, incorporating air resistance, and visualize how the range varies with the launch angle for different initial conditions. 
+This code will:
+
+1. **Simulate Projectile Motion:**
+
+- Solves equations of motion using Euler’s method
+- Includes quadratic air resistance if enabled
+
+2. **Range vs. Launch Angle Plot:**
+
+- Displays how air resistance reduces range.
+
+3. **Trajectory Visualization:**
+
+- Plots the projectile path for different angles.
 
 
