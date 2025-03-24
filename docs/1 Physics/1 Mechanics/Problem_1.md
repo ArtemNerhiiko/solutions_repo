@@ -303,5 +303,3 @@ plot_trajectories(v0_list, [25, 50, 70])
 plot_range_vs_angle(v0_list, angles)
 
 
-
-![projectiles](https://github.com/user-attachments/assets/8b8e657a-98eb-4963-8f51-cca7d7b60246)
