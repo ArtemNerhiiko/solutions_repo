@@ -46,27 +46,35 @@ $$
 $$
 
 ### 2. Small-Angle Approximation
+For small angles ($\theta \approx 0$), we use the approximation:
 
-For small angles (\(\theta \approx 0\)), we use the approximation:
-
-\[
+$$
 \sin\theta \approx \theta
-\]
+$$
 
 Thus, the equation simplifies to:
 
-\[
+$$
 \frac{d^2\theta}{dt^2} + \frac{g}{l} \theta = 0
-\]
+$$
 
 This is a standard **simple harmonic motion (SHM) equation** of the form:
 
-\[
+$$
 \frac{d^2\theta}{dt^2} + \omega^2 \theta = 0
-\]
+$$
 
-where \( \omega = \sqrt{\frac{g}{l}} \) is the angular frequency
+where $ \omega = \sqrt{\frac{g}{l}} $ is the angular frequency.
 
 ### 3. General Solution
 
+The general solution of a simple harmonic oscillator equation is:
 
+$$
+\theta(t) = \theta_0 \cos(\omega t + \phi)
+$$
+
+where:
+- $\theta_0$ is the initial amplitude,
+- $\phi$ is the phase constant (determined by initial conditions),
+- $\omega = \sqrt{\frac{g}{l}}$ is the angular frequency.
