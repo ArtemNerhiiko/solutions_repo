@@ -303,7 +303,5 @@ plot_trajectories(v0_list, [25, 50, 70])
 plot_range_vs_angle(v0_list, angles)
 
 
-![download (2)](https://github.com/user-attachments/assets/ba7375e1-9066-4e8f-8c2b-590d247d24ac)
-
 
 
