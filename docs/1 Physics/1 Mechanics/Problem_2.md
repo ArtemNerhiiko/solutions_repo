@@ -118,7 +118,7 @@ At this frequency, the amplitude of oscillations reaches a peak, provided dampin
 - Maximum Energy Absorption:
 At resonance, the system absorbs energy most efficiently. The energy input per cycle is maximized, resulting in a continuous increase in amplitude.
 
-- Effect of Damping on Energy:
+- **Effect of Damping on Energy**:
 - **Weak Damping ($b \approx 0$)**: The amplitude grows significantly, leading to energy accumulation.
 - **Moderate Damping**: The peak amplitude is reduced, but the system still experiences resonance.
 - **Heavy Damping**: The resonance effect diminishes, and energy input is dissipated before large oscillations can occur.
