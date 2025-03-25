@@ -138,3 +138,15 @@ E = \frac{1}{2} k A^2
 $$
 
 Since resonance causes a large amplitude $A$, the energy in the system increases drastically. In the absence of sufficient damping, this can lead to system failure.
+
+### 4. Practical Applications and Risks
+- 1. Useful Applications of Resonance
+- **Radio Tuning**: Resonance allows a receiver to selectively amplify a specific frequency.
+- **MRI (Magnetic Resonance Imaging)**: Exploits nuclear resonance to generate images.
+- **Musical Instruments**: Resonance enhances sound production in instruments.
+- **Quartz Clocks**: Use mechanical resonance for precise timekeeping.
+
+- 2. Risks and Dangers of Resonance
+- **Bridge Failures**: Structures like the Tacoma Narrows Bridge collapsed due to wind-induced resonance.
+- **Machine Vibrations**: Excessive resonance can damage rotating machinery.
+- **Building Oscillations**: Skyscrapers and suspension bridges must be designed to avoid resonance from wind or seismic forces.
