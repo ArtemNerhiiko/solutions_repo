@@ -157,7 +157,7 @@ Since resonance causes a large amplitude $A$, the energy in the system increases
 
 # 2 Analysis of Dynamics:
 
-### Influence of Damping Coefficient, Driving Amplitude, and Driving Frequency on Pendulum Motion
+## 2.1 Influence of Damping Coefficient, Driving Amplitude, and Driving Frequency on Pendulum Motion
 
 A **driven, damped pendulum** is an oscillatory system where external forces and damping influence motion. The equation governing the motion is:
 
