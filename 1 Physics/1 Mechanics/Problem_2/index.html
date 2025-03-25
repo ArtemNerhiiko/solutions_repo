@@ -301,10 +301,56 @@ m l \frac{d^2\theta}{dt^2} + b \frac{d\theta}{dt} + mg \sin\theta = F_0 \cos(\om
 - <span class="arithmatex">\(F_0\)</span> is the amplitude of the external driving force,
 - <span class="arithmatex">\(\omega\)</span> is the driving frequency,
 - <span class="arithmatex">\(\theta\)</span> is the angular displacement.</p>
-<p>Three key factors influence the motion:
-1. <strong>Damping coefficient (<span class="arithmatex">\(b\)</span>)</strong> – Determines energy dissipation.
-2. <strong>Driving amplitude (<span class="arithmatex">\(F_0\)</span>)</strong> – Determines external force magnitude.
-3. <strong>Driving frequency (<span class="arithmatex">\(\omega\)</span>)</strong> – Determines the rate at which the force is applied.</p>
+<h3 id="1-damping-coefficient-beta">1. Damping Coefficient (<span class="arithmatex">\(\beta\)</span>)</h3>
+<ul>
+<li><strong>Role</strong>: Determines energy dissipation rate.</li>
+<li><strong>Effects</strong>:</li>
+<li><strong>Low damping (<span class="arithmatex">\(\beta \ll \omega_0\)</span>)</strong>:<ul>
+<li>Slow amplitude decay; sharp resonance peaks when driven.</li>
+</ul>
+</li>
+<li><strong>High damping (<span class="arithmatex">\(\beta \geq \omega_0\)</span>)</strong>:<ul>
+<li>Overdamped: No oscillations, rapid return to equilibrium.</li>
+<li>Suppressed resonance (broader peaks).</li>
+</ul>
+</li>
+<li><strong>Behavior</strong>:</li>
+<li>Reduces transient oscillations.</li>
+<li>Decreases quality factor (<span class="arithmatex">\(Q = \omega_0/2\beta\)</span>).</li>
+</ul>
+<h3 id="2-driving-amplitude-a">2. Driving Amplitude (<span class="arithmatex">\(A\)</span>)</h3>
+<ul>
+<li><strong>Role</strong>: Strength of external forcing.</li>
+<li><strong>Effects</strong>:</li>
+<li><strong>Small <span class="arithmatex">\(A\)</span> (Linear regime)</strong>:<ul>
+<li>Approximate harmonic motion (<span class="arithmatex">\(\sin\theta \approx \theta\)</span>).</li>
+</ul>
+</li>
+<li><strong>Large <span class="arithmatex">\(A\)</span> (Nonlinear regime)</strong>:<ul>
+<li>Chaos, period doubling, whirling orbits.</li>
+<li>Subharmonic/ultraharmonic resonances.</li>
+</ul>
+</li>
+<li><strong>Behavior</strong>:</li>
+<li>Larger <span class="arithmatex">\(A\)</span> can induce rotations instead of oscillations.</li>
+</ul>
+<h3 id="3-driving-frequency-omega">3. Driving Frequency (<span class="arithmatex">\(\omega\)</span>)</h3>
+<ul>
+<li><strong>Role</strong>: Frequency of external forcing.</li>
+<li><strong>Effects</strong>:</li>
+<li><strong>Resonance (<span class="arithmatex">\(\omega \approx \omega_0\)</span>)</strong>:<ul>
+<li>Maximum amplitude (for underdamped systems).</li>
+<li>Shifted resonant frequency: <span class="arithmatex">\(\omega_{\text{res}} = \sqrt{\omega_0^2 - 2\beta^2}\)</span>.</li>
+</ul>
+</li>
+<li><strong>Far from resonance</strong>:<ul>
+<li><span class="arithmatex">\(\omega \ll \omega_0\)</span>: Quasi-static response.</li>
+<li><span class="arithmatex">\(\omega \gg \omega_0\)</span>: Averaged-out forcing.</li>
+</ul>
+</li>
+<li><strong>Nonlinearities</strong>:</li>
+<li>Frequency locking (synchronization to <span class="arithmatex">\(n\omega/m\)</span>).</li>
+</ul>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
