@@ -171,8 +171,37 @@ where:
 - $\omega$ is the driving frequency,
 - $\theta$ is the angular displacement.
 
-Three key factors influence the motion:
-1. **Damping coefficient ($b$)** – Determines energy dissipation.
-2. **Driving amplitude ($F_0$)** – Determines external force magnitude.
-3. **Driving frequency ($\omega$)** – Determines the rate at which the force is applied.
+### 1. Damping Coefficient (\(\beta\))
+- **Role**: Determines energy dissipation rate.
+- **Effects**:
+  - **Low damping (\(\beta \ll \omega_0\))**:
+    - Slow amplitude decay; sharp resonance peaks when driven.
+  - **High damping (\(\beta \geq \omega_0\))**:
+    - Overdamped: No oscillations, rapid return to equilibrium.
+    - Suppressed resonance (broader peaks).
+- **Behavior**:
+  - Reduces transient oscillations.
+  - Decreases quality factor (\(Q = \omega_0/2\beta\)).
 
+### 2. Driving Amplitude (\(A\))
+- **Role**: Strength of external forcing.
+- **Effects**:
+  - **Small \(A\) (Linear regime)**:
+    - Approximate harmonic motion (\(\sin\theta \approx \theta\)).
+  - **Large \(A\) (Nonlinear regime)**:
+    - Chaos, period doubling, whirling orbits.
+    - Subharmonic/ultraharmonic resonances.
+- **Behavior**:
+  - Larger \(A\) can induce rotations instead of oscillations.
+
+### 3. Driving Frequency (\(\omega\))
+- **Role**: Frequency of external forcing.
+- **Effects**:
+  - **Resonance (\(\omega \approx \omega_0\))**:
+    - Maximum amplitude (for underdamped systems).
+    - Shifted resonant frequency: \(\omega_{\text{res}} = \sqrt{\omega_0^2 - 2\beta^2}\).
+  - **Far from resonance**:
+    - \(\omega \ll \omega_0\): Quasi-static response.
+    - \(\omega \gg \omega_0\): Averaged-out forcing.
+- **Nonlinearities**:
+  - Frequency locking (synchronization to \(n\omega/m\)).
