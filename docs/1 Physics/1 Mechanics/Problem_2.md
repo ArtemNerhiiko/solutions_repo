@@ -25,6 +25,9 @@ A forced damped pendulum consists of:
 - A damping force (e.g., air resistance) proportional to the angular velocity.
 - An external periodic force driving the pendulum.
 
+ ![Pendulum](https://github.com/user-attachments/assets/0a53c509-3449-477b-8ff6-be8cd8d92cb8)
+ 
+
 ## 1.1 Deriving the approximate solutions for small-angle oscillations.
 
 ### 1. Equation of Motion for a Simple Pendulum
