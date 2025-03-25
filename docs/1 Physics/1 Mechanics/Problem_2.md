@@ -24,3 +24,11 @@ A forced damped pendulum consists of:
 - A mass (bob) attached to a pivot point by a massless rod or string.
 - A damping force (e.g., air resistance) proportional to the angular velocity.
 - An external periodic force driving the pendulum.
+
+### Deriving the approximate solutions for small-angle oscillations.
+
+### 1. Equation of Motion for a Simple Pendulum
+
+A simple pendulum consists of a mass $m$ attached to a string of length $l$, oscillating under the influence of gravity. The restoring force is given by:
+
+$$ F = -mg \sin\theta $$
