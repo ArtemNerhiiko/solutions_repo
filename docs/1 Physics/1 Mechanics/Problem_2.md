@@ -32,3 +32,15 @@ A forced damped pendulum consists of:
 A simple pendulum consists of a mass $m$ attached to a string of length $l$, oscillating under the influence of gravity. The restoring force is given by:
 
 $$ F = -mg \sin\theta $$
+
+Using Newton's second law, $F = ma = m l \frac{d^2\theta}{dt^2}$, we get the equation of motion:
+
+$$
+m l \frac{d^2\theta}{dt^2} = -mg \sin\theta
+$$
+
+Dividing by $ml$, we obtain:
+
+$$
+\frac{d^2\theta}{dt^2} + \frac{g}{l} \sin\theta = 0
+$$
