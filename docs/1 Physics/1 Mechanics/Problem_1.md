@@ -232,6 +232,8 @@ This code will:
 
 - Plots the projectile path for different angles.
 
+![download (2)](https://github.com/user-attachments/assets/c7b9c56e-1b32-4293-bb81-f098bfe30f05)
+
 
 ```python
 import numpy as np
