@@ -87,3 +87,54 @@ T = \frac{2\pi}{\omega} = 2\pi \sqrt{\frac{l}{g}}
 $$
 
 This is the approximate period for small-angle oscillations.
+
+## 1.2 Explore resonance conditions and their implications for the system's energy.
+
+Resonance occurs in an oscillatory system when an external periodic force matches the system's natural frequency. This phenomenon is observed in mechanical, electrical, and quantum systems, among others. It leads to a significant increase in amplitude, which can dramatically affect the system's energy.
+
+### 1. Mathematical Condition for Resonance
+A damped, driven harmonic oscillator follows the equation:
+
+$$
+m \frac{d^2x}{dt^2} + b \frac{dx}{dt} + kx = F_0 \cos(\omega t)
+$$
+
+where:
+- $m$ is the mass of the system,
+- $b$ is the damping coefficient,
+- $k$ is the stiffness constant (spring constant),
+- $F_0$ is the amplitude of the external force,
+- $\omega$ is the driving frequency.
+
+The system exhibits **resonance** when the driving frequency $\omega$ matches the natural frequency of the undamped system:
+
+$$
+\omega = \omega_0 = \sqrt{\frac{k}{m}}
+$$
+
+At this frequency, the amplitude of oscillations reaches a peak, provided damping is not excessively large.
+
+### 2. Energy Transfer in Resonance
+- Maximum Energy Absorption:
+At resonance, the system absorbs energy most efficiently. The energy input per cycle is maximized, resulting in a continuous increase in amplitude.
+
+- Effect of Damping on Energy:
+- **Weak Damping ($b \approx 0$)**: The amplitude grows significantly, leading to energy accumulation.
+- **Moderate Damping**: The peak amplitude is reduced, but the system still experiences resonance.
+- **Heavy Damping**: The resonance effect diminishes, and energy input is dissipated before large oscillations can occur.
+
+The steady-state amplitude at resonance is given by:
+
+$$
+A_{\text{max}} = \frac{F_0}{b \omega_0}
+$$
+
+showing that damping plays a crucial role in limiting energy buildup.
+
+### 3. The total mechanical energy of an oscillatory system is given by:
+
+$$
+E = \frac{1}{2} k A^2
+$$
+
+Since resonance causes a large amplitude $A$, the energy in the system increases drastically. In the absence of sufficient damping, this can lead to system failure.
