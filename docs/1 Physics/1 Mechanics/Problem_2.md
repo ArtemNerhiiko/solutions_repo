@@ -153,3 +153,26 @@ Since resonance causes a large amplitude $A$, the energy in the system increases
 
 
 # 2 Analysis of Dynamics:
+
+### Influence of Damping Coefficient, Driving Amplitude, and Driving Frequency on Pendulum Motion
+
+A **driven, damped pendulum** is an oscillatory system where external forces and damping influence motion. The equation governing the motion is:
+
+$$
+m l \frac{d^2\theta}{dt^2} + b \frac{d\theta}{dt} + mg \sin\theta = F_0 \cos(\omega t)
+$$
+
+where:
+- $m$ is the mass of the pendulum bob,
+- $l$ is the length of the pendulum,
+- $b$ is the damping coefficient,
+- $g$ is the gravitational acceleration,
+- $F_0$ is the amplitude of the external driving force,
+- $\omega$ is the driving frequency,
+- $\theta$ is the angular displacement.
+
+Three key factors influence the motion:
+1. **Damping coefficient ($b$)** – Determines energy dissipation.
+2. **Driving amplitude ($F_0$)** – Determines external force magnitude.
+3. **Driving frequency ($\omega$)** – Determines the rate at which the force is applied.
+
