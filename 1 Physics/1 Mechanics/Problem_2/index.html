@@ -230,6 +230,47 @@ m l \frac{d^2\theta}{dt^2} = -mg \sin\theta
 T = \frac{2\pi}{\omega} = 2\pi \sqrt{\frac{l}{g}}
 \]</div>
 <p>This is the approximate period for small-angle oscillations.</p>
+<h2 id="12-explore-resonance-conditions-and-their-implications-for-the-systems-energy">1.2 Explore resonance conditions and their implications for the system's energy.</h2>
+<p>Resonance occurs in an oscillatory system when an external periodic force matches the system's natural frequency. This phenomenon is observed in mechanical, electrical, and quantum systems, among others. It leads to a significant increase in amplitude, which can dramatically affect the system's energy.</p>
+<h3 id="1-mathematical-condition-for-resonance">1. Mathematical Condition for Resonance</h3>
+<p>A damped, driven harmonic oscillator follows the equation:</p>
+<div class="arithmatex">\[
+m \frac{d^2x}{dt^2} + b \frac{dx}{dt} + kx = F_0 \cos(\omega t)
+\]</div>
+<p>where:
+- <span class="arithmatex">\(m\)</span> is the mass of the system,
+- <span class="arithmatex">\(b\)</span> is the damping coefficient,
+- <span class="arithmatex">\(k\)</span> is the stiffness constant (spring constant),
+- <span class="arithmatex">\(F_0\)</span> is the amplitude of the external force,
+- <span class="arithmatex">\(\omega\)</span> is the driving frequency.</p>
+<p>The system exhibits <strong>resonance</strong> when the driving frequency <span class="arithmatex">\(\omega\)</span> matches the natural frequency of the undamped system:</p>
+<div class="arithmatex">\[
+\omega = \omega_0 = \sqrt{\frac{k}{m}}
+\]</div>
+<p>At this frequency, the amplitude of oscillations reaches a peak, provided damping is not excessively large.</p>
+<h3 id="2-energy-transfer-in-resonance">2. Energy Transfer in Resonance</h3>
+<ul>
+<li>
+<p>Maximum Energy Absorption:
+At resonance, the system absorbs energy most efficiently. The energy input per cycle is maximized, resulting in a continuous increase in amplitude.</p>
+</li>
+<li>
+<p>Effect of Damping on Energy:</p>
+</li>
+<li><strong>Weak Damping (<span class="arithmatex">\(b \approx 0\)</span>)</strong>: The amplitude grows significantly, leading to energy accumulation.</li>
+<li><strong>Moderate Damping</strong>: The peak amplitude is reduced, but the system still experiences resonance.</li>
+<li><strong>Heavy Damping</strong>: The resonance effect diminishes, and energy input is dissipated before large oscillations can occur.</li>
+</ul>
+<p>The steady-state amplitude at resonance is given by:</p>
+<div class="arithmatex">\[
+A_{\text{max}} = \frac{F_0}{b \omega_0}
+\]</div>
+<p>showing that damping plays a crucial role in limiting energy buildup.</p>
+<h3 id="3-the-total-mechanical-energy-of-an-oscillatory-system-is-given-by">3. The total mechanical energy of an oscillatory system is given by:</h3>
+<div class="arithmatex">\[
+E = \frac{1}{2} k A^2
+\]</div>
+<p>Since resonance causes a large amplitude <span class="arithmatex">\(A\)</span>, the energy in the system increases drastically. In the absence of sufficient damping, this can lead to system failure.</p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
