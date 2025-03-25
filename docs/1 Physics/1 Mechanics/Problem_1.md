@@ -302,4 +302,5 @@ angles = np.linspace(15, 75, 10)  # Angles from 15° to 75°
 plot_trajectories(v0_list, [25, 50, 70])
 plot_range_vs_angle(v0_list, angles)
 
+![download (2)](https://github.com/user-attachments/assets/0ccad98d-039d-4887-bd79-041fa30b2d5b)
 
