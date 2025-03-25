@@ -228,3 +228,8 @@ Damping represents **energy loss** due to air resistance, friction, or internal 
   $$b_c = 2 \sqrt{m k}$$
 
 - **Example**: Car suspension systems prevent excessive bouncing.
+
+### 2.3. Overdamping ($b$ is large)
+- The pendulum **slowly** returns to equilibrium without oscillating.
+- The system takes longer to settle compared to critical damping.
+- **Example**: Door closers that prevent slamming.
