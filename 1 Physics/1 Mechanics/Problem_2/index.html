@@ -425,24 +425,47 @@ Damping represents <strong>energy loss</strong> due to air resistance, friction,
 <li><strong>Fractal-Like Phase Space</strong>: The system's trajectory in phase space is <strong>irregular</strong> and <strong>non-repeating</strong>.</li>
 <li><strong>Deterministic Yet Unpredictable</strong>: Governed by precise equations but appears random.</li>
 </ul>
-<h2 id="transition-mechanisms"><strong>Transition Mechanisms</strong></h2>
-<h3 id="1-period-doubling-bifurcations">1. Period Doubling Bifurcations</h3>
+<h2 id="3-transition-from-regular-to-chaotic-motion">3. Transition from Regular to Chaotic Motion</h2>
+<p>The transition from <strong>regular to chaotic motion</strong> in a <strong>damped, driven pendulum</strong> occurs as parameters like <strong>driving amplitude (<span class="arithmatex">\(F_0\)</span>)</strong> and <strong>driving frequency (<span class="arithmatex">\(\omega\)</span>)</strong> increase.</p>
+<h3 id="31-influence-of-driving-amplitude-f_0">3.1. Influence of Driving Amplitude (<span class="arithmatex">\(F_0\)</span>)</h3>
 <ul>
-<li><strong>What happens</strong>: Stable period-<span class="arithmatex">\(T\)</span> orbit becomes period-<span class="arithmatex">\(2T\)</span>, then <span class="arithmatex">\(4T\)</span>, etc., until chaos.</li>
-<li><strong>Physical cause</strong>: Nonlinearity distorts restoring force, creating subharmonics.</li>
-<li><strong>Example</strong>: For <span class="arithmatex">\(A \approx 1.07\)</span> (with <span class="arithmatex">\(\beta=0.5\)</span>, <span class="arithmatex">\(\omega=2/3\)</span>), the pendulum alternates between two amplitudes before chaos.</li>
+<li><strong>Low <span class="arithmatex">\(F_0\)</span></strong> → <strong>Regular motion</strong> (small oscillations, periodic behavior).</li>
+<li><strong>Moderate <span class="arithmatex">\(F_0\)</span></strong> → <strong>Nonlinear effects</strong> appear (quasiperiodic motion).</li>
+<li><strong>High <span class="arithmatex">\(F_0\)</span></strong> → <strong>Onset of chaos</strong> (aperiodic, sensitive dependence).</li>
 </ul>
-<h3 id="2-intermittency">2. Intermittency</h3>
+<h3 id="32-influence-of-driving-frequency-omega">3.2. Influence of Driving Frequency (<span class="arithmatex">\(\omega\)</span>)</h3>
 <ul>
-<li><strong>What happens</strong>: Nearly periodic motion interrupted by chaotic bursts.</li>
-<li><strong>Physical cause</strong>: System "misses" stable orbits due to parameter thresholds.</li>
-<li><strong>Example</strong>: At <span class="arithmatex">\(\omega \approx 0.8\omega_0\)</span>, the pendulum rotates smoothly but suddenly tumbles chaotically.</li>
+<li><strong>Low <span class="arithmatex">\(\omega\)</span></strong> → The pendulum oscillates <strong>in phase</strong> with the external force.</li>
+<li><strong>Near resonance</strong> → Large oscillations; the system may still follow <strong>regular</strong> behavior.</li>
+<li><strong>High <span class="arithmatex">\(\omega\)</span></strong> → Irregular oscillations, leading to <strong>chaotic motion</strong>.</li>
 </ul>
-<h3 id="3-crisis-events">3. Crisis Events</h3>
+<h3 id="33-influence-of-damping-b">3.3. Influence of Damping (<span class="arithmatex">\(b\)</span>)</h3>
 <ul>
-<li><strong>What happens</strong>: Chaotic attractor suddenly expands or disappears.</li>
-<li><strong>Physical cause</strong>: Collision with unstable periodic orbits.</li>
-<li><strong>Example</strong>: For large <span class="arithmatex">\(A\)</span>, whirling motion becomes chaotic when energy exceeds a critical threshold.</li>
+<li><strong>High damping</strong> (<span class="arithmatex">\(b \gg 0\)</span>) → Regular motion is maintained; chaos is suppressed.</li>
+<li><strong>Low damping</strong> (<span class="arithmatex">\(b \approx 0\)</span>) → Chaotic behavior appears as energy remains in the system.</li>
+</ul>
+<h3 id="34-bifurcation-and-period-doubling">3.4. Bifurcation and Period Doubling</h3>
+<ul>
+<li>As <span class="arithmatex">\(F_0\)</span> or <span class="arithmatex">\(\omega\)</span> increases, <strong>bifurcations</strong> occur where:</li>
+<li><strong>A single stable oscillation (period-1) splits into two (period-2)</strong>.</li>
+<li>The process continues, leading to a <strong>cascade of period doubling</strong>.</li>
+<li>Beyond a critical threshold, the system enters <strong>chaos</strong>.</li>
+</ul>
+<p>## 4. Physical Interpretation of Chaos</p>
+<h3 id="41-sensitivity-to-initial-conditions-the-butterfly-effect">4.1. Sensitivity to Initial Conditions (The Butterfly Effect)</h3>
+<ul>
+<li>Small changes in <strong>initial angle (<span class="arithmatex">\(\theta_0\)</span>) or velocity</strong> result in <strong>drastically different</strong> long-term motion.</li>
+<li>Demonstrated by <strong>Lorenz Attractor</strong> in weather systems.</li>
+</ul>
+<h3 id="42-strange-attractors-in-phase-space">4.2. Strange Attractors in Phase Space</h3>
+<ul>
+<li><strong>Regular motion</strong>: Forms simple, <strong>closed</strong> loops in phase space.</li>
+<li><strong>Chaotic motion</strong>: Leads to <strong>strange attractors</strong> with <strong>fractals</strong> and <strong>dense trajectories</strong>.</li>
+</ul>
+<h3 id="43-energy-transfer-and-dissipation">4.3. Energy Transfer and Dissipation</h3>
+<ul>
+<li>In <strong>regular motion</strong>, energy exchange between the pendulum and external force is <strong>predictable</strong>.</li>
+<li>In <strong>chaotic motion</strong>, energy distribution is <strong>irregular</strong>, causing unpredictable motion.</li>
 </ul>
 </div>
 </div><footer>
