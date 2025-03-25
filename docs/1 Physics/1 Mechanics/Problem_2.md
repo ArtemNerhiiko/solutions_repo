@@ -64,7 +64,7 @@ $$
 \frac{d^2\theta}{dt^2} + \omega^2 \theta = 0
 $$
 
-where $ \omega = \sqrt{\frac{g}{l}} $ is the angular frequency.
+where $$ \omega = \sqrt{\frac{g}{l}} $$ is the angular frequency.
 
 ### 3. General Solution
 
@@ -78,3 +78,12 @@ where:
 - $$\theta_0$$ is the initial amplitude,
 - $$\phi$$ is the phase constant (determined by initial conditions),
 - $$\omega = \sqrt{\frac{g}{l}}$$ is the angular frequency.
+
+### 4. Period of Oscillation
+The period of oscillation is given by:
+
+$$
+T = \frac{2\pi}{\omega} = 2\pi \sqrt{\frac{l}{g}}
+$$
+
+This is the approximate period for small-angle oscillations.
