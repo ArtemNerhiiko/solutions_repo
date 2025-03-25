@@ -64,7 +64,7 @@ $$
 \frac{d^2\theta}{dt^2} + \omega^2 \theta = 0
 $$
 
-where $$ \omega = \sqrt{\frac{g}{l}} $$ is the angular frequency.
+where $$\omega = \sqrt{\frac{g}{l}}$$ is the angular frequency.
 
 ### 3. General Solution
 
