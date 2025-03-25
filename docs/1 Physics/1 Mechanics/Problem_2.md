@@ -233,3 +233,9 @@ Damping represents **energy loss** due to air resistance, friction, or internal 
 - The pendulum **slowly** returns to equilibrium without oscillating.
 - The system takes longer to settle compared to critical damping.
 - **Example**: Door closers that prevent slamming.
+
+### Practical Applications
+- **Seismic Engineering**: Buildings are designed with **dampers** to reduce oscillations during earthquakes.
+- **Clock Mechanisms**: Pendulums with minimal damping sustain oscillations for accurate timekeeping.
+- **Automotive Suspension**: Car shocks are tuned to avoid excessive vibrations.
+- **Bridges and Skyscrapers**: Must be designed to **avoid resonance** from wind or traffic.
