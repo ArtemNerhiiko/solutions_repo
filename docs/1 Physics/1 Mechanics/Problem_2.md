@@ -318,3 +318,20 @@ The transition from **regular to chaotic motion** in a **damped, driven pendulum
 ### 4.3. Energy Transfer and Dissipation
 - In **regular motion**, energy exchange between the pendulum and external force is **predictable**.
 - In **chaotic motion**, energy distribution is **irregular**, causing unpredictable motion.
+
+## 5. Experimental and Real-World Examples
+
+### 5.1. Double Pendulum
+- A simple pendulum exhibits **regular** motion.
+- A **double pendulum** (two connected pendulums) quickly enters **chaotic motion**.
+- The second pendulum’s motion is highly sensitive to initial conditions.
+
+### 5.2. Weather Systems
+- The **Lorenz system** models chaotic weather patterns.
+- A **small atmospheric disturbance** can lead to drastically different weather outcomes.
+
+### 5.3. Electronic Circuits
+- **Chaotic circuits** (e.g., Chua’s circuit) demonstrate deterministic chaos.
+- Used in cryptography and secure communications.
+
+
