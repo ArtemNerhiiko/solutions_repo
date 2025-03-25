@@ -208,7 +208,6 @@ where:
     - $\omega \gg \omega_0$: Averaged-out forcing.
 - **Nonlinearities**:
   - Frequency locking (synchronization to $n\omega/m$).
-<<<<<<< HEAD
 
   ### 2. Effect of Damping Coefficient ($b$)
 Damping represents **energy loss** due to air resistance, friction, or internal material properties. The behavior of the pendulum depends on the damping strength.
@@ -218,9 +217,7 @@ Damping represents **energy loss** due to air resistance, friction, or internal 
 - Energy is lost slowly over time.
 - The motion follows:
 
-  $$
-  \theta(t) = \theta_0 e^{-bt/2m} \cos(\omega_0 t + \phi)
-  $$
+  $$\theta(t) = \theta_0 e^{-bt/2m} \cos(\omega_0 t + \phi)$$
 
 - **Example**: A clock pendulum, where oscillations persist for a long time.
 
@@ -228,11 +225,6 @@ Damping represents **energy loss** due to air resistance, friction, or internal 
 - The pendulum returns to equilibrium as quickly as possible without oscillating.
 - The damping coefficient at critical damping is:
 
-  $$
-  b_c = 2 \sqrt{m k}
-  $$
+  $$b_c = 2 \sqrt{m k}$$
 
 - **Example**: Car suspension systems prevent excessive bouncing.
-=======
-
->>>>>>> f1e76cb1ea7c11ee3b3979b05132044e8898ee22
