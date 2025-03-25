@@ -150,3 +150,6 @@ Since resonance causes a large amplitude $A$, the energy in the system increases
 - **Bridge Failures**: Structures like the Tacoma Narrows Bridge collapsed due to wind-induced resonance.
 - **Machine Vibrations**: Excessive resonance can damage rotating machinery.
 - **Building Oscillations**: Skyscrapers and suspension bridges must be designed to avoid resonance from wind or seismic forces.
+
+
+# 2 Analysis of Dynamics:
