@@ -388,9 +388,19 @@ Damping represents <strong>energy loss</strong> due to air resistance, friction,
 </ul>
 <h2 id="22-examine-the-transition-between-regular-and-chaotic-motion-and-their-physical-interpretations">2.2 Examine the transition between regular and chaotic motion and their physical interpretations.</h2>
 <h2 id="1-introduction">1. Introduction</h2>
-<p>In dynamical systems, motion can be classified as:
-- <strong>Regular (Periodic or Quasiperiodic Motion)</strong>: Predictable and follows a well-defined pattern.
-- <strong>Chaotic Motion</strong>: Highly sensitive to initial conditions, appearing random and unpredictable despite being deterministic.</p>
+<h2 id="regular-motion-periodic"><strong>Regular Motion (Periodic)</strong></h2>
+<h3 id="characteristics">Characteristics</h3>
+<ul>
+<li><strong>Stable orbits</strong>: Predictable, repeating trajectories (limit cycles).</li>
+<li><strong>Phase space</strong>: Closed curves (periodic) or fixed points.</li>
+<li><strong>Sensitivity</strong>: Low dependence on initial conditions.</li>
+</ul>
+<h3 id="physical-interpretation">Physical Interpretation</h3>
+<ul>
+<li><strong>Energy balance</strong>: Driving force compensates damping, sustaining oscillations.</li>
+<li><strong>Resonance</strong>: When <span class="arithmatex">\(\omega \approx \omega_0\)</span>, motion synchronizes with driver (phase-locking).</li>
+<li><strong>Linear regime</strong>: Small <span class="arithmatex">\(A\)</span> approximates <span class="arithmatex">\(\sin\theta \approx \theta\)</span> (harmonic motion).</li>
+</ul>
 <p>A <strong>driven, damped pendulum</strong> is an example where the transition from <strong>regular to chaotic motion</strong> can be observed. The governing equation is:</p>
 <div class="arithmatex">\[m l \frac{d^2\theta}{dt^2} + b \frac{d\theta}{dt} + mg \sin\theta = F_0 \cos(\omega t)\]</div>
 <p>where:
@@ -414,6 +424,25 @@ Damping represents <strong>energy loss</strong> due to air resistance, friction,
 <li><strong>Aperiodic Behavior</strong>: No repeating patterns over time.</li>
 <li><strong>Fractal-Like Phase Space</strong>: The system's trajectory in phase space is <strong>irregular</strong> and <strong>non-repeating</strong>.</li>
 <li><strong>Deterministic Yet Unpredictable</strong>: Governed by precise equations but appears random.</li>
+</ul>
+<h2 id="transition-mechanisms"><strong>Transition Mechanisms</strong></h2>
+<h3 id="1-period-doubling-bifurcations">1. Period Doubling Bifurcations</h3>
+<ul>
+<li><strong>What happens</strong>: Stable period-<span class="arithmatex">\(T\)</span> orbit becomes period-<span class="arithmatex">\(2T\)</span>, then <span class="arithmatex">\(4T\)</span>, etc., until chaos.</li>
+<li><strong>Physical cause</strong>: Nonlinearity distorts restoring force, creating subharmonics.</li>
+<li><strong>Example</strong>: For <span class="arithmatex">\(A \approx 1.07\)</span> (with <span class="arithmatex">\(\beta=0.5\)</span>, <span class="arithmatex">\(\omega=2/3\)</span>), the pendulum alternates between two amplitudes before chaos.</li>
+</ul>
+<h3 id="2-intermittency">2. Intermittency</h3>
+<ul>
+<li><strong>What happens</strong>: Nearly periodic motion interrupted by chaotic bursts.</li>
+<li><strong>Physical cause</strong>: System "misses" stable orbits due to parameter thresholds.</li>
+<li><strong>Example</strong>: At <span class="arithmatex">\(\omega \approx 0.8\omega_0\)</span>, the pendulum rotates smoothly but suddenly tumbles chaotically.</li>
+</ul>
+<h3 id="3-crisis-events">3. Crisis Events</h3>
+<ul>
+<li><strong>What happens</strong>: Chaotic attractor suddenly expands or disappears.</li>
+<li><strong>Physical cause</strong>: Collision with unstable periodic orbits.</li>
+<li><strong>Example</strong>: For large <span class="arithmatex">\(A\)</span>, whirling motion becomes chaotic when energy exceeds a critical threshold.</li>
 </ul>
 </div>
 </div><footer>
