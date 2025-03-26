@@ -351,12 +351,11 @@ $$m l \frac{d^2\theta}{dt^2} + b \frac{d\theta}{dt} + mg \sin\theta = F_0 \cos(\
 
 This model applies to **various engineering, physics, and real-world systems**, including:
 
-1. **Oscillating Circuits in Electronics**
-2. **Suspension Bridges and Structural Engineering**
-3. **Energy Harvesting Devices**
-4. **Ship Stabilization Systems**
-5. **Biological Systems**
-6. **Seismic Isolation in Buildings**
+
+1. **Suspension Bridges and Structural Engineering**
+2. **Energy Harvesting Devices**
+3. **Biological Systems**
+4. **Seismic Isolation in Buildings**
 
 ## 2. Suspension Bridges and Structural Engineering
 Bridges and buildings experience oscillations due to **wind, traffic, and earthquakes**.
