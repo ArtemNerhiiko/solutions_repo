@@ -589,6 +589,42 @@ Several biological systems behave like forced damped oscillators.</p>
 <li>The <strong>leg’s motion is periodic</strong> but damped.</li>
 <li><strong>Energy harvesting from walking</strong> can be achieved using pendulum-based devices.</li>
 </ul>
+<h1 id="4-implementation">4. Implementation:</h1>
+<h2 id="creating-a-computational-model-to-simulate-the-motion-of-a-forced-damped-pendulum">Creating a computational model to simulate the motion of a forced damped pendulum.</h2>
+<p>```python
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.integrate import solve_ivp</p>
+<h1 id="constants">Constants</h1>
+<p>g = 9.81    # Gravity (m/s^2)
+l = 1.0     # Length of pendulum (m)
+b = 0.1     # Damping coefficient
+F0 = 1.2    # Driving force amplitude
+omega = 2.0 # Driving frequency (rad/s)</p>
+<h1 id="define-the-system-of-odes">Define the system of ODEs</h1>
+<p>def pendulum_eq(t, y):
+    theta, omega_t = y  # y = [theta, d(theta)/dt]
+    dtheta_dt = omega_t
+    domega_dt = - (g / l) * np.sin(theta) - (b * omega_t) + (F0 * np.cos(omega * t))
+    return [dtheta_dt, domega_dt]</p>
+<h1 id="initial-conditions">Initial conditions</h1>
+<p>t_span = (0, 20)  # Time interval
+initial_conditions = [np.pi / 4, 0]  # Initial angle and angular velocity
+t_eval = np.linspace(t_span[0], t_span[1], 1000)  # Time points for evaluation</p>
+<h1 id="solve-the-differential-equation">Solve the differential equation</h1>
+<p>solution = solve_ivp(pendulum_eq, t_span, initial_conditions, t_eval=t_eval, method='RK45')</p>
+<h1 id="extract-results">Extract results</h1>
+<p>time = solution.t
+theta_vals = solution.y[0]</p>
+<h1 id="plot-results">Plot results</h1>
+<p>plt.figure(figsize=(10, 5))
+plt.plot(time, theta_vals, label="Angular Displacement θ (radians)")
+plt.xlabel("Time (s)")
+plt.ylabel("Theta (radians)")
+plt.title("Forced Damped Pendulum Motion")
+plt.legend()
+plt.grid()
+plt.show()</p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
