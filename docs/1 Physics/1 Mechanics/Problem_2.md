@@ -425,3 +425,48 @@ Several biological systems behave like forced damped oscillators.
 - **Relevance to the Pendulum Model**:
   - The **leg’s motion is periodic** but damped.
   - **Energy harvesting from walking** can be achieved using pendulum-based devices.
+
+# 4. Implementation:
+
+## Creating a computational model to simulate the motion of a forced damped pendulum.
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.integrate import solve_ivp
+
+# Constants
+g = 9.81    # Gravity (m/s^2)
+l = 1.0     # Length of pendulum (m)
+b = 0.1     # Damping coefficient
+F0 = 1.2    # Driving force amplitude
+omega = 2.0 # Driving frequency (rad/s)
+
+# Define the system of ODEs
+def pendulum_eq(t, y):
+    theta, omega_t = y  # y = [theta, d(theta)/dt]
+    dtheta_dt = omega_t
+    domega_dt = - (g / l) * np.sin(theta) - (b * omega_t) + (F0 * np.cos(omega * t))
+    return [dtheta_dt, domega_dt]
+
+# Initial conditions
+t_span = (0, 20)  # Time interval
+initial_conditions = [np.pi / 4, 0]  # Initial angle and angular velocity
+t_eval = np.linspace(t_span[0], t_span[1], 1000)  # Time points for evaluation
+
+# Solve the differential equation
+solution = solve_ivp(pendulum_eq, t_span, initial_conditions, t_eval=t_eval, method='RK45')
+
+# Extract results
+time = solution.t
+theta_vals = solution.y[0]
+
+# Plot results
+plt.figure(figsize=(10, 5))
+plt.plot(time, theta_vals, label="Angular Displacement θ (radians)")
+plt.xlabel("Time (s)")
+plt.ylabel("Theta (radians)")
+plt.title("Forced Damped Pendulum Motion")
+plt.legend()
+plt.grid()
+plt.show()
