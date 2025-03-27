@@ -473,9 +473,7 @@ plt.title("Forced Damped Pendulum Motion")
 plt.legend()
 plt.grid()
 plt.show()
-```python
 
-##Visualize the behavior under various damping, driving force, and initial conditions.
 
 
 
