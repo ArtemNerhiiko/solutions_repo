@@ -476,13 +476,4 @@ plt.title("Forced Damped Pendulum Motion")
 plt.legend()
 plt.grid()
 plt.show()
-
-<<<<<<< HEAD
-
-
-=======
-
-
-
-
->>>>>>> 83cfbe956cabf5c15f668242b370215a85bfde1d
+```
