@@ -23,10 +23,24 @@ Equating both forces:
 
 $\frac{GMm}{r^2} = \frac{m v^2}{r}$
 
-Cancel $ m $ (assuming $ m \neq 0 $):
+Cancel $m$ (assuming $m \neq 0$):
 
 $\frac{GM}{r^2} = \frac{v^2}{r}$
 
 Rearrange to express velocity:
 
 $v^2 = \frac{GM}{r}$
+
+### Step 2: Expressing Orbital Period $T$
+The orbital period $T$ is given by:
+$$
+T = \frac{2\pi r}{v}
+$$
+Substituting $v$ from above:
+$$
+T = \frac{2\pi r}{\sqrt{GM/r}}
+$$
+Simplify:
+$$
+T = 2\pi \sqrt{\frac{r^3}{GM}}
+$$
