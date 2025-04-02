@@ -176,26 +176,43 @@ where:
 
 ### 1. Damping Coefficient ($\beta$)
 - **Role**: Determines energy dissipation rate.
+
 - **Effects**:
-  - **Low damping ($\beta \ll \omega_0$)**:
-    - Slow amplitude decay; sharp resonance peaks when driven.
-  - **High damping ($\beta \geq \omega_0$)**:
-    - Overdamped: No oscillations, rapid return to equilibrium.
-    - Suppressed resonance (broader peaks).
+
+- **Low damping ($\beta \ll \omega_0$)**:
+
+- Slow amplitude decay; sharp resonance peaks when driven.
+
+- **High damping ($\beta \geq \omega_0$)**:
+
+- Overdamped: No oscillations, rapid return to equilibrium.
+
+- Suppressed resonance (broader peaks).
+
 - **Behavior**:
-  - Reduces transient oscillations.
-  - Decreases quality factor ($Q = \omega_0/2\beta$).
+
+- Reduces transient oscillations.
+
+- Decreases quality factor ($Q = \omega_0/2\beta$).
 
 ### 2. Driving Amplitude ($A$)
 - **Role**: Strength of external forcing.
+
 - **Effects**:
-  - **Small $A$ (Linear regime)**:
-    - Approximate harmonic motion ($\sin\theta \approx \theta$).
-  - **Large $A$ (Nonlinear regime)**:
-    - Chaos, period doubling, whirling orbits.
-    - Subharmonic/ultraharmonic resonances.
+
+- **Small $A$ (Linear regime)**:
+
+- Approximate harmonic motion ($\sin\theta \approx \theta$).
+
+- **Large $A$ (Nonlinear regime)**:
+
+- Chaos, period doubling, whirling orbits.
+
+- Subharmonic/ultraharmonic resonances.
+
 - **Behavior**:
-  - Larger $A$ can induce rotations instead of oscillations.
+
+- Larger $A$ can induce rotations instead of oscillations.
 
 ### 3. Driving Frequency ($\omega$)
 - **Role**: Frequency of external forcing.
@@ -209,7 +226,7 @@ where:
 - **Nonlinearities**:
   - Frequency locking (synchronization to $n\omega/m$).
 
-  ### 2. Effect of Damping Coefficient ($b$)
+### 2. Effect of Damping Coefficient ($b$)
 Damping represents **energy loss** due to air resistance, friction, or internal material properties. The behavior of the pendulum depends on the damping strength.
 
 ### 2.1. Underdamping ($b$ is small)
@@ -261,11 +278,17 @@ $$m l \frac{d^2\theta}{dt^2} + b \frac{d\theta}{dt} + mg \sin\theta = F_0 \cos(\
 
 where:
 - $m$ is the mass of the pendulum bob,
+
 - $l$ is the length of the pendulum,
+
 - $b$ is the damping coefficient,
+
 - $g$ is gravitational acceleration,
+
 - $F_0$ is the external driving amplitude,
+
 - $\omega$ is the driving frequency,
+
 - $\theta$ is the angular displacement.
 
 ## 2. Characteristics of Regular and Chaotic Motion
