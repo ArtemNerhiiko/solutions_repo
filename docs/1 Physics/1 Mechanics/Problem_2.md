@@ -167,11 +167,17 @@ $$
 
 where:
 - $m$ is the mass of the pendulum bob,
+
 - $l$ is the length of the pendulum,
+
 - $b$ is the damping coefficient,
+
 - $g$ is the gravitational acceleration,
+
 - $F_0$ is the amplitude of the external driving force,
+
 - $\omega$ is the driving frequency,
+
 - $\theta$ is the angular displacement.
 
 ### 1. Damping Coefficient ($\beta$)
