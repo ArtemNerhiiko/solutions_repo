@@ -37,3 +37,12 @@ The orbital period $T$ is given by: $T = \frac{2\pi r}{v}$.
 Substituting $v$ from above: $T = \frac{2\pi r}{\sqrt{GM/r}}$.
 
 Simplify: $T = 2\pi \sqrt{\frac{r^3}{GM}}$.
+
+### Step 3: Squaring Both Sides
+$T^2 = 4\pi^2 \frac{r^3}{GM}$.
+
+Rearrange: $\frac{T^2}{r^3} = \frac{4\pi^2}{GM}$.
+
+Since $\frac{4\pi^2}{GM}$ is a constant for a given central mass $M$, this shows that: $T^2 \propto r^3$.
+
+This is Kepler's Third Law, which states that the square of the orbital period is proportional to the cube of the orbital radius for circular orbits.
