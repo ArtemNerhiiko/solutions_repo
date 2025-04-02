@@ -305,7 +305,7 @@ The transition from **regular to chaotic motion** in a **damped, driven pendulum
   - The process continues, leading to a **cascade of period doubling**.
   - Beyond a critical threshold, the system enters **chaos**.
 
-  ## 4. Physical Interpretation of Chaos
+## 4. Physical Interpretation of Chaos
 
 ### 4.1. Sensitivity to Initial Conditions (The Butterfly Effect)
 - Small changes in **initial angle ($\theta_0$) or velocity** result in **drastically different** long-term motion.
