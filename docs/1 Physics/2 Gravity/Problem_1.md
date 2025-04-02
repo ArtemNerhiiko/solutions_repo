@@ -7,7 +7,7 @@
 # 1. Deriving the relationship between the square of the orbital period and the cube of the orbital radius for circular orbits.
 
 ### Step 1: Centripetal Force and Gravitational Force
-For a body of mass $ m $ orbiting a central mass $ M $, the gravitational force provides the necessary centripetal force:
+For a body of mass $m$ orbiting a central mass $M$, the gravitational force provides the necessary centripetal force:
 
 $F_g = F_c$
 
