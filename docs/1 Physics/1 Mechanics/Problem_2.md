@@ -104,9 +104,13 @@ $$
 
 where:
 - $m$ is the mass of the system,
+
 - $b$ is the damping coefficient,
+
 - $k$ is the stiffness constant (spring constant),
+
 - $F_0$ is the amplitude of the external force,
+
 - $\omega$ is the driving frequency.
 
 The system exhibits **resonance** when the driving frequency $\omega$ matches the natural frequency of the undamped system:
