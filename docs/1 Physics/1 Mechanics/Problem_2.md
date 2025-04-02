@@ -507,3 +507,56 @@ plt.legend()
 plt.grid()
 plt.show()
 
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.integrate import solve_ivp
+
+# Parameters
+g = 9.81  # gravity (m/s^2)
+L = 2.0   # length of the pendulum (m)
+b = 0.8   # damping coefficient
+A = 2.0   # driving force amplitude
+omega_d = 1.5  # driving force frequency
+
+# Equations of motion
+def forced_damped_pendulum(t, y):
+    theta, omega = y
+    dtheta_dt = omega
+    domega_dt = -(b * omega) - (g / L) * np.sin(theta) + A * np.cos(omega_d * t)
+    return [dtheta_dt, domega_dt]
+
+# Initial conditions
+t_span = (0, 50)  # time interval
+initial_conditions = [np.pi / 3, 0.5]  # initial angle and angular velocity
+t_eval = np.linspace(t_span[0], t_span[1], 10000)  # time points for solution
+
+# Solve the differential equation
+sol = solve_ivp(forced_damped_pendulum, t_span, initial_conditions, t_eval=t_eval)
+
+
+# Phase diagram (theta vs omega)
+plt.figure(figsize=(10, 5))
+plt.plot(sol.y[0], sol.y[1], label='Phase Diagram')
+plt.xlabel('Theta (rad)')
+plt.ylabel('Omega (rad/s)')
+plt.title('Phase Diagram of the Forced Damped Pendulum')
+plt.legend()
+plt.grid()
+plt.show()
+
+# Poincaré Section: plot omega vs theta at each time step
+# Let's sample every 100th data point as an approximation of a Poincaré section
+poincare_section = sol.y[:, ::100]
+
+plt.figure(figsize=(10, 5))
+plt.plot(poincare_section[0], poincare_section[1], 'o', label='Poincaré Section')
+plt.xlabel('Theta (rad)')
+plt.ylabel('Omega (rad/s)')
+plt.title('Poincaré Section of the Forced Damped Pendulum')
+plt.legend()
+plt.grid()
+plt.show()
+
+
