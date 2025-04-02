@@ -227,7 +227,7 @@ Damping represents **energy loss** due to air resistance, friction, or internal 
 - The pendulum returns to equilibrium as quickly as possible without oscillating.
 - The damping coefficient at critical damping is:
 
-  $b_c = 2 \sqrt{m k}$
+  $ b_c = 2 \sqrt{m k} $
 
 - **Example**: Car suspension systems prevent excessive bouncing.
 
