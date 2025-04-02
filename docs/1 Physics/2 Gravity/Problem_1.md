@@ -6,26 +6,25 @@
 
 ### Step 1: Centripetal Force and Gravitational Force
 For a body of mass $ m $ orbiting a central mass $ M $, the gravitational force provides the necessary centripetal force:
-$
-F_g = F_c
-$
+
+$F_g = F_c$
+
 Using Newton's law of universal gravitation:
-$
-F_g = \frac{GMm}{r^2}
-$
+
+$F_g = \frac{GMm}{r^2}$
+
 And the centripetal force:
-$
-F_c = \frac{m v^2}{r}
-$
+
+$F_c = \frac{m v^2}{r}$
+
 Equating both forces:
-$
-\frac{GMm}{r^2} = \frac{m v^2}{r}
-$
+
+$\frac{GMm}{r^2} = \frac{m v^2}{r}$
+
 Cancel $ m $ (assuming $ m \neq 0 $):
-$
-\frac{GM}{r^2} = \frac{v^2}{r}
-$
+
+$\frac{GM}{r^2} = \frac{v^2}{r}$
+
 Rearrange to express velocity:
-$
-v^2 = \frac{GM}{r}
-$
+
+$v^2 = \frac{GM}{r}$
