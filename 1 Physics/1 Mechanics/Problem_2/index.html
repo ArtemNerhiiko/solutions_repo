@@ -308,36 +308,66 @@ m l \frac{d^2\theta}{dt^2} + b \frac{d\theta}{dt} + mg \sin\theta = F_0 \cos(\om
 - <span class="arithmatex">\(\theta\)</span> is the angular displacement.</p>
 <h3 id="1-damping-coefficient-beta">1. Damping Coefficient (<span class="arithmatex">\(\beta\)</span>)</h3>
 <ul>
-<li><strong>Role</strong>: Determines energy dissipation rate.</li>
-<li><strong>Effects</strong>:</li>
-<li><strong>Low damping (<span class="arithmatex">\(\beta \ll \omega_0\)</span>)</strong>:<ul>
-<li>Slow amplitude decay; sharp resonance peaks when driven.</li>
-</ul>
+<li>
+<p><strong>Role</strong>: Determines energy dissipation rate.</p>
 </li>
-<li><strong>High damping (<span class="arithmatex">\(\beta \geq \omega_0\)</span>)</strong>:<ul>
-<li>Overdamped: No oscillations, rapid return to equilibrium.</li>
-<li>Suppressed resonance (broader peaks).</li>
-</ul>
+<li>
+<p><strong>Effects</strong>:</p>
 </li>
-<li><strong>Behavior</strong>:</li>
-<li>Reduces transient oscillations.</li>
-<li>Decreases quality factor (<span class="arithmatex">\(Q = \omega_0/2\beta\)</span>).</li>
+<li>
+<p><strong>Low damping (<span class="arithmatex">\(\beta \ll \omega_0\)</span>)</strong>:</p>
+</li>
+<li>
+<p>Slow amplitude decay; sharp resonance peaks when driven.</p>
+</li>
+<li>
+<p><strong>High damping (<span class="arithmatex">\(\beta \geq \omega_0\)</span>)</strong>:</p>
+</li>
+<li>
+<p>Overdamped: No oscillations, rapid return to equilibrium.</p>
+</li>
+<li>
+<p>Suppressed resonance (broader peaks).</p>
+</li>
+<li>
+<p><strong>Behavior</strong>:</p>
+</li>
+<li>
+<p>Reduces transient oscillations.</p>
+</li>
+<li>
+<p>Decreases quality factor (<span class="arithmatex">\(Q = \omega_0/2\beta\)</span>).</p>
+</li>
 </ul>
 <h3 id="2-driving-amplitude-a">2. Driving Amplitude (<span class="arithmatex">\(A\)</span>)</h3>
 <ul>
-<li><strong>Role</strong>: Strength of external forcing.</li>
-<li><strong>Effects</strong>:</li>
-<li><strong>Small <span class="arithmatex">\(A\)</span> (Linear regime)</strong>:<ul>
-<li>Approximate harmonic motion (<span class="arithmatex">\(\sin\theta \approx \theta\)</span>).</li>
-</ul>
+<li>
+<p><strong>Role</strong>: Strength of external forcing.</p>
 </li>
-<li><strong>Large <span class="arithmatex">\(A\)</span> (Nonlinear regime)</strong>:<ul>
-<li>Chaos, period doubling, whirling orbits.</li>
-<li>Subharmonic/ultraharmonic resonances.</li>
-</ul>
+<li>
+<p><strong>Effects</strong>:</p>
 </li>
-<li><strong>Behavior</strong>:</li>
-<li>Larger <span class="arithmatex">\(A\)</span> can induce rotations instead of oscillations.</li>
+<li>
+<p><strong>Small <span class="arithmatex">\(A\)</span> (Linear regime)</strong>:</p>
+</li>
+<li>
+<p>Approximate harmonic motion (<span class="arithmatex">\(\sin\theta \approx \theta\)</span>).</p>
+</li>
+<li>
+<p><strong>Large <span class="arithmatex">\(A\)</span> (Nonlinear regime)</strong>:</p>
+</li>
+<li>
+<p>Chaos, period doubling, whirling orbits.</p>
+</li>
+<li>
+<p>Subharmonic/ultraharmonic resonances.</p>
+</li>
+<li>
+<p><strong>Behavior</strong>:</p>
+</li>
+<li>
+<p>Larger <span class="arithmatex">\(A\)</span> can induce rotations instead of oscillations.</p>
+</li>
 </ul>
 <h3 id="3-driving-frequency-omega">3. Driving Frequency (<span class="arithmatex">\(\omega\)</span>)</h3>
 <ul>
@@ -356,8 +386,8 @@ m l \frac{d^2\theta}{dt^2} + b \frac{d\theta}{dt} + mg \sin\theta = F_0 \cos(\om
 <li><strong>Nonlinearities</strong>:</li>
 <li>Frequency locking (synchronization to <span class="arithmatex">\(n\omega/m\)</span>).</li>
 </ul>
-<p>### 2. Effect of Damping Coefficient (<span class="arithmatex">\(b\)</span>)
-Damping represents <strong>energy loss</strong> due to air resistance, friction, or internal material properties. The behavior of the pendulum depends on the damping strength.</p>
+<h3 id="2-effect-of-damping-coefficient-b">2. Effect of Damping Coefficient (<span class="arithmatex">\(b\)</span>)</h3>
+<p>Damping represents <strong>energy loss</strong> due to air resistance, friction, or internal material properties. The behavior of the pendulum depends on the damping strength.</p>
 <h3 id="21-underdamping-b-is-small">2.1. Underdamping (<span class="arithmatex">\(b\)</span> is small)</h3>
 <ul>
 <li>The pendulum oscillates with gradually decreasing amplitude.</li>
@@ -408,13 +438,27 @@ Damping represents <strong>energy loss</strong> due to air resistance, friction,
 <p>A <strong>driven, damped pendulum</strong> is an example where the transition from <strong>regular to chaotic motion</strong> can be observed. The governing equation is:</p>
 <div class="arithmatex">\[m l \frac{d^2\theta}{dt^2} + b \frac{d\theta}{dt} + mg \sin\theta = F_0 \cos(\omega t)\]</div>
 <p>where:
-- <span class="arithmatex">\(m\)</span> is the mass of the pendulum bob,
-- <span class="arithmatex">\(l\)</span> is the length of the pendulum,
-- <span class="arithmatex">\(b\)</span> is the damping coefficient,
-- <span class="arithmatex">\(g\)</span> is gravitational acceleration,
-- <span class="arithmatex">\(F_0\)</span> is the external driving amplitude,
-- <span class="arithmatex">\(\omega\)</span> is the driving frequency,
-- <span class="arithmatex">\(\theta\)</span> is the angular displacement.</p>
+- <span class="arithmatex">\(m\)</span> is the mass of the pendulum bob,</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(l\)</span> is the length of the pendulum,</p>
+</li>
+<li>
+<p><span class="arithmatex">\(b\)</span> is the damping coefficient,</p>
+</li>
+<li>
+<p><span class="arithmatex">\(g\)</span> is gravitational acceleration,</p>
+</li>
+<li>
+<p><span class="arithmatex">\(F_0\)</span> is the external driving amplitude,</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\omega\)</span> is the driving frequency,</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\theta\)</span> is the angular displacement.</p>
+</li>
+</ul>
 <h2 id="2-characteristics-of-regular-and-chaotic-motion">2. Characteristics of Regular and Chaotic Motion</h2>
 <h3 id="21-regular-motion">2.1. Regular Motion</h3>
 <ul>
