@@ -32,15 +32,8 @@ Rearrange to express velocity:
 $v^2 = \frac{GM}{r}$
 
 ### Step 2: Expressing Orbital Period $T$
-The orbital period $T$ is given by:
-$$
-T = \frac{2\pi r}{v}
-$$
-Substituting $v$ from above:
-$$
-T = \frac{2\pi r}{\sqrt{GM/r}}
-$$
-Simplify:
-$$
-T = 2\pi \sqrt{\frac{r^3}{GM}}
-$$
+The orbital period $T$ is given by: $T = \frac{2\pi r}{v}$.
+
+Substituting $v$ from above: $T = \frac{2\pi r}{\sqrt{GM/r}}$.
+
+Simplify: $T = 2\pi \sqrt{\frac{r^3}{GM}}$.
