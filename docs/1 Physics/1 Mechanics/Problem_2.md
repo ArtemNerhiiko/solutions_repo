@@ -362,69 +362,69 @@ Bridges and buildings experience oscillations due to **wind, traffic, and earthq
 
 ### 2.1. Suspension Bridges and Resonance
 - **Example**: **Tacoma Narrows Bridge collapse (1940)**
-  - The bridge oscillated due to **wind-induced resonance**.
-  - The oscillations behaved like a **forced damped pendulum**, leading to structural failure.
+- The bridge oscillated due to **wind-induced resonance**.
+- The oscillations behaved like a **forced damped pendulum**, leading to structural failure.
 
 - **Modern Applications**:
-  - **Tuned Mass Dampers (TMDs)** are installed in bridges to **dissipate energy**.
-  - **Active control systems** adjust damping in real time to counteract oscillations.
+- **Tuned Mass Dampers (TMDs)** are installed in bridges to **dissipate energy**.
+- **Active control systems** adjust damping in real time to counteract oscillations.
 
 - **Relevance to the Pendulum Model**:
-  - **Driving force ($F_0$)** comes from wind or vehicle-induced vibrations.
-  - **Damping ($b$)** helps reduce excessive oscillations and prevents structural failure.
-  - **Resonance effects** must be avoided to ensure safety.
+- **Driving force ($F_0$)** comes from wind or vehicle-induced vibrations.
+- **Damping ($b$)** helps reduce excessive oscillations and prevents structural failure.
+- **Resonance effects** must be avoided to ensure safety.
 
-  ## 3. Seismic Isolation in Buildings
+## 3. Seismic Isolation in Buildings
 Buildings experience **oscillatory forces** during earthquakes. The forced damped pendulum model is used in designing **seismic isolators**.
 
 ### 3.1. Tuned Mass Dampers (TMDs)
 - **Purpose**: Reduce structural vibrations during earthquakes and strong winds.
 - **Example**: Taipei 101 skyscraper uses a **660-ton pendulum** as a seismic damper.
 - **How it Works**:
-  - The pendulum **swings opposite to building oscillations**.
-  - **Damping** dissipates seismic energy.
-  - Reduces stress on the building’s structure.
+- The pendulum **swings opposite to building oscillations**.
+- **Damping** dissipates seismic energy.
+- Reduces stress on the building’s structure.
 
 - **Relevance to the Pendulum Model**:
-  - The **building acts as a driven pendulum**.
-  - The TMD **adds damping ($b$)** to minimize oscillations.
-  - Proper tuning ensures **resonance is avoided**.
+- The **building acts as a driven pendulum**.
+- The TMD **adds damping ($b$)** to minimize oscillations.
+- Proper tuning ensures **resonance is avoided**.
 
-  ## 4. Energy Harvesting Devices
+## 4. Energy Harvesting Devices
 Energy harvesting systems convert **mechanical vibrations** into **electrical energy**, often using a pendulum-like mechanism.
 
 ### 4.1. Piezoelectric Energy Harvesters
 - **Working Principle**:
-  - A forced damped pendulum (or a vibrating beam) oscillates due to environmental forces (wind, ocean waves, or human motion).
-  - The oscillations cause a **piezoelectric material** to generate voltage.
-  - The output is stored in a capacitor or battery.
+- A forced damped pendulum (or a vibrating beam) oscillates due to environmental forces (wind, ocean waves, or human motion).
+- The oscillations cause a **piezoelectric material** to generate voltage.
+- The output is stored in a capacitor or battery.
 
 - **Example Applications**:
-  - Self-powered sensors for remote monitoring.
-  - Wearable energy harvesters for medical implants (e.g., pacemakers).
-  - Ocean wave energy converters.
+- Self-powered sensors for remote monitoring.
+- Wearable energy harvesters for medical implants (e.g., pacemakers).
+- Ocean wave energy converters.
 
 - **Relevance to the Pendulum Model**:
-  - The pendulum's **resonance frequency** is tuned to maximize energy absorption.
-  - **Damping (b)** controls energy dissipation and efficiency.
+- The pendulum's **resonance frequency** is tuned to maximize energy absorption.
+- **Damping (b)** controls energy dissipation and efficiency.
 
-  ## 5. Biological Systems
+## 5. Biological Systems
 Several biological systems behave like forced damped oscillators.
 
 ### 5.1. Human Walking and Gait Analysis
 - **Walking involves a driven pendulum motion**:
-  - The legs behave like **inverted pendulums**.
-  - Muscles provide **periodic driving force ($F_0$)**.
-  - **Damping ($b$)** occurs due to energy loss in joints.
+- The legs behave like **inverted pendulums**.
+- Muscles provide **periodic driving force ($F_0$)**.
+- **Damping ($b$)** occurs due to energy loss in joints.
 
 - **Applications**:
-  - **Prosthetic limb design** mimics pendulum-like motion.
-  - **Robotic exoskeletons** use pendulum-based gait models.
-  - **Rehabilitation therapy** for stroke patients.
+- **Prosthetic limb design** mimics pendulum-like motion.
+- **Robotic exoskeletons** use pendulum-based gait models.
+- **Rehabilitation therapy** for stroke patients.
 
 - **Relevance to the Pendulum Model**:
-  - The **leg’s motion is periodic** but damped.
-  - **Energy harvesting from walking** can be achieved using pendulum-based devices.
+- The **leg’s motion is periodic** but damped.
+- **Energy harvesting from walking** can be achieved using pendulum-based devices.
 
 # 4. Implementation:
 
