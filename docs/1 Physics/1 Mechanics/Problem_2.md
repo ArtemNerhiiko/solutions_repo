@@ -78,12 +78,9 @@ $$
 $$
 
 where:
-
-$$\theta_0$$ is the initial amplitude,
-
-$$\phi$$ is the phase constant (determined by initial conditions),
-
-$$\omega = \sqrt{\frac{g}{l}}$$ is the angular frequency.
+- $\theta_0$ is the initial amplitude,
+- $\phi$ is the phase constant (determined by initial conditions),
+- $\omega = \sqrt{\frac{g}{l}}$ is the angular frequency.
 
 ### 4. Period of Oscillation
 The period of oscillation is given by:
@@ -433,9 +430,6 @@ Several biological systems behave like forced damped oscillators.
 
 ## Creating a computational model to simulate the motion of a forced damped pendulum.
 
-![download (3)](https://github.com/user-attachments/assets/4a336ace-3477-4fea-ac38-c791a0597d67)
-
-
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -476,4 +470,4 @@ plt.title("Forced Damped Pendulum Motion")
 plt.legend()
 plt.grid()
 plt.show()
-```
+
