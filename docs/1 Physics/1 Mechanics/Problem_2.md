@@ -78,11 +78,11 @@ $$
 $$
 
 where:
-- $\theta_0$ is the initial amplitude,
+- $$\theta_0$$ is the initial amplitude,
 
-- $\phi$ is the phase constant (determined by initial conditions),
+- $$\phi$$ is the phase constant (determined by initial conditions),
 
-- $\omega = \sqrt{\frac{g}{l}}$ is the angular frequency.
+- $$\omega = \sqrt{\frac{g}{l}}$$ is the angular frequency.
 
 ### 4. Period of Oscillation
 The period of oscillation is given by:
