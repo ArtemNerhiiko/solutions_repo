@@ -219,7 +219,7 @@ Damping represents **energy loss** due to air resistance, friction, or internal 
 - Energy is lost slowly over time.
 - The motion follows:
 
-  $ \theta(t) = \theta_0 e^{-bt/2m} \cos(\omega_0 t + \phi) $
+  $\theta(t) = \theta_0 e^{-bt/2m} \cos(\omega_0 t + \phi)$
 
 - **Example**: A clock pendulum, where oscillations persist for a long time.
 
@@ -227,7 +227,7 @@ Damping represents **energy loss** due to air resistance, friction, or internal 
 - The pendulum returns to equilibrium as quickly as possible without oscillating.
 - The damping coefficient at critical damping is:
 
-  $ b_c = 2 \sqrt{m k} $
+  $b_c = 2 \sqrt{m k}$
 
 - **Example**: Car suspension systems prevent excessive bouncing.
 
