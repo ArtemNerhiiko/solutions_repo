@@ -232,7 +232,15 @@ This code will:
 
 - Plots the projectile path for different angles.
 
-![download (2)](https://github.com/user-attachments/assets/c7b9c56e-1b32-4293-bb81-f098bfe30f05)
+
+![download (3)](https://github.com/user-attachments/assets/8c323b2a-542e-47ff-83f0-9d3ea9572262)
+
+
+![download (4)](https://github.com/user-attachments/assets/ab498954-36d8-4bb2-97ec-ce6311e2385d)
+
+
+![download (5)](https://github.com/user-attachments/assets/8bf92b91-cf3d-4f0a-ad3e-ad7cb9b90410)
+
 
 
 ```python
