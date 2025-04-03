@@ -240,34 +240,66 @@ This code will:
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Define velocities and angles
-velocities = [25, 35, 50]
-angles = [25, 50, 70]
-colors = ['b', 'orange', 'g', 'r', 'brown', 'purple', 'pink', 'grey', 'yellow']
+# Constants
+Cd = 0.47  # Drag coefficient (sphere)
+rho = 1.225  # Air density (kg/m^3)
+d = 0.1  # Diameter of projectile (m)
+A = np.pi * (d / 2) ** 2  # Cross-sectional area (m^2)
+m = 0.145  # Mass of projectile (kg), e.g., a baseball
+g = 9.81  # Gravity (m/s^2)
+v0 = 30  # Initial velocity (m/s)
+angles = [30, 45, 60]  # Launch angles in degrees
+dt = 0.01  # Time step
 
-# Function to calculate projectile motion with air resistance
-def projectile_motion(v0, theta):
-    # Your numerical solver code goes here
-    # Example: Generate dummy x, y data
-    t = np.linspace(0, 3, num=100)  # Time array
-    x = v0 * np.cos(np.radians(theta)) * t  # Dummy X values
-    y = v0 * np.sin(np.radians(theta)) * t - 0.5 * 9.81 * t**2  # Dummy Y values
-    y = np.maximum(y, 0)  # Keep y ≥ 0
+# Function to compute trajectory WITH air resistance
+def compute_trajectory_with_drag(theta):
+    theta_rad = np.radians(theta)
+    vx, vy = v0 * np.cos(theta_rad), v0 * np.sin(theta_rad)
+    
+    x, y = [0], [0]  # Initial positions
+    while y[-1] >= 0:
+        v = np.sqrt(vx**2 + vy**2)  # Speed
+        Fd = 0.5 * Cd * rho * A * v**2  # Drag force
+        ax = - (Fd / m) * (vx / v)  # Acceleration in x
+        ay = -g - (Fd / m) * (vy / v)  # Acceleration in y
+
+        # Update velocities
+        vx += ax * dt
+        vy += ay * dt
+
+        # Update positions
+        x.append(x[-1] + vx * dt)
+        y.append(y[-1] + vy * dt)
+
     return x, y
 
-# Generate and split plots
-for i, v0 in enumerate(velocities):
-    plt.figure(figsize=(6, 4))
-    for j, theta in enumerate(angles):
-        x, y = projectile_motion(v0, theta)
-        plt.plot(x, y, label=f'v0={v0}m/s, angle={theta}°', color=colors[j])
-    
-    plt.xlabel("Distance (m)")
-    plt.ylabel("Height (m)")
-    plt.title(f"Projectile Motion with Air Resistance (v0={v0} m/s)")
-    plt.legend()
-    plt.grid(True)
-    plt.show()
+# Function to compute trajectory WITHOUT air resistance
+def compute_trajectory_no_drag(theta):
+    theta_rad = np.radians(theta)
+    t_flight = (2 * v0 * np.sin(theta_rad)) / g  # Total time of flight
+    t = np.arange(0, t_flight, dt)
+
+    x = v0 * np.cos(theta_rad) * t
+    y = v0 * np.sin(theta_rad) * t - 0.5 * g * t**2
+
+    return x, y
+
+# Plot both cases
+plt.figure(figsize=(10, 5))
+
+for theta in angles:
+    x_drag, y_drag = compute_trajectory_with_drag(theta)
+    x_no_drag, y_no_drag = compute_trajectory_no_drag(theta)
+
+    plt.plot(x_drag, y_drag, label=f"With Drag {theta}°", linestyle="dashed")
+    plt.plot(x_no_drag, y_no_drag, label=f"No Drag {theta}°", linestyle="solid")
+
+plt.xlabel("Horizontal Distance (m)")
+plt.ylabel("Vertical Distance (m)")
+plt.title("Projectile Motion With and Without Air Resistance")
+plt.legend()
+plt.grid()
+plt.show()
 ```
 
 
