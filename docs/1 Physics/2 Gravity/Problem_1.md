@@ -4,7 +4,7 @@
 
 ### The relationship between the square of the orbital period and the cube of the orbital radius, known as Kepler's Third Law, is a cornerstone of celestial mechanics. This simple yet profound relationship allows for the determination of planetary motions and has implications for understanding gravitational interactions on both local and cosmic scales. By analyzing this relationship, one can connect fundamental principles of gravity with real-world phenomena such as satellite orbits and planetary systems.
 
-# 1. Deriving the relationship between the square of the orbital period and the cube of the orbital radius for circular orbits.
+## 1. Deriving the relationship between the square of the orbital period and the cube of the orbital radius for circular orbits.
 
 ### Step 1: Centripetal Force and Gravitational Force
 For a body of mass $m$ orbiting a central mass $M$, the gravitational force provides the necessary centripetal force:
@@ -47,19 +47,19 @@ Since $\frac{4\pi^2}{GM}$ is a constant for a given central mass $M$, this shows
 
 This is Kepler's Third Law, which states that the square of the orbital period is proportional to the cube of the orbital radius for circular orbits.
 
-## **Discussing the implications of this relationship for astronomy, including its role in calculating planetary masses and distances.**  
+## **2. Discussing the implications of this relationship for astronomy, including its role in calculating planetary masses and distances.**  
 
 The relationship  
-$$ T^2 \propto r^3 $$  
+$$T^2 \propto r^3$$  
 derived from Kepler’s Third Law has profound implications for astronomy, particularly in calculating planetary masses, determining distances in space, and understanding celestial mechanics.  
 
 ---
 
 ### **1. Determining the Mass of Celestial Bodies**  
 By modifying the equation  
-$$ T^2 = \frac{4\pi^2}{G M} r^3 $$  
+$$T^2 = \frac{4\pi^2}{G M} r^3$$  
 we can solve for the mass \( M \) of the central object:  
-$$ M = \frac{4\pi^2 r^3}{G T^2} $$  
+$$M = \frac{4\pi^2 r^3}{G T^2}$$  
 This allows astronomers to measure the mass of massive celestial bodies such as:  
 
 - **The Sun**: By observing the orbits of planets in our Solar System, we can determine the Sun's mass.  
@@ -70,7 +70,7 @@ This allows astronomers to measure the mass of massive celestial bodies such as:
 
 ### **2. Measuring Planetary and Moon Distances**  
 If the mass of the central body is known, the equation  
-$$ r^3 = \frac{G M T^2}{4\pi^2} $$  
+$$r^3 = \frac{G M T^2}{4\pi^2}$$  
 allows astronomers to estimate the distance of a planet or moon from its parent body.  
 
 - **Earth-Moon Distance**: By measuring the Moon’s orbital period around Earth, we can determine its orbital radius.  
