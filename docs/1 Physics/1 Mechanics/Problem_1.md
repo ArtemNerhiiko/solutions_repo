@@ -239,70 +239,34 @@ This code will:
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Constants
-g = 9.81  # Gravity (m/s^2)
-rho = 1.225  # Air density (kg/m^3)
-Cd = 0.47  # Drag coefficient (spherical object)
-radius = 0.07  # Projectile radius (m)
-mass = 0.2  # Projectile mass (kg)
-A = np.pi * radius**2  # Cross-sectional area (m^2)
-k = 0.5 * rho * Cd * A  # Drag factor
+# Define velocities and angles
+velocities = [25, 35, 50]
+angles = [25, 50, 70]
+colors = ['b', 'orange', 'g', 'r', 'brown', 'purple', 'pink', 'grey', 'yellow']
 
-def projectile_motion(v0, angle, dt=0.01, air_resistance=True):
-    """Simulate projectile motion with/without air resistance."""
-    angle_rad = np.radians(angle)
-    vx, vy = v0 * np.cos(angle_rad), v0 * np.sin(angle_rad)
-    x, y = 0, 0
-    positions = [(x, y)]
-    
-    while y >= 0:
-        ax = -k * vx * np.sqrt(vx**2 + vy**2) / mass if air_resistance else 0
-        ay = -g - (k * vy * np.sqrt(vx**2 + vy**2) / mass if air_resistance else 0)
-        
-        vx += ax * dt
-        vy += ay * dt
-        x += vx * dt
-        y += vy * dt
-        positions.append((x, y))
-    
-    return np.array(positions)
+# Function to calculate projectile motion with air resistance
+def projectile_motion(v0, theta):
+    # Your numerical solver code goes here
+    # Example: Generate dummy x, y data
+    t = np.linspace(0, 3, num=100)  # Time array
+    x = v0 * np.cos(np.radians(theta)) * t  # Dummy X values
+    y = v0 * np.sin(np.radians(theta)) * t - 0.5 * 9.81 * t**2  # Dummy Y values
+    y = np.maximum(y, 0)  # Keep y ≥ 0
+    return x, y
 
-def plot_trajectories(v0_list, angles):
-    """Plot projectile trajectories for different launch angles."""
-    plt.figure(figsize=(10, 6))
-    for v0 in v0_list:
-        for angle in angles:
-            traj = projectile_motion(v0, angle)
-            plt.plot(traj[:, 0], traj[:, 1], label=f'v0={v0}m/s, angle={angle}°')
+# Generate and split plots
+for i, v0 in enumerate(velocities):
+    plt.figure(figsize=(6, 4))
+    for j, theta in enumerate(angles):
+        x, y = projectile_motion(v0, theta)
+        plt.plot(x, y, label=f'v0={v0}m/s, angle={theta}°', color=colors[j])
     
     plt.xlabel("Distance (m)")
     plt.ylabel("Height (m)")
-    plt.title("Projectile Motion with Air Resistance")
+    plt.title(f"Projectile Motion with Air Resistance (v0={v0} m/s)")
     plt.legend()
-    plt.grid()
+    plt.grid(True)
     plt.show()
-
-def plot_range_vs_angle(v0_list, angles):
-    """Plot range as a function of launch angle for different initial velocities."""
-    plt.figure(figsize=(10, 6))
-    for v0 in v0_list:
-        ranges = [projectile_motion(v0, angle)[-1, 0] for angle in angles]
-        plt.plot(angles, ranges, label=f'v0={v0}m/s')
-    
-    plt.xlabel("Launch Angle (degrees)")
-    plt.ylabel("Range (m)")
-    plt.title("Range vs. Launch Angle")
-    plt.legend()
-    plt.grid()
-    plt.show()
-
-# Define parameters
-v0_list = [25, 35, 50]  # Initial velocities (m/s)
-angles = np.linspace(15, 75, 10)  # Angles from 15° to 75°
-
-# Plot results
-plot_trajectories(v0_list, [25, 50, 70])
-plot_range_vs_angle(v0_list, angles)
 ```
 
 
