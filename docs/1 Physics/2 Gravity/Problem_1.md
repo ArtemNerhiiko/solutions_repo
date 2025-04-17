@@ -147,4 +147,10 @@ Kepler’s Law applies to moons orbiting planets as well as exoplanets orbiting 
 - By measuring an exoplanet’s transit period and orbital radius, scientists estimate the **mass** and **habitable zone** of exoplanetary systems.
 - Example: Kepler-186f was discovered using Kepler’s Third Law, confirming it orbits within its star’s habitable zone.
 
+## 4. Implement a computational model to simulate circular orbits and verify the relationship.
+
+### T^2 vs r^3 
+
+
+
 
