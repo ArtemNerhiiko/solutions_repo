@@ -163,6 +163,56 @@ As expected from Kepler's Third Law, the relationship is perfectly linear, showi
 
 
 
+## 4.1 Using Kepler's Third Law to Find Mass of the Sun and Earth
+
+### Formula (Newton's Version of Kepler’s Third Law):
+
+$T^2 = (4π^2 * r^3) / (G * M)$
+
+Solving for M (mass of the central body):
+
+$M = (4π^2 * r³) / (G * T^2)$
+
+Where:
+- T = orbital period (in seconds)
+
+- r = orbital radius (in meters)
+
+- $G = gravitational constant = 6.674 × 10^-11 m^3 kg^-1 s^-2$
+
+- M = mass of the central object being orbited (Sun or Earth)
+
+
+
+### 1. Mass of the Sun (using Earth's orbit)
+
+- T = 1 year = 365.25 × 24 × 3600 = **31,557,600 s**
+- r = 1 AU = **1.496 × 10¹¹ m**
+
+Now plug into the formula:
+
+$M = (4 * π^2 * (1.496 × 10^11)^3) / (6.674 × 10^-11 * (31,557,600)^2)$
+
+$M ≈ **1.989 × 10^30 kg**$
+
+**Mass of the Sun ≈ 1.989 × 10³⁰ kg**
+
+
+### 2. Mass of the Earth (using Moon's orbit)
+
+- T = 27.32 days = 27.32 × 24 × 3600 = **2,360,592 s**
+- r = average distance from Moon to Earth = **3.844 × 10⁸ m**
+
+Plug into the formula:
+
+M = (4 * π² * (3.844 × 10⁸)³) / (6.674 × 10⁻¹¹ * (2,360,592)²)
+
+M ≈ **5.97 × 10²⁴ kg**
+
+**Mass of the Earth ≈ 5.97 × 10²⁴ kg**
+
+
+
 
 
 
