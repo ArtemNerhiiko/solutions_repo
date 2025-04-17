@@ -178,7 +178,7 @@ Where:
 
 - r = orbital radius (in meters)
 
-- $$G = $$ gravitational constant = $$6.674 × 10^{-11} m^3 kg^{-1} s^P{-2}$$
+- $G = $ gravitational constant = $6.674 × 10^{-11} m^3 kg^{-1} s^P{-2}$
 
 - M = mass of the central object being orbited (Sun or Earth)
 
