@@ -153,6 +153,8 @@ Kepler’s Law applies to moons orbiting planets as well as exoplanets orbiting 
 
 ![download (12)](https://github.com/user-attachments/assets/f41b11bd-62aa-4f05-9fe0-9229d5a3e207)
 
+As expected from Kepler's Third Law, the relationship is perfectly linear, showing that the square of the orbital period is directly proportional to the cube of the orbital radius. Let me know if you'd like to try this with different parameters or units. 
+
 
 
 
