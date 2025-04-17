@@ -112,11 +112,11 @@ plays a crucial role in understanding the motion of celestial bodies in our Sola
 The Moon follows an approximately circular orbit around Earth, allowing us to apply Kepler’s Third Law to estimate its orbital parameters.
 
 ### **Key Data:**
-- **Orbital period**: $$T = 27.32 $$ days
+- **Orbital period**: $T = 27.32$ days
 
-- **Average orbital radius**: $$r = 3.84 \times 10^5$$ km
+- **Average orbital radius**: $r = 3.84 \times 10^5$ km
 
-- **Mass of Earth**: $$M = 5.97 \times 10^{24}$$ kg
+- **Mass of Earth**: $M = 5.97 \times 10^{24}$ kg
 
 Using Kepler’s Law,  
 $$ T^2 = \frac{4\pi^2 r^3}{G M} $$  
