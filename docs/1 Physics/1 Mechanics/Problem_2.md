@@ -468,6 +468,12 @@ Several biological systems behave like forced damped oscillators.
 
 
 ### 2. Damped Pendulum
+![download (10)](https://github.com/user-attachments/assets/a2df57a9-30ce-4422-a88b-d87c46a5530a)
+
+
+### 3. Forced Pendulum
+![download (11)](https://github.com/user-attachments/assets/395df210-1fe8-4357-b7b4-7edf021374f2)
+
 
 
 
