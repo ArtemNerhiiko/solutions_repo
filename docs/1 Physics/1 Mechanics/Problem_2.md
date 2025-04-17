@@ -463,10 +463,11 @@ Several biological systems behave like forced damped oscillators.
 
 ## Creating a computational model to simulate the motion of a forced damped pendulum.
 
-### 1. Simple pendulum
+### 1. Simple Pendulum
 ![download (8)](https://github.com/user-attachments/assets/873adc68-2727-4a40-b387-859f1ec6c619)
 
-![download (9)](https://github.com/user-attachments/assets/da2d07b9-486f-46d2-9ea7-10b7b1fdb46c)
+
+### 2. Damped Pendulum
 
 
 
