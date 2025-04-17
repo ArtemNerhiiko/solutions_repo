@@ -288,6 +288,42 @@ where <span class="arithmatex">\( T \)</span> is measured in years and <span cla
 <p>As expected from Kepler's Third Law, the relationship is perfectly linear, showing that the square of the orbital period is directly proportional to the cube of the orbital radius. Let me know if you'd like to try this with different parameters or units. </p>
 <h3 id="a-t2-vs-r3-plot-for-different-planets">A <span class="arithmatex">\(T^2\)</span> vs <span class="arithmatex">\(r^3\)</span> plot for different planets</h3>
 <p><img alt="download (14)" src="https://github.com/user-attachments/assets/b4ef40ad-1b77-454b-bdf3-83664c9d4580"/></p>
+<h2 id="41-using-keplers-third-law-to-find-mass-of-the-sun-and-earth">4.1 Using Kepler's Third Law to Find Mass of the Sun and Earth</h2>
+<h3 id="formula-newtons-version-of-keplers-third-law">Formula (Newton's Version of Kepler’s Third Law):</h3>
+<p><span class="arithmatex">\(T^2 = (4π^2 * r^3) / (G * M)\)</span></p>
+<p>Solving for M (mass of the central body):</p>
+<p><span class="arithmatex">\(M = (4π^2 * r³) / (G * T^2)\)</span></p>
+<p>Where:
+- T = orbital period (in seconds)</p>
+<ul>
+<li>
+<p>r = orbital radius (in meters)</p>
+</li>
+<li>
+<p><span class="arithmatex">\(G = gravitational constant = 6.674 × 10^-11 m^3 kg^-1 s^-2\)</span></p>
+</li>
+<li>
+<p>M = mass of the central object being orbited (Sun or Earth)</p>
+</li>
+</ul>
+<h3 id="1-mass-of-the-sun-using-earths-orbit">1. Mass of the Sun (using Earth's orbit)</h3>
+<ul>
+<li>T = 1 year = 365.25 × 24 × 3600 = <strong>31,557,600 s</strong></li>
+<li>r = 1 AU = <strong>1.496 × 10¹¹ m</strong></li>
+</ul>
+<p>Now plug into the formula:</p>
+<p><span class="arithmatex">\(M = (4 * π^2 * (1.496 × 10^11)^3) / (6.674 × 10^-11 * (31,557,600)^2)\)</span></p>
+<p><span class="arithmatex">\(M ≈ **1.989 × 10^30 kg**\)</span></p>
+<p><strong>Mass of the Sun ≈ 1.989 × 10³⁰ kg</strong></p>
+<h3 id="2-mass-of-the-earth-using-moons-orbit">2. Mass of the Earth (using Moon's orbit)</h3>
+<ul>
+<li>T = 27.32 days = 27.32 × 24 × 3600 = <strong>2,360,592 s</strong></li>
+<li>r = average distance from Moon to Earth = <strong>3.844 × 10⁸ m</strong></li>
+</ul>
+<p>Plug into the formula:</p>
+<p>M = (4 * π² * (3.844 × 10⁸)³) / (6.674 × 10⁻¹¹ * (2,360,592)²)</p>
+<p>M ≈ <strong>5.97 × 10²⁴ kg</strong></p>
+<p><strong>Mass of the Earth ≈ 5.97 × 10²⁴ kg</strong></p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
