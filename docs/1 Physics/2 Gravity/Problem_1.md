@@ -132,7 +132,9 @@ Kepler’s Third Law helps us understand the motion of planets around the Sun.
 
 ### **Kepler’s Law Applied to the Planets**
 For planets orbiting the Sun,  
-$$\frac{T^2}{r^3} = \text{constant}$$  
+
+$\frac{T^2}{r^3} = \text{constant}$ 
+
 where \( T \) is measured in years and \( r \) in astronomical units (AU).
 
 ### **3. Jupiter’s Moons and Exoplanet Studies**
