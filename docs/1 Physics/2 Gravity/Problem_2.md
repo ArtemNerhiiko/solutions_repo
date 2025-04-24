@@ -140,5 +140,6 @@ Cosmic velocities increase with the mass of the central body and decrease with d
 ## 3. Calculating and visualize these velocities for different celestial bodies like Earth, Mars adn Jupyter.
 
 
+![download (9)](https://github.com/user-attachments/assets/b03e7d19-4b72-4ae8-b716-a58e5cda8f27)
 
 
