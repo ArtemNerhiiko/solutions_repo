@@ -137,3 +137,8 @@ $v_3 = \sqrt{\frac{2GM_{\text{Sun}}}{R_{\text{orbit}}}} - v_{\text{Earth orbit}}
 Cosmic velocities increase with the mass of the central body and decrease with distance from its center. They are foundational to space mission design and orbital mechanics.
 
 
+## 3. Calculating and visualize these velocities for different celestial bodies like Earth, Mars adn Jupyter.
+
+
+
+
