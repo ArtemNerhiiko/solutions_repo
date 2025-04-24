@@ -60,6 +60,4 @@ This velocity allows a spacecraft to leave the Solar System, overcoming the Sunâ
 **Example (from Earth orbit):**  
 Approximately **16.7 km/s** relative to Earth.
 
-
-
-**Note:** These are idealized values and do not consider atmosphere, terrain, or other practical factors in spaceflight.
+These are idealized values and do not consider atmosphere, terrain, or other practical factors in spaceflight.
