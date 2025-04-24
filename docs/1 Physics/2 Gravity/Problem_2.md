@@ -32,7 +32,7 @@ Approximately **7.9 km/s**
 The minimum speed needed to break free from the gravitational pull of a celestial body without further propulsion.
 
 **Formula:**  
-$ v_2 = \sqrt{\frac{2GM}{R}} ]$
+$v_2 = \sqrt{\frac{2GM}{R}}$
 
 **Physical Meaning:**  
 At this velocity, an object will escape into space without falling back, moving away indefinitely unless acted upon by other forces.
