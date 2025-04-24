@@ -199,3 +199,74 @@ df.set_index("Body")  # Show table for reference
 ![download (10)](https://github.com/user-attachments/assets/4a5b3eb9-6ffe-4c11-831d-9602d78e5a6f)
 
 
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation
+
+# Constants
+G = 6.67430e-11  # gravitational constant, m^3 kg^-1 s^-1
+M = 5.972e24     # mass of Earth, kg
+R = 6.371e6      # radius of Earth, m
+
+# Simulation parameters
+dt = 0.1  # time step in seconds
+total_time = 1500  # total simulation time in seconds
+steps = int(total_time / dt)
+
+# Initial conditions (updated scenario)
+altitude = 300000  # initial altitude in meters
+speed = 9000       # initial speed in m/s
+angle_deg = 45     # launch angle in degrees
+angle_rad = np.radians(angle_deg)
+
+# Initial position and velocity
+x = R + altitude
+y = 0
+vx = 0
+vy = speed
+
+# Rotate velocity vector based on launch angle
+vx = speed * np.cos(angle_rad)
+vy = speed * np.sin(angle_rad)
+
+# Storage for trajectory
+x_vals = []
+y_vals = []
+
+# Simulation loop
+for _ in range(steps):
+    r = np.sqrt(x**2 + y**2)
+    if r < R:
+        break  # collision with Earth
+
+    # Gravitational acceleration
+    a = -G * M / r**2
+    ax = a * x / r
+    ay = a * y / r
+
+    # Update velocity and position
+    vx += ax * dt
+    vy += ay * dt
+    x += vx * dt
+    y += vy * dt
+
+    x_vals.append(x - R)  # convert to surface-relative x
+    y_vals.append(y)
+
+# Convert to km for plotting
+x_vals_km = np.array(x_vals) / 1000
+y_vals_km = np.array(y_vals) / 1000
+
+# Plotting
+plt.figure(figsize=(8, 8))
+plt.plot(x_vals_km, y_vals_km, label='Payload Trajectory')
+plt.gca().add_patch(plt.Circle((0, 0), R/1000, color='blue', label='Earth'))
+plt.xlabel('X Position (km)')
+plt.ylabel('Y Position (km)')
+plt.title('Payload Motion under Earth Gravity')
+plt.axis('equal')
+plt.grid(True)
+plt.legend()
+plt.show()
+```
