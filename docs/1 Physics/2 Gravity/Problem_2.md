@@ -196,6 +196,6 @@ df.set_index("Body")  # Show table for reference
 ## 4. Developing a computational tool to simulate and visualize the motion of the payload under Earth's gravity, accounting for initial velocities and directions.
 
 
-
+![download (10)](https://github.com/user-attachments/assets/4a5b3eb9-6ffe-4c11-831d-9602d78e5a6f)
 
 
