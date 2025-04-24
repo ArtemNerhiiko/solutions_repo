@@ -143,3 +143,54 @@ Cosmic velocities increase with the mass of the central body and decrease with d
 ![download (9)](https://github.com/user-attachments/assets/b03e7d19-4b72-4ae8-b716-a58e5cda8f27)
 
 
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+# Gravitational constant
+G = 6.67430e-11  # in m^3 kg^-1 s^-1
+
+# Celestial body data: mass in kg, radius in meters
+bodies = {
+    "Earth": {"mass": 5.972e24, "radius": 6.371e6},
+    "Mars": {"mass": 6.417e23, "radius": 3.3895e6},
+    "Jupiter": {"mass": 1.898e27, "radius": 6.9911e7},
+}
+
+# Calculate first and second cosmic velocities
+data = []
+for body, params in bodies.items():
+    M = params["mass"]
+    R = params["radius"]
+    v1 = np.sqrt(G * M / R)             # First cosmic velocity
+    v2 = np.sqrt(2 * G * M / R)         # Second cosmic velocity
+    data.append({"Body": body, "v1 (km/s)": v1 / 1000, "v2 (km/s)": v2 / 1000})
+
+# Create a DataFrame
+df = pd.DataFrame(data)
+
+# Plotting
+fig, ax = plt.subplots(figsize=(10, 6))
+index = np.arange(len(df))
+bar_width = 0.35
+
+v1_bars = ax.bar(index, df["v1 (km/s)"], bar_width, label='1st Cosmic Velocity')
+v2_bars = ax.bar(index + bar_width, df["v2 (km/s)"], bar_width, label='2nd Cosmic Velocity')
+
+ax.set_xlabel('Celestial Body')
+ax.set_ylabel('Velocity (km/s)')
+ax.set_title('First and Second Cosmic Velocities for Different Celestial Bodies')
+ax.set_xticks(index + bar_width / 2)
+ax.set_xticklabels(df["Body"])
+ax.legend()
+ax.grid(True, linestyle='--', alpha=0.5)
+
+plt.tight_layout()
+plt.show()
+
+df.set_index("Body")  # Show table for reference
+```
+
+
+
