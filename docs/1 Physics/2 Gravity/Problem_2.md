@@ -2,7 +2,8 @@
 
 # Escape Velocities and Cosmic Velocities
 
-## Cosmic Velocities
+## 1. Defining the first, second, and third cosmic velocities, explaining their physical meaning.
+
 
 ### 1. First Cosmic Velocity (Orbital Velocity)
 
@@ -61,3 +62,78 @@ This velocity allows a spacecraft to leave the Solar System, overcoming the Sun�
 Approximately **16.7 km/s** relative to Earth.
 
 These are idealized values and do not consider atmosphere, terrain, or other practical factors in spaceflight.
+
+
+## 2. Analyzing the mathematical derivations and parameters affecting these velocities.
+
+
+### 1. First Cosmic Velocity
+
+### Derivation:
+
+The first cosmic velocity is derived by equating **gravitational force** to **centripetal force** for circular motion:
+
+$\frac{GMm}{R^2} = \frac{mv^2}{R}$
+
+Solving for $v$:
+
+$v_1 = \sqrt{\frac{GM}{R}}$
+
+### Parameters:
+
+- $G$: Gravitational constant ($6.674 \times 10^{-11} \, \text{Nm}^2/\text{kg}^2$) – universal and constant.
+
+- $M$: Mass of the planet – more massive planets require higher orbital velocity.
+
+- $R$: Radius from the center of the planet – a lower orbit (smaller $R$) means a higher velocity.
+
+
+
+### 2. Second Cosmic Velocity
+
+### Derivation:
+
+Derived using **energy conservation** — the sum of kinetic and potential energy at the surface must be zero at infinity:
+
+$\frac{1}{2}mv^2 - \frac{GMm}{R} = 0$
+
+Solving for $v$:
+
+$v_2 = \sqrt{\frac{2GM}{R}}$
+
+### Parameters:
+
+- Same as the first velocity ($G$, $M$, and $R$).
+
+- Because of the factor of 2, $v_2 = \sqrt{2} \cdot v_1 \approx 1.41 \cdot v_1$
+
+
+
+### 3. Third Cosmic Velocity
+
+### Derivation:
+
+To escape the Sun's gravity starting from Earth's orbit, we use energy conservation in the **heliocentric frame**:
+
+$\frac{1}{2}mv^2 - \frac{GM_{\text{Sun}}m}{R_{\text{orbit}}} = 0$
+
+Solving:
+
+$v = \sqrt{\frac{2GM_{\text{Sun}}}{R_{\text{orbit}}}}$
+
+However, Earth is already moving around the Sun with orbital speed $v_{\text{Earth orbit}}$, so the additional speed required is:
+
+$v_3 = \sqrt{\frac{2GM_{\text{Sun}}}{R_{\text{orbit}}}} - v_{\text{Earth orbit}}$
+
+### Parameters:
+
+- $M_{\text{Sun}}$: Mass of the Sun.
+
+- $R_{\text{orbit}}$: Earth's orbital radius around the Sun ($\approx 1.496 \times 10^{11} \, \text{m}$).
+
+- $v_{\text{Earth orbit}}$: Orbital speed of Earth around the Sun ($\approx 29.8 \, \text{km/s}$).
+
+
+Cosmic velocities increase with the mass of the central body and decrease with distance from its center. They are foundational to space mission design and orbital mechanics.
+
+
