@@ -173,7 +173,7 @@
 <div class="section" itemprop="articleBody">
 <h1 id="problem-2">Problem 2</h1>
 <h1 id="escape-velocities-and-cosmic-velocities">Escape Velocities and Cosmic Velocities</h1>
-<h2 id="cosmic-velocities">Cosmic Velocities</h2>
+<h2 id="1-defining-the-first-second-and-third-cosmic-velocities-explaining-their-physical-meaning">1. Defining the first, second, and third cosmic velocities, explaining their physical meaning.</h2>
 <h3 id="1-first-cosmic-velocity-orbital-velocity">1. First Cosmic Velocity (Orbital Velocity)</h3>
 <p><strong>Definition:</strong><br/>
 The minimum velocity required for an object to enter a stable circular orbit around a celestial body, just above its surface.</p>
@@ -216,6 +216,61 @@ This velocity allows a spacecraft to leave the Solar System, overcoming the Sun�
 <p><strong>Example (from Earth orbit):</strong><br/>
 Approximately <strong>16.7 km/s</strong> relative to Earth.</p>
 <p>These are idealized values and do not consider atmosphere, terrain, or other practical factors in spaceflight.</p>
+<h2 id="2-analyzing-the-mathematical-derivations-and-parameters-affecting-these-velocities">2. Analyzing the mathematical derivations and parameters affecting these velocities.</h2>
+<h3 id="1-first-cosmic-velocity">1. First Cosmic Velocity</h3>
+<h3 id="derivation">Derivation:</h3>
+<p>The first cosmic velocity is derived by equating <strong>gravitational force</strong> to <strong>centripetal force</strong> for circular motion:</p>
+<p><span class="arithmatex">\(\frac{GMm}{R^2} = \frac{mv^2}{R}\)</span></p>
+<p>Solving for <span class="arithmatex">\(v\)</span>:</p>
+<p><span class="arithmatex">\(v_1 = \sqrt{\frac{GM}{R}}\)</span></p>
+<h3 id="parameters">Parameters:</h3>
+<ul>
+<li>
+<p><span class="arithmatex">\(G\)</span>: Gravitational constant (<span class="arithmatex">\(6.674 \times 10^{-11} \, \text{Nm}^2/\text{kg}^2\)</span>) – universal and constant.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(M\)</span>: Mass of the planet – more massive planets require higher orbital velocity.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(R\)</span>: Radius from the center of the planet – a lower orbit (smaller <span class="arithmatex">\(R\)</span>) means a higher velocity.</p>
+</li>
+</ul>
+<h3 id="2-second-cosmic-velocity">2. Second Cosmic Velocity</h3>
+<h3 id="derivation_1">Derivation:</h3>
+<p>Derived using <strong>energy conservation</strong> — the sum of kinetic and potential energy at the surface must be zero at infinity:</p>
+<p><span class="arithmatex">\(\frac{1}{2}mv^2 - \frac{GMm}{R} = 0\)</span></p>
+<p>Solving for <span class="arithmatex">\(v\)</span>:</p>
+<p><span class="arithmatex">\(v_2 = \sqrt{\frac{2GM}{R}}\)</span></p>
+<h3 id="parameters_1">Parameters:</h3>
+<ul>
+<li>
+<p>Same as the first velocity (<span class="arithmatex">\(G\)</span>, <span class="arithmatex">\(M\)</span>, and <span class="arithmatex">\(R\)</span>).</p>
+</li>
+<li>
+<p>Because of the factor of 2, <span class="arithmatex">\(v_2 = \sqrt{2} \cdot v_1 \approx 1.41 \cdot v_1\)</span></p>
+</li>
+</ul>
+<h3 id="3-third-cosmic-velocity">3. Third Cosmic Velocity</h3>
+<h3 id="derivation_2">Derivation:</h3>
+<p>To escape the Sun's gravity starting from Earth's orbit, we use energy conservation in the <strong>heliocentric frame</strong>:</p>
+<p><span class="arithmatex">\(\frac{1}{2}mv^2 - \frac{GM_{\text{Sun}}m}{R_{\text{orbit}}} = 0\)</span></p>
+<p>Solving:</p>
+<p><span class="arithmatex">\(v = \sqrt{\frac{2GM_{\text{Sun}}}{R_{\text{orbit}}}}\)</span></p>
+<p>However, Earth is already moving around the Sun with orbital speed <span class="arithmatex">\(v_{\text{Earth orbit}}\)</span>, so the additional speed required is:</p>
+<p><span class="arithmatex">\(v_3 = \sqrt{\frac{2GM_{\text{Sun}}}{R_{\text{orbit}}}} - v_{\text{Earth orbit}}\)</span></p>
+<h3 id="parameters_2">Parameters:</h3>
+<ul>
+<li>
+<p><span class="arithmatex">\(M_{\text{Sun}}\)</span>: Mass of the Sun.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(R_{\text{orbit}}\)</span>: Earth's orbital radius around the Sun (<span class="arithmatex">\(\approx 1.496 \times 10^{11} \, \text{m}\)</span>).</p>
+</li>
+<li>
+<p><span class="arithmatex">\(v_{\text{Earth orbit}}\)</span>: Orbital speed of Earth around the Sun (<span class="arithmatex">\(\approx 29.8 \, \text{km/s}\)</span>).</p>
+</li>
+</ul>
+<p>Cosmic velocities increase with the mass of the central body and decrease with distance from its center. They are foundational to space mission design and orbital mechanics.</p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
