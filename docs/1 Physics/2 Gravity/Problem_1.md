@@ -149,7 +149,7 @@ Kepler’s Law applies to moons orbiting planets as well as exoplanets orbiting 
 
 ## 4. Implement a computational model to simulate circular orbits and verify the relationship.
 
-### T^2 vs r^3 
+### $T^2$ vs $r^3$
 
 ![download (12)](https://github.com/user-attachments/assets/f41b11bd-62aa-4f05-9fe0-9229d5a3e207)
 
