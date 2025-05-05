@@ -74,6 +74,8 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#key-terms-and-formulas">Key Terms and Formulas</a>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#2-performing-a-numerical-analysis-to-compute-the-path-of-the-payload-based-on-given-initial-conditions-position-velocity-and-altitude">2. Performing a numerical analysis to compute the path of the payload based on given initial conditions (position, velocity, and altitude).</a>
+</li>
 </ul>
 </li>
 </ul>
@@ -254,6 +256,74 @@
 <p>If <span class="arithmatex">\(E &gt; 0\)</span>: hyperbolic</p>
 </li>
 </ul>
+<h2 id="2-performing-a-numerical-analysis-to-compute-the-path-of-the-payload-based-on-given-initial-conditions-position-velocity-and-altitude">2. Performing a numerical analysis to compute the path of the payload based on given initial conditions (position, velocity, and altitude).</h2>
+<pre><code class="language-python">import numpy as np
+import matplotlib.pyplot as plt
+
+# Initial conditions
+x0 = 0          # initial horizontal position (m)
+y0 = 1000       # initial altitude (m)
+vx0 = 200       # initial horizontal velocity (m/s)
+vy0 = 0         # initial vertical velocity (m/s)
+
+# Parameters
+g = 9.81        # gravity (m/s²)
+mass = 10       # mass of payload (kg)
+Cd = 0.5        # drag coefficient
+rho = 1.225     # air density (kg/m³)
+A = 0.1         # cross-sectional area (m²)
+dt = 0.01       # time step (s)
+t_max = 30      # max simulation time (s)
+
+# Initialize arrays
+t = np.arange(0, t_max, dt)
+x = np.zeros_like(t)
+y = np.zeros_like(t)
+vx = np.zeros_like(t)
+vy = np.zeros_like(t)
+
+# Set initial conditions
+x[0] = x0
+y[0] = y0
+vx[0] = vx0
+vy[0] = vy0
+
+# Simulation loop
+for i in range(1, len(t)):
+    v = np.sqrt(vx[i-1]**2 + vy[i-1]**2)
+    drag = 0.5 * Cd * rho * A * v**2
+
+    # Drag components
+    drag_x = drag * (vx[i-1] / v)
+    drag_y = drag * (vy[i-1] / v)
+
+    # Update velocities
+    ax = -drag_x / mass
+    ay = -g - drag_y / mass
+
+    vx[i] = vx[i-1] + ax * dt
+    vy[i] = vy[i-1] + ay * dt
+
+    # Update positions
+    x[i] = x[i-1] + vx[i] * dt
+    y[i] = y[i-1] + vy[i] * dt
+
+    # Stop if payload hits the ground
+    if y[i] &lt;= 0:
+        x = x[:i+1]
+        y = y[:i+1]
+        t = t[:i+1]
+        break
+
+# Plot trajectory
+plt.figure(figsize=(10,5))
+plt.plot(x, y)
+plt.title("Payload Trajectory")
+plt.xlabel("Horizontal Distance (m)")
+plt.ylabel("Altitude (m)")
+plt.grid()
+plt.show()
+</code></pre>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
