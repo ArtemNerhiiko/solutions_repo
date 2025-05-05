@@ -76,6 +76,18 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#2-performing-a-numerical-analysis-to-compute-the-path-of-the-payload-based-on-given-initial-conditions-position-velocity-and-altitude">2. Performing a numerical analysis to compute the path of the payload based on given initial conditions (position, velocity, and altitude).</a>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#3-discussing-how-these-trajectories-relate-to-orbital-insertion-reentry-or-escape-scenarios">3. Discussing how these trajectories relate to orbital insertion, reentry, or escape scenarios.</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#interpreting-payload-trajectories-in-orbital-contexts">Interpreting Payload Trajectories in Orbital Contexts</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#1-orbital-insertion">1. Orbital Insertion</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#2-reentry">2. Reentry</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#3-escape-trajectory">3. Escape Trajectory</a>
+</li>
 </ul>
 </li>
 </ul>
@@ -325,6 +337,94 @@ plt.ylabel("Altitude (m)")
 plt.grid()
 plt.show()
 </code></pre>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
+<h2 id="3-discussing-how-these-trajectories-relate-to-orbital-insertion-reentry-or-escape-scenarios">3. Discussing how these trajectories relate to orbital insertion, reentry, or escape scenarios.</h2>
+<h3 id="interpreting-payload-trajectories-in-orbital-contexts">Interpreting Payload Trajectories in Orbital Contexts</h3>
+<p>The numerical simulation we performed models a <strong>suborbital ballistic trajectory</strong> — useful for understanding short-range missiles, sounding rockets, or atmospheric reentry vehicles. Here's how it relates to key orbital scenarios:</p>
+<h2 id="1-orbital-insertion">1. Orbital Insertion</h2>
+<p><strong>Minimum speed required</strong> (in low Earth orbit): ~7.8 km/s</p>
+<p>In our example, the horizontal velocity is only 200 m/s, far too low for orbit.</p>
+<p><strong>Orbital insertion</strong> requires engines to fire <strong>horizontally</strong>, not vertically, and usually at high altitude (above atmosphere).</p>
+<p>In simulation, if you gradually increase <code>vx0</code>, you approach a more flattened trajectory, but true orbital insertion needs modeling Earth's curvature and using Newton's law of universal gravitation, not just constant gravity.</p>
+<p><strong>To simulate orbital insertion</strong>:</p>
+<ul>
+<li>
+<p>Switch to polar coordinates <span class="arithmatex">\((r, \theta)\)</span></p>
+</li>
+<li>
+<p>Use variable gravity: <span class="arithmatex">\(F = \frac{GMm}{r^2}\)</span></p>
+</li>
+<li>
+<p>Account for Earth's rotation</p>
+</li>
+</ul>
+<h2 id="2-reentry">2. Reentry</h2>
+<p><strong>Context</strong>: A payload returning from orbit or a suborbital trajectory enters Earth's atmosphere.</p>
+<ul>
+<li>
+<p><strong>Our simulation</strong> resembles <strong>controlled reentry</strong> of capsules or spacecraft.</p>
+</li>
+<li>
+<p>High-altitude, steep-angle trajectories are common for reentry vehicles.</p>
+</li>
+<li>
+<p>Drag becomes dominant in upper atmosphere — it slows the vehicle and heats it up (thermal analysis required).</p>
+</li>
+</ul>
+<p><strong>Key factors in reentry</strong>:</p>
+<ul>
+<li>
+<p>Entry angle (too steep = burn up, too shallow = skip off)</p>
+</li>
+<li>
+<p>Velocity (orbital reentry ~7.8 km/s; ballistic reentry ~1–3 km/s)</p>
+</li>
+<li>
+<p>Heat shielding and structural stress</p>
+</li>
+</ul>
+<p>The drag force reduces vertical and horizontal speed, mimicking reentry deceleration.</p>
+<h2 id="3-escape-trajectory">3. Escape Trajectory</h2>
+<p>Reaching escape velocity to leave Earth's gravitational field.</p>
+<p><strong>Escape velocity from Earth</strong>: ~11.2 km/s (ignoring atmosphere)</p>
+<p>Payload is far below this; it always falls back.</p>
+<p>For a true escape:</p>
+<ul>
+<li>
+<p><code>vx0</code> (and/or <code>vy0</code>) must be very high.</p>
+</li>
+<li>
+<p>Gravity is not constant — use <span class="arithmatex">\(F = \frac{GMm}{r^2}\)</span></p>
+</li>
+<li>
+<p>Air resistance greatly hinders escape at lower altitudes — so launches are vertical to get above most of the atmosphere first.</p>
+</li>
+</ul>
+<p><strong>To simulate escape</strong>:</p>
+<ul>
+<li>
+<p>Extend the model to include changing gravity\</p>
+</li>
+<li>
+<p>Possibly include multi-stage propulsion</p>
+</li>
+</ul>
+<p>=======</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>ee7d11cdc57279f1c4c9ec783ac94686b56ebf9f</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
