@@ -60,6 +60,20 @@
 </li>
 <li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 3</a>
 <ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="#1-analyzing-the-possible-trajectories-eg-parabolic-hyperbolic-elliptical-of-a-payload-released-near-earth">1. Analyzing the possible trajectories (e.g., parabolic, hyperbolic, elliptical) of a payload released near Earth.</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#1-elliptical-trajectory-0-v-ve">1. Elliptical Trajectory (0 &lt; v &lt; vₑ)</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#2-parabolic-trajectory-v-ve">2. Parabolic Trajectory (v = vₑ)</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#3-hyperbolic-trajectory-v-ve">3. Hyperbolic Trajectory (v &gt; vₑ)</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#4-straight-line-radial-trajectory">4. Straight-Line (Radial) Trajectory</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#key-terms-and-formulas">Key Terms and Formulas</a>
+</li>
 </ul>
 </li>
 </ul>
@@ -172,6 +186,98 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-3">Problem 3</h1>
+<h2 id="1-analyzing-the-possible-trajectories-eg-parabolic-hyperbolic-elliptical-of-a-payload-released-near-earth">1. Analyzing the possible trajectories (e.g., parabolic, hyperbolic, elliptical) of a payload released near Earth.</h2>
+<p>The trajectory of a payload released near Earth depends primarily on its velocity relative to Earth and the influence of Earth's gravity. These trajectories can generally be categorized into three conic sections: <strong>elliptical</strong>, <strong>parabolic</strong>, and <strong>hyperbolic</strong>.</p>
+<h3 id="1-elliptical-trajectory-0-v-ve">1. <strong>Elliptical Trajectory (0 &lt; v &lt; vₑ)</strong></h3>
+<ul>
+<li>
+<p><strong>Description</strong>: The payload moves in an elliptical orbit around Earth.</p>
+</li>
+<li>
+<p><strong>Condition</strong>: </p>
+</li>
+<li>
+<p>Initial velocity <span class="arithmatex">\(v\)</span> is less than the escape velocity <span class="arithmatex">\(vₑ\)</span>.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(0 &lt; v &lt; vₑ\)</span></p>
+</li>
+<li>
+<p><strong>Outcome</strong>: The payload remains bound to Earth and will continue orbiting unless acted upon by another force (e.g., atmospheric drag or propulsion).</p>
+</li>
+</ul>
+<h3 id="2-parabolic-trajectory-v-ve">2. <strong>Parabolic Trajectory (v = vₑ)</strong></h3>
+<ul>
+<li>
+<p><strong>Description</strong>: The payload follows a parabolic escape trajectory.</p>
+</li>
+<li>
+<p><strong>Condition</strong>: </p>
+</li>
+<li>
+<p>Initial velocity <span class="arithmatex">\(v\)</span> is exactly equal to Earth's escape velocity <span class="arithmatex">\(vₑ\)</span>.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(v = vₑ\)</span></p>
+</li>
+<li>
+<p><strong>Outcome</strong>: The payload escapes Earth's gravity but with zero excess velocity at infinity.</p>
+</li>
+</ul>
+<h3 id="3-hyperbolic-trajectory-v-ve">3. <strong>Hyperbolic Trajectory (v &gt; vₑ)</strong></h3>
+<ul>
+<li>
+<p><strong>Description</strong>: The payload follows a hyperbolic path, escaping Earth’s gravity.</p>
+</li>
+<li>
+<p><strong>Condition</strong>:</p>
+</li>
+<li>
+<p>Initial velocity <span class="arithmatex">\(v\)</span> exceeds Earth's escape velocity <span class="arithmatex">\(vₑ\)</span>.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(v &gt; vₑ\)</span></p>
+</li>
+<li>
+<p><strong>Outcome</strong>: The payload escapes Earth with positive velocity at infinity, continuing into interplanetary space.</p>
+</li>
+</ul>
+<h3 id="4-straight-line-radial-trajectory">4. <strong>Straight-Line (Radial) Trajectory</strong></h3>
+<ul>
+<li><strong>Special Case</strong>: If the payload is released directly upward or downward, the trajectory may still be parabolic, hyperbolic, or elliptical, but without angular momentum (degenerate conic sections).</li>
+</ul>
+<h2 id="key-terms-and-formulas">Key Terms and Formulas</h2>
+<ul>
+<li><strong>Escape Velocity (<span class="arithmatex">\(vₑ\)</span>)</strong>:</li>
+</ul>
+<p>$$ vₑ = \sqrt{\frac{2GM}{R}} $$
+Where:</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(G\)</span> = gravitational constant</p>
+</li>
+<li>
+<p><span class="arithmatex">\(M\)</span> = mass of Earth </p>
+</li>
+<li>
+<p><span class="arithmatex">\(R\)</span> = distance from Earth’s center to the payload  </p>
+</li>
+<li>
+<p><strong>Total Mechanical Energy (<span class="arithmatex">\(E\)</span>)</strong>:</p>
+</li>
+</ul>
+<p>$$ E = \frac{1}{2}mv^2 - \frac{GMm}{r} $$</p>
+<ul>
+<li>
+<p>If <span class="arithmatex">\(E &lt; 0\)</span>: elliptical </p>
+</li>
+<li>
+<p>If <span class="arithmatex">\(E = 0\)</span>: parabolic  </p>
+</li>
+<li>
+<p>If <span class="arithmatex">\(E &gt; 0\)</span>: hyperbolic</p>
+</li>
+</ul>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
