@@ -57,6 +57,7 @@ The trajectory of a payload released near Earth depends primarily on its velocit
 - **Escape Velocity ($vₑ$)**:
 
 $$ vₑ = \sqrt{\frac{2GM}{R}} $$
+
 Where:
 
 - $G$ = gravitational constant
