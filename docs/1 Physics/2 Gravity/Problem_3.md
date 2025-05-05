@@ -80,6 +80,10 @@ $$ E = \frac{1}{2}mv^2 - \frac{GMm}{r} $$
 
 ## 2. Performing a numerical analysis to compute the path of the payload based on given initial conditions (position, velocity, and altitude).
 
+
+![download (11)](https://github.com/user-attachments/assets/742e0204-c92f-497a-ac06-90a2fe618627)
+
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
