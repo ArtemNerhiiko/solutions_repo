@@ -221,13 +221,3 @@ For a true escape:
 - Gravity is not constant — use $F = \frac{GMm}{r^2}$
 
 - Air resistance greatly hinders escape at lower altitudes — so launches are vertical to get above most of the atmosphere first.
-
-**To simulate escape**:
-
-- Extend the model to include changing gravity\
-
-- Possibly include multi-stage propulsion
-
-=======
-
->>>>>>> ee7d11cdc57279f1c4c9ec783ac94686b56ebf9f
