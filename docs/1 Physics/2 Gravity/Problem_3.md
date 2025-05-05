@@ -152,3 +152,82 @@ plt.ylabel("Altitude (m)")
 plt.grid()
 plt.show()
 ```
+<<<<<<< HEAD
+
+## 3. Discussing how these trajectories relate to orbital insertion, reentry, or escape scenarios.
+
+
+### Interpreting Payload Trajectories in Orbital Contexts
+
+The numerical simulation we performed models a **suborbital ballistic trajectory** — useful for understanding short-range missiles, sounding rockets, or atmospheric reentry vehicles. Here's how it relates to key orbital scenarios:
+
+
+
+## 1. Orbital Insertion
+
+
+**Minimum speed required** (in low Earth orbit): ~7.8 km/s
+
+In our example, the horizontal velocity is only 200 m/s, far too low for orbit.
+
+**Orbital insertion** requires engines to fire **horizontally**, not vertically, and usually at high altitude (above atmosphere).
+
+In simulation, if you gradually increase `vx0`, you approach a more flattened trajectory, but true orbital insertion needs modeling Earth's curvature and using Newton's law of universal gravitation, not just constant gravity.
+
+**To simulate orbital insertion**:
+
+- Switch to polar coordinates $(r, \theta)$
+
+- Use variable gravity: $F = \frac{GMm}{r^2}$
+
+- Account for Earth's rotation
+
+
+
+## 2. Reentry
+
+**Context**: A payload returning from orbit or a suborbital trajectory enters Earth's atmosphere.
+
+- **Our simulation** resembles **controlled reentry** of capsules or spacecraft.
+
+- High-altitude, steep-angle trajectories are common for reentry vehicles.
+
+- Drag becomes dominant in upper atmosphere — it slows the vehicle and heats it up (thermal analysis required).
+
+**Key factors in reentry**:
+
+- Entry angle (too steep = burn up, too shallow = skip off)
+
+- Velocity (orbital reentry ~7.8 km/s; ballistic reentry ~1–3 km/s)
+
+- Heat shielding and structural stress
+
+The drag force reduces vertical and horizontal speed, mimicking reentry deceleration.
+
+
+
+## 3. Escape Trajectory
+
+Reaching escape velocity to leave Earth's gravitational field.
+
+**Escape velocity from Earth**: ~11.2 km/s (ignoring atmosphere)
+
+Payload is far below this; it always falls back.
+
+For a true escape:
+
+- `vx0` (and/or `vy0`) must be very high.
+
+- Gravity is not constant — use $F = \frac{GMm}{r^2}$
+
+- Air resistance greatly hinders escape at lower altitudes — so launches are vertical to get above most of the atmosphere first.
+
+**To simulate escape**:
+
+- Extend the model to include changing gravity\
+
+- Possibly include multi-stage propulsion
+
+=======
+
+>>>>>>> ee7d11cdc57279f1c4c9ec783ac94686b56ebf9f
