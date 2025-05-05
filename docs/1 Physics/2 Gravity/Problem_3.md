@@ -152,7 +152,7 @@ plt.ylabel("Altitude (m)")
 plt.grid()
 plt.show()
 ```
-<<<<<<< HEAD
+
 
 ## 3. Discussing how these trajectories relate to orbital insertion, reentry, or escape scenarios.
 
