@@ -66,9 +66,9 @@ Where:
 
 - $R$ = distance from Earth’s center to the payload  
 
-- **Total Mechanical Energy ($E$)**:
+**Total Mechanical Energy ($E$)**:
 
-  $$ E = \frac{1}{2}mv^2 - \frac{GMm}{r} $$
+$$ E = \frac{1}{2}mv^2 - \frac{GMm}{r} $$
 
 - If $E < 0$: elliptical 
 
