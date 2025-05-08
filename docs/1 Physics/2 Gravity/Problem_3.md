@@ -225,6 +225,12 @@ For a true escape:
 ## 4. Developing a computational tool to simulate and visualize the motion of the payload under Earth's gravity, accounting for initial velocities and directions.
 
 
+
+![download (12)](https://github.com/user-attachments/assets/cc9076bc-2a84-4fdd-96d8-cb813cdf30b3)
+
+
+
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
