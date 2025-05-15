@@ -107,3 +107,5 @@ $$
 - $r_4 = \sqrt{\left(x + \dfrac{a}{2}\right)^2 + \left(y + \dfrac{a}{2}\right)^2}$
 
 - $\eta_4(x, y, t) = \dfrac{A}{\sqrt{r_4}} \cos(k r_4 - \omega t + \phi_4)$
+
+
