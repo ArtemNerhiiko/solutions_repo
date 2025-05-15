@@ -221,6 +221,10 @@ Where $A_{\text{eff}}(x, y)$ depends on spatial interference. Over time:
 - **Nodes**: points of constant zero displacement (do not vary)
 
 
+![download (17)](https://github.com/user-attachments/assets/3e2fe76a-2107-4fa7-b861-415ddb3659f3)
+
+
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
