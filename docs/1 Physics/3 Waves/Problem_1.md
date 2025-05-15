@@ -57,3 +57,20 @@ $$
 
 - Pattern: Symmetrical, based on square geometry
 
+
+## 2. Positioning the Point Sources
+
+We place point wave sources at the vertices of a square, centered at the origin $(0, 0)$, with side length $a$.
+
+### Coordinates of the Sources:
+
+- $S_1 = \left(-\frac{a}{2}, \frac{a}{2}\right)$ (top-left)
+
+- $S_2 = \left(\frac{a}{2}, \frac{a}{2}\right)$ (top-right)
+
+- $S_3 = \left(\frac{a}{2}, -\frac{a}{2}\right)$ (bottom-right)
+
+- $S_4 = \left(-\frac{a}{2}, -\frac{a}{2}\right)$ (bottom-left)
+
+These points lie at equal distances from the center, forming a regular square configuration.
+
