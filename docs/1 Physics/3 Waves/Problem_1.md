@@ -219,3 +219,52 @@ Where $A_{\text{eff}}(x, y)$ depends on spatial interference. Over time:
 - **Antinodes**: points of high oscillation (amplitude varies)
 
 - **Nodes**: points of constant zero displacement (do not vary)
+
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
+# Parameters
+A = 1.0         # Amplitude
+a = 4.0         # Side length of square
+wavelength = 1.0
+k = 2 * np.pi / wavelength
+omega = 2 * np.pi * 1  # frequency = 1 Hz
+t = 0                # fixed time snapshot
+phi = [0, 0, 0, 0]   # All sources in phase
+
+# Grid for x and y
+x = np.linspace(-5, 5, 400)
+y = np.linspace(-5, 5, 400)
+X, Y = np.meshgrid(x, y)
+
+# Source positions (vertices of square)
+sources = [
+    (-a/2, a/2),   # S1 (top-left)
+    (a/2, a/2),    # S2 (top-right)
+    (a/2, -a/2),   # S3 (bottom-right)
+    (-a/2, -a/2)   # S4 (bottom-left)
+]
+
+# Calculate the total wave
+eta_total = np.zeros_like(X)
+for i, (x0, y0) in enumerate(sources):
+    r = np.sqrt((X - x0)**2 + (Y - y0)**2)
+    # Avoid divide-by-zero by adding a small epsilon
+    r[r == 0] = 1e-6
+    eta = A / np.sqrt(r) * np.cos(k * r - omega * t + phi[i])
+    eta_total += eta
+
+# Plotting the interference pattern as heatmap
+plt.figure(figsize=(10, 8))
+plt.contourf(X, Y, eta_total, levels=100, cmap='viridis')
+plt.colorbar(label='Wave Amplitude')
+plt.title('Interference Pattern from 4 Point Sources (Square Configuration)')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.axis('equal')
+plt.grid(False)
+plt.show()
+```
