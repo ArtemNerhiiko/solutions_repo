@@ -31,7 +31,7 @@ where:
 
 ### 2. Coordinates
 
-- $S_1 = (-a/2, a/2),\quad S_2 = (a/2, a/2),\quad S_3 = (a/2, -a/2),\quad S_4 = (-a/2, -a/2)$
+- $S_1 = (\frac{-a}{2}, \frac{a}{2}),\quad S_2 = (\frac{a}{2}, \frac{a}{2}),\quad S_3 = (\frac{a}{2}, \frac{-a}{2}),\quad S_4 = (\frac{-a}{2}, \frac{-a}{2})$
 
 ### 3. Wave Equation (for each source)
 
