@@ -20,3 +20,40 @@ where:
 
 - $\phi$ is the initial phase.
 
+
+## Interference Pattern from Point Sources at Square Vertices
+
+### 1. Geometry
+
+- Regular polygon: **Square**
+
+- Sources: 4 point sources at vertices
+
+### 2. Coordinates
+
+- $S_1 = (-a/2, a/2),\quad S_2 = (a/2, a/2),\quad S_3 = (a/2, -a/2),\quad S_4 = (-a/2, -a/2)$
+
+### 3. Wave Equation (for each source)
+
+$$
+\eta_i(x, y, t) = \frac{A}{\sqrt{r_i}} \cos(k r_i - \omega t + \phi_i)
+$$
+
+Where:
+
+- $r_i = \sqrt{(x - x_i)^2 + (y - y_i)^2}$
+
+### 4. Total Surface Displacement
+
+$$
+\eta_{\text{total}}(x, y, t) = \sum_{i=1}^{4} \frac{A}{\sqrt{r_i}} \cos(k r_i - \omega t + \phi_i)
+$$
+
+### 5. Interference Analysis
+
+- Constructive: $\Delta r = n \lambda$
+
+- Destructive: $\Delta r = (n + 0.5) \lambda$
+
+- Pattern: Symmetrical, based on square geometry
+
