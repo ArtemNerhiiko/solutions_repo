@@ -109,3 +109,36 @@ $$
 - $\eta_4(x, y, t) = \dfrac{A}{\sqrt{r_4}} \cos(k r_4 - \omega t + \phi_4)$
 
 
+## 4. Superposition of Waves
+
+Using the principle of superposition, the total surface displacement at a point $(x, y)$ and time $t$ is the sum of the displacements from all sources:
+
+### Total Displacement:
+
+$$
+\eta_{\text{total}}(x, y, t) = \sum_{i=1}^{4} \eta_i(x, y, t)
+$$
+
+Substituting in the wave functions:
+
+$$
+\eta_{\text{total}}(x, y, t) =
+
+\frac{A}{\sqrt{r_1}} \cos(k r_1 - \omega t + \phi_1) +
+
+\frac{A}{\sqrt{r_2}} \cos(k r_2 - \omega t + \phi_2) +
+
+\frac{A}{\sqrt{r_3}} \cos(k r_3 - \omega t + \phi_3) +
+
+\frac{A}{\sqrt{r_4}} \cos(k r_4 - \omega t + \phi_4)
+$$
+
+Where:
+
+- $r_i = \sqrt{(x - x_i)^2 + (y - y_i)^2}$ is the distance from source $i$ to point $(x, y)$
+
+- $\phi_i$ is the phase of source $i$
+
+- $k = \dfrac{2\pi}{\lambda}$ is the wave number
+
+- $\omega = 2\pi f$ is the angular frequency
