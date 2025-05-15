@@ -121,17 +121,17 @@ $$
 
 Substituting in the wave functions:
 
-$$
-\eta_{\text{total}}(x, y, t) =
 
-\frac{A}{\sqrt{r_1}} \cos(k r_1 - \omega t + \phi_1) +
+$$\eta_{\text{total}}(x, y, t) =$$
 
-\frac{A}{\sqrt{r_2}} \cos(k r_2 - \omega t + \phi_2) +
+$$\frac{A}{\sqrt{r_1}} \cos(k r_1 - \omega t + \phi_1) +$$
 
-\frac{A}{\sqrt{r_3}} \cos(k r_3 - \omega t + \phi_3) +
+$$\frac{A}{\sqrt{r_2}} \cos(k r_2 - \omega t + \phi_2) +$$
 
-\frac{A}{\sqrt{r_4}} \cos(k r_4 - \omega t + \phi_4)
-$$
+$$\frac{A}{\sqrt{r_3}} \cos(k r_3 - \omega t + \phi_3) +$$
+
+$$\frac{A}{\sqrt{r_4}} \cos(k r_4 - \omega t + \phi_4)$$
+
 
 Where:
 
