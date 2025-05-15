@@ -74,3 +74,36 @@ We place point wave sources at the vertices of a square, centered at the origin 
 
 These points lie at equal distances from the center, forming a regular square configuration.
 
+
+## 3. Wave Equations from Each Source
+
+Each point source emits a wave given by:
+
+$$
+\eta_i(x, y, t) = \frac{A}{\sqrt{r_i}} \cos(k r_i - \omega t + \phi_i)
+$$
+
+### Source 1 at $\left(-\dfrac{a}{2}, \dfrac{a}{2} \right)$:
+
+- $r_1 = \sqrt{\left(x + \dfrac{a}{2}\right)^2 + \left(y - \dfrac{a}{2}\right)^2}$
+
+- $\eta_1(x, y, t) = \dfrac{A}{\sqrt{r_1}} \cos(k r_1 - \omega t + \phi_1)$
+
+### Source 2 at $\left(\dfrac{a}{2}, \dfrac{a}{2} \right)$:
+
+- $r_2 = \sqrt{\left(x - \dfrac{a}{2}\right)^2 + \left(y - \dfrac{a}{2}\right)^2}$
+
+- $\eta_2(x, y, t) = \dfrac{A}{\sqrt{r_2}} \cos(k r_2 - \omega t + \phi_2)$
+
+
+### Source 3 at $\left(\dfrac{a}{2}, -\dfrac{a}{2} \right)$:
+
+- $r_3 = \sqrt{\left(x - \dfrac{a}{2}\right)^2 + \left(y + \dfrac{a}{2}\right)^2}$
+
+- $\eta_3(x, y, t) = \dfrac{A}{\sqrt{r_3}} \cos(k r_3 - \omega t + \phi_3)$
+
+### Source 4 at $\left(-\dfrac{a}{2}, -\dfrac{a}{2} \right)$:
+
+- $r_4 = \sqrt{\left(x + \dfrac{a}{2}\right)^2 + \left(y + \dfrac{a}{2}\right)^2}$
+
+- $\eta_4(x, y, t) = \dfrac{A}{\sqrt{r_4}} \cos(k r_4 - \omega t + \phi_4)$
