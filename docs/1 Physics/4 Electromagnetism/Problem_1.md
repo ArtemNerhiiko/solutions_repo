@@ -102,6 +102,11 @@ When both **E** and **B** fields are present:
 ## Simulating Particle Motion:
 
 
+
+![download (14)](https://github.com/user-attachments/assets/4fe6d784-dc4a-4b0e-b81e-1efca06e4f8a)
+
+
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
