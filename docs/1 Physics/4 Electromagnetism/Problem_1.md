@@ -172,4 +172,10 @@ plt.show()
 ```
 
 
+![download (16)](https://github.com/user-attachments/assets/eed98c13-9752-40b2-ae41-9a0b80212662)
+
+
+
+
+
 
