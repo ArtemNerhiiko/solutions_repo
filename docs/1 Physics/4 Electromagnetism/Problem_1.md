@@ -172,7 +172,13 @@ plt.show()
 ```
 
 
-![download (16)](https://github.com/user-attachments/assets/eed98c13-9752-40b2-ae41-9a0b80212662)
+
+![download (17)](https://github.com/user-attachments/assets/afd9983c-5aee-49e8-ad99-e58f02bf5076)
+
+
+
+
+![download (18)](https://github.com/user-attachments/assets/a62af7d8-3c83-472d-a56a-4a2afc7d9b5d)
 
 
 
