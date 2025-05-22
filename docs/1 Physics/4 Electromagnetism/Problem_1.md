@@ -91,11 +91,80 @@ where:
 
 - **Fusion reactors (tokamaks)**: Confine plasma with magnetic fields to prevent contact with reactor walls.
 
-### ombined Fields
+### Combined Fields
 
 When both **E** and **B** fields are present:
 
 - Particles experience complex trajectories (e.g., **helical motion** or **E × B drift**).
 
 - **Velocity selectors** use perpendicular E and B fields to filter particles of a specific velocity.
+
+## Simulating Particle Motion:
+
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
+# Constants
+q = 1.6e-19   # Charge of the particle (Coulombs)
+m = 9.11e-31  # Mass of the particle (kg)
+dt = 1e-11    # Time step (seconds)
+steps = 1000  # Number of simulation steps
+
+# Initialize arrays
+def simulate_motion(E, B, v0, r0):
+    r = np.zeros((steps, 3))
+    v = np.zeros((steps, 3))
+    r[0] = r0
+    v[0] = v0
+
+    for i in range(1, steps):
+        F = q * (E + np.cross(v[i-1], B))
+        a = F / m
+        v[i] = v[i-1] + a * dt
+        r[i] = r[i-1] + v[i] * dt
+
+    return r
+
+# Scenarios
+scenarios = {
+    "1. Uniform Magnetic Field Only": {
+        "E": np.array([0, 0, 0]),
+        "B": np.array([0, 0, 1]),
+        "v0": np.array([1e6, 0, 0]),
+        "r0": np.array([0, 0, 0])
+    },
+    "2. Uniform Electric and Magnetic Fields": {
+        "E": np.array([0, 0, 1e3]),
+        "B": np.array([0, 0, 1]),
+        "v0": np.array([1e6, 0, 0]),
+        "r0": np.array([0, 0, 0])
+    },
+    "3. Crossed Electric and Magnetic Fields (E ⊥ B)": {
+        "E": np.array([1e3, 0, 0]),
+        "B": np.array([0, 0, 1]),
+        "v0": np.array([0, 0, 0]),
+        "r0": np.array([0, 0, 0])
+    }
+}
+
+# Plotting
+fig = plt.figure(figsize=(18, 5))
+for i, (title, params) in enumerate(scenarios.items(), 1):
+    r = simulate_motion(params["E"], params["B"], params["v0"], params["r0"])
+    ax = fig.add_subplot(1, 3, i, projection='3d')
+    ax.plot(r[:, 0], r[:, 1], r[:, 2])
+    ax.set_title(title)
+    ax.set_xlabel('x (m)')
+    ax.set_ylabel('y (m)')
+    ax.set_zlabel('z (m)')
+    ax.grid(True)
+
+plt.tight_layout()
+plt.show()
+```
+
+
 
