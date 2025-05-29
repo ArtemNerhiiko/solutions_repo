@@ -103,7 +103,7 @@ When both **E** and **B** fields are present:
 
 
 
-![download (14)](https://github.com/user-attachments/assets/4fe6d784-dc4a-4b0e-b81e-1efca06e4f8a)
+
 
 
 
