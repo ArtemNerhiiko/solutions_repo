@@ -102,6 +102,7 @@ When both **E** and **B** fields are present:
 ## Simulating Particle Motion:
 
 
+![download (19)](https://github.com/user-attachments/assets/6e271ae7-88c2-44bb-90d5-8b99178ce659)
 
 
 
