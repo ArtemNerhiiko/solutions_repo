@@ -230,5 +230,8 @@ Where $A_{\text{eff}}(x, y)$ depends on spatial interference. Over time:
 
 # Triangle:
 
+![download](https://github.com/user-attachments/assets/73e6bf53-c8b7-46b9-9357-78c713a39c2f)
+
+
 
 
