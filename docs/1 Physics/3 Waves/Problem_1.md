@@ -225,3 +225,7 @@ Where $A_{\text{eff}}(x, y)$ depends on spatial interference. Over time:
 ![download (17)](https://github.com/user-attachments/assets/3e2fe76a-2107-4fa7-b861-415ddb3659f3)
 
 
+![image](https://github.com/user-attachments/assets/0e6f7d4a-06b6-40f7-9d82-4c7706412ecd)
+
+
+
