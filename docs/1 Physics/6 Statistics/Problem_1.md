@@ -1,6 +1,6 @@
 # Problem 1
 
-## Simulating Sampling Distributions:
+## 1. Simulating Sampling Distributions:
 
 
 
@@ -51,6 +51,46 @@ plt.xlabel("Value")
 plt.ylabel("Frequency")
 
 plt.tight_layout()
+plt.show()
+```
+
+
+## 2. Sampling and Visualization:
+
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Set seed for reproducibility
+np.random.seed(42)
+
+# Create a non-normal population (e.g., exponential distribution)
+population = np.random.exponential(scale=2.0, size=100000)
+
+# Sample sizes to investigate
+sample_sizes = [5, 10, 30, 50]
+n_iterations = 1000  # number of samples to draw for each size
+
+# Plot setup
+fig, axes = plt.subplots(2, 2, figsize=(12, 10))
+axes = axes.flatten()
+
+for idx, n in enumerate(sample_sizes):
+    sample_means = []
+    
+    for _ in range(n_iterations):
+        sample = np.random.choice(population, size=n, replace=False)
+        sample_means.append(np.mean(sample))
+    
+    # Plot histogram of sample means
+    axes[idx].hist(sample_means, bins=30, color='skyblue', edgecolor='black', density=True)
+    axes[idx].set_title(f"Sample Size = {n}")
+    axes[idx].set_xlabel("Sample Mean")
+    axes[idx].set_ylabel("Frequency")
+
+plt.suptitle("Sampling Distributions of Sample Means", fontsize=16)
+plt.tight_layout(rect=[0, 0, 1, 0.96])
 plt.show()
 ```
 
