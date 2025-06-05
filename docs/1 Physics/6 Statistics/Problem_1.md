@@ -2,6 +2,13 @@
 
 ## Simulating Sampling Distributions:
 
+
+
+![450475176-1581d6e9-bc43-4428-ba31-b958ac109b6a](https://github.com/user-attachments/assets/38c9d246-f087-4dcf-8887-4220149af904)
+
+
+
+
 ```python
 # Re-import required libraries due to session reset
 import numpy as np
@@ -48,7 +55,6 @@ plt.show()
 ```
 
 
-![download (20)](https://github.com/user-attachments/assets/1581d6e9-bc43-4428-ba31-b958ac109b6a)
 
 
 
