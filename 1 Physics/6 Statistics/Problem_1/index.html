@@ -84,7 +84,9 @@
 <ul class="current">
 <li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 1</a>
 <ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="#simulating-sampling-distributions">Simulating Sampling Distributions:</a>
+<li class="toctree-l3"><a class="reference internal" href="#1-simulating-sampling-distributions">1. Simulating Sampling Distributions:</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#2-sampling-and-visualization">2. Sampling and Visualization:</a>
 </li>
 </ul>
 </li>
@@ -174,7 +176,7 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-1">Problem 1</h1>
-<h2 id="simulating-sampling-distributions">Simulating Sampling Distributions:</h2>
+<h2 id="1-simulating-sampling-distributions">1. Simulating Sampling Distributions:</h2>
 <p><img alt="450475176-1581d6e9-bc43-4428-ba31-b958ac109b6a" src="https://github.com/user-attachments/assets/38c9d246-f087-4dcf-8887-4220149af904"/></p>
 <pre><code class="language-python"># Re-import required libraries due to session reset
 import numpy as np
@@ -217,6 +219,41 @@ plt.xlabel("Value")
 plt.ylabel("Frequency")
 
 plt.tight_layout()
+plt.show()
+</code></pre>
+<h2 id="2-sampling-and-visualization">2. Sampling and Visualization:</h2>
+<pre><code class="language-python">import numpy as np
+import matplotlib.pyplot as plt
+
+# Set seed for reproducibility
+np.random.seed(42)
+
+# Create a non-normal population (e.g., exponential distribution)
+population = np.random.exponential(scale=2.0, size=100000)
+
+# Sample sizes to investigate
+sample_sizes = [5, 10, 30, 50]
+n_iterations = 1000  # number of samples to draw for each size
+
+# Plot setup
+fig, axes = plt.subplots(2, 2, figsize=(12, 10))
+axes = axes.flatten()
+
+for idx, n in enumerate(sample_sizes):
+    sample_means = []
+
+    for _ in range(n_iterations):
+        sample = np.random.choice(population, size=n, replace=False)
+        sample_means.append(np.mean(sample))
+
+    # Plot histogram of sample means
+    axes[idx].hist(sample_means, bins=30, color='skyblue', edgecolor='black', density=True)
+    axes[idx].set_title(f"Sample Size = {n}")
+    axes[idx].set_xlabel("Sample Mean")
+    axes[idx].set_ylabel("Frequency")
+
+plt.suptitle("Sampling Distributions of Sample Means", fontsize=16)
+plt.tight_layout(rect=[0, 0, 1, 0.96])
 plt.show()
 </code></pre>
 </div>
