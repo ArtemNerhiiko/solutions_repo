@@ -99,6 +99,11 @@ plt.show()
 ```
 
 
+## 3 Parameter Exploration:
+
+
+
+
 
 
 
