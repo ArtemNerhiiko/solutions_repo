@@ -102,6 +102,7 @@ plt.show()
 ## 3 Parameter Exploration:
 
 
+![download (22)](https://github.com/user-attachments/assets/0d4a0541-e9c5-481c-80b4-5d44e3b1ffbe)
 
 
 
