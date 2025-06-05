@@ -90,7 +90,15 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#3-parameter-exploration">3 Parameter Exploration:</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#4">4.</a>
+<li class="toctree-l3"><a class="reference internal" href="#4-practical-applications">4. Practical Applications:</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#reflection-on-the-importance-of-the-central-limit-theorem-clt">Reflection on the Importance of the Central Limit Theorem (CLT)</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#1-estimating-population-parameters">1. Estimating Population Parameters</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#2-quality-control-in-manufacturing">2. Quality Control in Manufacturing</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#3-predicting-outcomes-in-financial-models">3. Predicting Outcomes in Financial Models</a>
 </li>
 </ul>
 </li>
@@ -320,7 +328,42 @@ plt.tight_layout(rect=[0, 0, 1, 0.95])
 plt.legend(loc='upper right')
 plt.show()
 </code></pre>
-<h2 id="4">4.</h2>
+<h2 id="4-practical-applications">4. Practical Applications:</h2>
+<h2 id="reflection-on-the-importance-of-the-central-limit-theorem-clt">Reflection on the Importance of the Central Limit Theorem (CLT)</h2>
+<p>The <strong>Central Limit Theorem (CLT)</strong> is one of the most powerful and foundational concepts in statistics. It allows us to make <strong>inferences about population parameters using sample data</strong>, even when the population distribution is unknown or non-normal.</p>
+<h2 id="1-estimating-population-parameters">1. Estimating Population Parameters</h2>
+<p>In many fields, it's impractical or impossible to measure an entire population. Instead, we collect <strong>random samples</strong> and calculate statistics like the mean or proportion.</p>
+<ul>
+<li>
+<p><strong>CLT guarantees</strong> that the sampling distribution of these statistics is <strong>approximately normal</strong> for large enough sample sizes.</p>
+</li>
+<li>
+<p>This makes it possible to use <strong>confidence intervals</strong> and <strong>hypothesis tests</strong> reliably.</p>
+</li>
+</ul>
+<p><em>Example</em>: Polling agencies can survey just a few thousand people to estimate the national vote share with a known margin of error.</p>
+<h2 id="2-quality-control-in-manufacturing">2. Quality Control in Manufacturing</h2>
+<p>Manufacturers frequently use <strong>sample testing</strong> to monitor production quality (e.g., checking whether the mean weight of cereal boxes is within limits).</p>
+<ul>
+<li>
+<p>Thanks to CLT, even if the <strong>distribution of a single item is skewed</strong>, the <strong>average from a sample</strong> follows a normal distribution.</p>
+</li>
+<li>
+<p>This enables the use of <strong>control charts</strong> and <strong>statistical process monitoring</strong>.</p>
+</li>
+</ul>
+<p><em>Example</em>: If the average diameter of bolts in a sample shifts too far from the target, the production line can be stopped and recalibrated.</p>
+<h2 id="3-predicting-outcomes-in-financial-models">3. Predicting Outcomes in Financial Models</h2>
+<p>Finance involves uncertainty, and models rely on historical data to estimate expected returns, risks, and probabilities of various outcomes.</p>
+<ul>
+<li>
+<p>CLT enables the assumption that <strong>portfolios of many independent assets</strong> will have <strong>normally distributed average returns</strong>.</p>
+</li>
+<li>
+<p>This is essential for risk measures like <strong>Value at Risk (VaR)</strong> and <strong>confidence intervals</strong> for returns.</p>
+</li>
+</ul>
+<p><em>Example</em>: A financial analyst might use 30-day rolling average returns to predict next-month performance, assuming the averages follow a normal distribution.</p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
