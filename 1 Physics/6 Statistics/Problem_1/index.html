@@ -90,6 +90,8 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#3-parameter-exploration">3 Parameter Exploration:</a>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#4">4.</a>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Problem_2/">Problem 2</a>
@@ -261,6 +263,64 @@ plt.show()
 </code></pre>
 <h2 id="3-parameter-exploration">3 Parameter Exploration:</h2>
 <p><img alt="download (22)" src="https://github.com/user-attachments/assets/0d4a0541-e9c5-481c-80b4-5d44e3b1ffbe"/></p>
+<pre><code class="language-python">import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Set style and seed
+sns.set(style="whitegrid")
+np.random.seed(0)
+
+# Define population distributions
+populations = {
+    'Normal': np.random.normal(loc=50, scale=10, size=100000),
+    'Exponential (Right-Skewed)': np.random.exponential(scale=10, size=100000),
+    'Uniform': np.random.uniform(low=20, high=80, size=100000)
+}
+
+# Sample sizes to investigate
+sample_sizes = [5, 10, 30, 50, 100]
+n_iterations = 1000  # number of samples to draw
+
+# Plot
+fig, axes = plt.subplots(len(populations), len(sample_sizes), figsize=(20, 12), sharey='row')
+fig.suptitle("CLT: Effect of Population Shape and Sample Size on Sampling Distribution", fontsize=18)
+
+for row, (pop_name, pop_data) in enumerate(populations.items()):
+    pop_mean = np.mean(pop_data)
+    pop_std = np.std(pop_data)
+
+    for col, n in enumerate(sample_sizes):
+        sample_means = [
+            np.mean(np.random.choice(pop_data, size=n, replace=False))
+            for _ in range(n_iterations)
+        ]
+
+        ax = axes[row, col]
+        sns.histplot(sample_means, bins=30, kde=True, ax=ax, color='skyblue', stat='density')
+        ax.axvline(pop_mean, color='red', linestyle='--', label='Population Mean')
+
+        ax.set_title(f"{pop_name}\nSample Size = {n}")
+        if col == 0:
+            ax.set_ylabel("Density")
+        else:
+            ax.set_ylabel("")
+        if row == len(populations) - 1:
+            ax.set_xlabel("Sample Mean")
+        else:
+            ax.set_xlabel("")
+
+        if col == len(sample_sizes) - 1:
+            # Show standard deviation of the sample mean
+            std_sample_means = np.std(sample_means)
+            ax.text(0.95, 0.9, f"Std: {std_sample_means:.2f}",
+                    transform=ax.transAxes, ha='right', va='top', fontsize=10)
+
+plt.tight_layout(rect=[0, 0, 1, 0.95])
+plt.legend(loc='upper right')
+plt.show()
+</code></pre>
+<h2 id="4">4.</h2>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
