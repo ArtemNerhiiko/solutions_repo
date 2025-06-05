@@ -58,7 +58,8 @@ plt.show()
 ## 2. Sampling and Visualization:
 
 
-![450475176-1581d6e9-bc43-4428-ba31-b958ac109b6a](https://github.com/user-attachments/assets/e1075f22-4beb-4a50-8f7f-d9c53601691c)
+![download (21)](https://github.com/user-attachments/assets/4bf5bd57-4181-49a1-915f-04463778913f)
+
 
 
 ```python
