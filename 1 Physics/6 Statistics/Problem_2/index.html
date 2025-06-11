@@ -86,6 +86,22 @@
 </li>
 <li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 2</a>
 <ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="#theoretical-foundation">Theoretical Foundation:</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#estimating-using-a-unit-circle-and-random-points">Estimating π Using a Unit Circle and Random Points</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#step-1-define-the-square-and-circle">Step 1: Define the Square and Circle</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#areas">Areas:</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#step-2-generate-random-points">Step 2: Generate Random Points</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#step-3-use-the-ratio-to-estimate">Step 3: Use the Ratio to Estimate π</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#final-formula">Final Formula</a>
+</li>
 </ul>
 </li>
 </ul>
@@ -172,6 +188,43 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-2">Problem 2</h1>
+<h2 id="theoretical-foundation">Theoretical Foundation:</h2>
+<h2 id="estimating-using-a-unit-circle-and-random-points">Estimating π Using a Unit Circle and Random Points</h2>
+<p>You can estimate π by randomly generating points inside a square that encloses a <strong>unit circle</strong>, and then calculating the ratio of points that fall <strong>inside the circle</strong> to the total number of points in the <strong>square</strong>.</p>
+<p>This method is known as a <strong>Monte Carlo simulation</strong>.</p>
+<h2 id="step-1-define-the-square-and-circle">Step 1: Define the Square and Circle</h2>
+<ul>
+<li>
+<p>The <strong>unit circle</strong> is centered at the origin <span class="arithmatex">\((0, 0)\)</span> with radius <span class="arithmatex">\(r = 1\)</span>.</p>
+</li>
+<li>
+<p>The <strong>bounding square</strong> goes from <span class="arithmatex">\(-1\)</span> to <span class="arithmatex">\(1\)</span> in both x and y, so the side length is 2.</p>
+</li>
+</ul>
+<h3 id="areas">Areas:</h3>
+<ul>
+<li><strong>Area of the circle</strong>: </li>
+</ul>
+<p><span class="arithmatex">\(A_{\text{circle}} = \pi r^2 = \pi(1)^2 = \pi\)</span></p>
+<ul>
+<li><strong>Area of the square</strong>: </li>
+</ul>
+<p><span class="arithmatex">\(A_{\text{square}} = (2)^2 = 4\)</span></p>
+<h2 id="step-2-generate-random-points">Step 2: Generate Random Points</h2>
+<p>Generate a large number <span class="arithmatex">\(N\)</span> of random points <span class="arithmatex">\((x, y)\)</span> such that:  </p>
+<p>$ -1 \leq x \leq 1,\quad -1 \leq y \leq 1 $</p>
+<p>For each point, check whether it falls <strong>inside the circle</strong> using the inequality:<br/>
+<span class="arithmatex">\(x^2 + y^2 \leq 1\)</span></p>
+<p>Let <span class="arithmatex">\(N_{\text{in}}\)</span> be the number of points that fall <strong>inside the circle</strong>.</p>
+<h2 id="step-3-use-the-ratio-to-estimate">Step 3: Use the Ratio to Estimate π</h2>
+<p>Since the ratio of areas is approximately equal to the ratio of points:  </p>
+<p><span class="arithmatex">\(\frac{A_{\text{circle}}}{A_{\text{square}}} \approx \frac{N_{\text{in}}}{N}\)</span></p>
+<p>Substituting the area values:  </p>
+<p><span class="arithmatex">\(\frac{\pi}{4} \approx \frac{N_{\text{in}}}{N}\)</span></p>
+<p>Multiplying both sides by 4:</p>
+<p><span class="arithmatex">\(\boxed{\pi \approx 4 \cdot \frac{N_{\text{in}}}{N}}\)</span></p>
+<h2 id="final-formula">Final Formula</h2>
+<p><span class="arithmatex">\(\pi \approx 4 \times \frac{\text{Number of points inside the circle}}{\text{Total number of points in the square}}\)</span></p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
