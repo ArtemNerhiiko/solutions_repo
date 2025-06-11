@@ -25,16 +25,6 @@ Let:
 
 - $L \in \mathbb{R}^{n \times n}$: Laplacian matrix.
 
-Laplacian Matrix $L$ is defined as:
-
-$$
-L_{ij} =
-\begin{cases}
-\sum_{k \neq i} w_{ik}, & \text{if } i = j 
-- w_{ij}, & \text{if } i \ne j \text{ and nodes are connected} s
-0, & \text{otherwise}
-\end{cases}
-$$
 
 
 ## 3. Compute Equivalent Resistance Using the Pseudoinverse
